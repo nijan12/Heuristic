@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../Css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+    <script src="https://kit.fontawesome.com/9b45b95bcc.js" crossorigin="anonymous"></script>
+    <script src="../Js/main.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+  <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+ </head>
+<body>
+  <div class="maincontainer-wrapper"> 
+    <!--header start here-->
+    <div class="container-wrap">
+        <div class="logo-main dd-flex">
+            <div class="logo">
+              <img src="../Image/Relevantz_Logo-png200.webp" alt="logo">
+            </div>
+            <div class="notify-sec dd-flex flex-spacebtwn">
+                <p>Welcome Back, <span></span>John Wick!</p>
+                <div class="notification">
+                    <div class="account dd-flex flex-hcenter">
+                      <p class="notify-count">10</p>
+                        <span><i class="fa-sharp fa-regular fa-bell"></i></span>
+                        <span class="user">John Wick</span>
+                        <span><img src="../Image/profile.PNG" alt=""></span>
+                        <i class="fa-solid fa-angle-down" class="prof-downarrow"></i>
+                        
+                    </div>
+
+            </div>
+        </div>
+        </div> 
+    <!--header end here--> 
+
+    <div class="content-area dd-flex">
+        <div class="navigation">
+            <ul class="nav-link">
+                <li><a href="index.html"> <img src="../Image/dashboard-icon.PNG" alt="dashboard icon"> Dashboard</a></li>
+                <li><a href="heuristic.html" class="active"> <img src="../Image/he-analysis.PNG" alt="he Analysis"> Heuristic Analysis</a></li>
+                <li><a href="#"> <img src="../Image/history-icon.PNG" alt="" style="margin-right:0.1rem; padding-left: 0.2rem;"> History</a></li>
+                <li><a href="#"> <img src="../Image/help-icon.PNG" alt=""> Help</a></li>
+                <li><a href="#"> <img src="../Image/logout-icon.PNG" alt=""> Logout</a></li>
+            </ul>
+          
+          <div id="showimgs"></div>
+        </div>
+        <div class="dynamic-container" style="flex:1;">
+    <div class="heuristic-inner">
+                
+                <h1 class="f14 bg-white p1">Heuristic Analysis</h1>
+          <div class="section">
+            <div id="c1" class="circle active step1" >
+                <p class="round"><i class="fa-solid fa-check"></i></p>
+                <div class="circle-content ">
+                    Stage 1 <br/><span>Upload Files</span>
+                </div>
+            </div>
+        <div id="c2" class="circle step2">
+            <p class="round"><i class="fa-solid fa-check"></i></p>
+            <div class="circle-content">
+                Stage 2 <br/><span>Navigation</span>
+            </div>
+        </div>
+        <div id="c3" class="circle step3">
+            <p class="round"><i class="fa-solid fa-check"></i></p>
+            <div class="circle-content">
+                Stage 3 <br/><span>Content</span>
+            </div>
+        </div>
+        <div id="c4" class="circle stpe4">
+            <p class="round"><i class="fa-solid fa-check"></i></p>
+            <div class="circle-content">
+                Stage 4 <br/><span>Presentation</span>
+            </div>
+        </div>
+		<div id="c5" class="circle step5">
+            <p class="round"><i class="fa-solid fa-check"></i></p>
+            <div class="circle-content">
+                Stage 5 <br/><span>Interaction</span>
+            </div>
+        </div>
+		<div id="c6" class="circle step6" >
+            <p class="round"><i class="fa-solid fa-check"></i></p>
+            <div class="circle-content">
+                Stage 6 <br/><span>Value & Usefulness</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+    <fieldset class="form-NS activeForm" id="f1">
+    <div class="innercont">
+        <h2 class="f14">Upload Screens</h2>
+        <div class="wiz-inner-content">
+            <div class="upload-container tx-center">
+                <i class="fa-solid fa-folder-open mb-2 mrt-1"></i>
+                <p class="mrt-1">Drag and Drop your files here<br><br>or<br><br><span>Browse file</span></p>
+                <!--<input href="#" type="file" id="file_upload" multiple="true"/>-->
+            </div>
+            <br>
+            <!--<button class="upload-btn uploadflbtn" onclick="uploadFiles()">Upload</button>-->
+            <p id="file_lable" class="dropped-img" style="display:none;"></p>
+            <div class="imgload">
+                <p class="dd-flex flex-spacebtwn"><span>Screen 1.jpg</span> <span>Upload Completed: <strong>100%</strong></span></p>
+                <p class="dd-flex flex-spacebtwn"><span>Screen 1.jpg</span> <span>Upload Completed: <strong>75%</strong></span></p>
+            </div>
+        </div>
+        <div class="buttonGroup bot-fix">
+            <button class="cancelit">Cancel</button>
+            <button class="next-modif tabbt1"  onclick="ChangeField(c2,f2), imggrid()">Next</button>
+        </div>
+    </div>
+</fieldset>
+</div>
+
+    <div class="section">
+        
+        <fieldset class="form-NS" id="f2">
+            
+            <div class="innercont">
+            <div class="dd-flex flex-spacebtwn na-header flex-hcenter">
+                <h2 class="f14">Navigation & Information Architecture</h2>
+                <button class="na-addnew clickit"><i class="fa-solid fa-plus"></i> Add New</button>
+                
+
+            </div>
+            <div class="wiz-inner-content">
+                <div class="usab-content">
+                    <div class="useab-head">
+                        <div class="checkbx"></div>
+                        <div class="width40">Usability Dimensions</div>
+                        <div class="wid130">Reviewer - 1</div>
+                        <div class="wid130">Reviewer - 2</div>
+                        <div>Recommendations</div>
+                    </div>
+                    <ul class="dd-flex main-list">
+                        <li class="dd-flex list-row flex-hcenter list-color">
+                            <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
+                            <span class="width40 bold">Navigation & Information Architecture</span>
+                            <span class="wid130"></span>
+                            <span class="wid130"></span>
+                            <span class="width300">
+                                 
+                            </span>
+                            <span class="na-toggle"><i class="fa-solid fa-angle-down"></i></span>
+                        </li>
+                    </ul>
+                        <ul class="main-list">
+                            <li class="dd-flex list-row flex-hcenter">
+                                <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
+                                <span class="width40 bold">Effective Navigation Approach</span>
+                                <span class="wid130">
+                                    
+                                </span>
+                                <span class="wid130">
+                                    </span>
+                                <span class="width300 recommend"></span>
+                                <span class="na-toggle"></span>  
+                            </li>
+                            <li class="dd-flex list-row flex-hcenter"><span class="checkme"><input type="checkbox" id="" name="" value=""></span>
+                                <span class="width40">Navigation options are visible and clear</span>
+                                <span class="wid130">
+                                    <select id="iconSelector">
+                                        <option value="box">😉 <i>1</i></option> 
+                                        <option value="piano">🙂 <i>2</i></option>    
+                                        <option value="books">😐 <i>3</i></option>
+                                        <option value="dog">😑 <i>4</i></option>     
+                                        <option value="car">😶 <i>5</i></option>
+                                    </select>
+                                </span>
+                                <span class="wid130">
+                                    
+                                </span>
+                                <span class="width300 recommend"><input type="text" placeholder="Enter your Comment's here"></span>
+                                <span class="na-toggle"></span></li>
+                            <li class="dd-flex list-row flex-hcenter">
+                                <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
+                                <span class="width40">Overall navigation supports primary task flows and works as an integrated whole</span>
+                                <span class="wid130">
+                                    <select id="iconSelector">
+                                        <option value="box">😉 <i>1</i></option> 
+                                        <option value="piano">🙂 <i>2</i></option>    
+                                        <option value="books">😐 <i>3</i></option>
+                                        <option value="dog">😑 <i>4</i></option>     
+                                        <option value="car">😶 <i>5</i></option>
+                                    </select>
+                                </span>
+                                <span class="wid130"></span>
+                                <span class="width300 recommend"><input type="text" placeholder="Enter your Comment's here"></span>
+                                <span class="na-toggle"></span>
+                            </li>
+                            <li class="dd-flex list-row flex-hcenter">
+                                <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
+                                <span class="width40">Sense of place is clear</span>
+                                <span class="wid130">
+                                    <select id="iconSelector">
+                                        <option value="box">😉 <i>1</i></option> 
+                                        <option value="piano">🙂 <i>2</i></option>    
+                                        <option value="books">😐 <i>3</i></option>
+                                        <option value="dog">😑 <i>4</i></option>     
+                                        <option value="car">😶 <i>5</i></option>
+                                    </select>
+                                </span>
+                                <span class="wid130"></span>
+                                <span class="width300 recommend"><input type="text" placeholder="Enter your Comment's here"></span>
+                                <span class="na-toggle"></span>
+                            </li>
+                            <li class="dd-flex list-row flex-hcenter">
+                                <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
+                                <span class="width40">Number of pages to complete task is appropriate</span>
+                                <span class="wid130">
+                                    <select id="iconSelector">
+                                        <option value="box">😉 <i>1</i></option> 
+                                        <option value="piano">🙂 <i>2</i></option>    
+                                        <option value="books">😐 <i>3</i></option>
+                                        <option value="dog">😑 <i>4</i></option>     
+                                        <option value="car">😶 <i>5</i></option>
+                                    </select>
+                                </span>
+                                <span class="wid130"></span>
+                                <span class="width300 recommend"><input type="text" placeholder="Enter your Comment's here"></span>
+                                <span class="na-toggle"></span>
+                            </li>
+                            <li class="dd-flex list-row flex-hcenter">
+                                <span class="checkme"></span>
+                                <span class="width40 bold">Average Total Score</span>
+                                <span class="wid130">
+                                    
+                                </span>
+                                <span class="wid130"></span>
+                                <span class="width300 recommend"></span>
+                                <span class="na-toggle"></span>
+                            </li>
+                        </ul>
+
+                        <ul class="main-list">
+                            <li class="dd-flex list-row flex-hcenter">
+                                <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
+                                <span class="width40 bold">Effective Information Approach</span>
+                                <span class="wid130">
+                                    
+                                </span>
+                                <span class="wid130">
+                                    </span>
+                                <span class="width300 recommend"></span>
+                                <span class="na-toggle"></span>  
+                            </li>
+                            <li class="dd-flex list-row flex-hcenter"><span class="checkme"><input type="checkbox" id="" name="" value=""></span>
+                                <span class="width40">Effective Information Approach</span>
+                                <span class="wid130">
+                                    <select id="iconSelector">
+                                        <option value="box">😉 <i>1</i></option> 
+                                        <option value="piano">🙂 <i>2</i></option>    
+                                        <option value="books">😐 <i>3</i></option>
+                                        <option value="dog">😑 <i>4</i></option>     
+                                        <option value="car">😶 <i>5</i></option>
+                                    </select>
+                                </span>
+                                <span class="wid130">
+                                    
+                                </span>
+                                <span class="width300 recommend"><input type="text" placeholder="Enter your Comments here"></span>
+                                <span class="na-toggle"></span></li>
+                            <li class="dd-flex list-row flex-hcenter">
+                                <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
+                                <span class="width40">Labels are distinctive and descriptive</span>
+                                <span class="wid130">
+                                    <select id="iconSelector">
+                                        <option value="box">😉 <i>1</i></option> 
+                                        <option value="piano">🙂 <i>2</i></option>    
+                                        <option value="books">😐 <i>3</i></option>
+                                        <option value="dog">😑 <i>4</i></option>     
+                                        <option value="car">😶 <i>5</i></option>
+                                    </select>
+                                </span> 
+                                <span class="wid130"></span>
+                                <span class="width300 recommend"><input type="text" placeholder="Enter your Comment's here"></span>
+                                <span class="na-toggle"></span>
+                            </li>
+                            <li class="dd-flex list-row flex-hcenter">
+                                <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
+                                <span class="width40">Menu items trigger action that meet user needs</span>
+                                <span class="wid130">
+                                    <select id="iconSelector">
+                                        <option value="box">😉 <i>1</i></option> 
+                                        <option value="piano">🙂 <i>2</i></option>    
+                                        <option value="books">😐 <i>3</i></option>
+                                        <option value="dog">😑 <i>4</i></option>     
+                                        <option value="car">😶 <i>5</i></option>
+                                    </select>
+                                </span>
+                                <span class="wid130"></span>
+                                <span class="width300 recommend"><input type="text" placeholder="Enter your Comment's here"></span>
+                                <span class="na-toggle"></span>
+                            </li>
+                            <li class="dd-flex list-row flex-hcenter">
+                                <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
+                                <span class="width40">Menu item promote content which meets user needs</span>
+                                <span class="wid130">
+                                    <select id="iconSelector">
+                                        <option value="box">😉 <i>1</i></option> 
+                                        <option value="piano">🙂 <i>2</i></option>    
+                                        <option value="books">😐 <i>3</i></option>
+                                        <option value="dog">😑 <i>4</i></option>     
+                                        <option value="car">😶 <i>5</i></option>
+                                    </select>
+                                </span>
+                                <span class="wid130"></span>
+                                <span class="width300 recommend"><input type="text" placeholder="Enter your Comment's here"></span>
+                                <span class="na-toggle"></span>
+                            </li>
+                            <li class="dd-flex list-row flex-hcenter">
+                                <span class="checkme"></span>
+                                <span class="width40 bold">Average Total Score</span>
+                                <span class="wid130">
+                                    
+                                </span>
+                                <span class="wid130"></span>
+                                <span class="width300 recommend"></span>
+                                <span class="na-toggle"></span>
+                            </li>
+                        </ul>
+
+                    
+                </div>
+
+            </div>
+            <div class="buttonGroup bot-fix">
+                <button class="cancelit gobackbtn" onclick="ChangeField(c1,f1), removeBtn(c2)">Previous</button>
+                <button class="next-modif tabbt2" onclick="ChangeField(c3,f3)">Next</button>
+            </div>
+        </div>
+        </fieldset>
+
+    </div>
+    <div class="section">
+        <fieldset class="form-NS" id="f3">
+            <div class="innercont">
+            <div class="dd-flex flex-spacebtwn na-header flex-hcenter">
+                <h2 class="f14">Content</h2>
+                <button class="na-addnew clickit"><i class="fa-solid fa-plus"></i> Add New</button>
+            </div>
+            <div class="wiz-inner-content">
+                <div class="usab-content">
+                    <div class="useab-head">
+                        <div class="checkbx"></div>
+                        <div class="width40">Usability Dimensions</div>
+                        <div class="wid130">Reviewer - 1</div>
+                        <div class="wid130">Reviewer - 2</div>
+                        <div>Recommendations</div>
+                    </div>
+                    <ul class="dd-flex main-list">
+                        <li class="dd-flex list-row flex-hcenter list-color">
+                            <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
+                            <span class="width40 bold">Content</span>
+                            <span class="wid130"></span>
+                            <span class="wid130"></span>
+                            <span class="width300">
+                                 
+                            </span>
+                            <span class="na-toggle"><i class="fa-solid fa-angle-down"></i></span>
+                        </li>
+                    </ul>
+                    </div>
+            <div class="buttonGroup bot-fix">
+                <button class="cancelit gobackbtn2" onclick="ChangeField(c2,f2) , removeBtn(c3)">Previous</button>
+                <button class="next-modif tabbt3" onclick="ChangeField(c4,f4)">Next</button>
+            </div>
+            </div>
+        </div>
+        </fieldset>
+    </div>
+    <div class="section">
+        <fieldset class="form-NS" id="f4">
+            <div class="innercont">
+            <div class="dd-flex flex-spacebtwn na-header flex-hcenter">
+                <h2 class="f14">Presentation</h2>
+                <button class="na-addnew clickit"><i class="fa-solid fa-plus"></i> Add New</button>
+            </div>
+            <div class="wiz-inner-content">
+                <div class="usab-content">
+                    <div class="useab-head">
+                        <div class="checkbx"></div>
+                        <div class="width40">Usability Dimensions</div>
+                        <div class="wid130">Reviewer - 1</div>
+                        <div class="wid130">Reviewer - 2</div>
+                        <div>Recommendations</div>
+                    </div>
+                    <ul class="dd-flex main-list">
+                        <li class="dd-flex list-row flex-hcenter list-color">
+                            <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
+                            <span class="width40 bold">Presentation</span>
+                            <span class="wid130"></span>
+                            <span class="wid130"></span>
+                            <span class="width300">
+                                 
+                            </span>
+                            <span class="na-toggle"><i class="fa-solid fa-angle-down"></i></span>
+                        </li>
+                    </ul>
+                    </div>
+            <div class="buttonGroup bot-fix">
+                <button class="cancelit gobackbtnn3" onclick="ChangeField(c3,f3) , removeBtn(c4)">Previous</button>
+                <button class="next-modif tabbt4" onclick="ChangeField(c5,f5)">Next</button>
+            </div>
+        </div>
+    </div>
+</fieldset>
+    </div>
+	<div class="section">
+        <fieldset class="form-NS" id="f5">
+            <div class="innercont">
+            <div class="dd-flex flex-spacebtwn na-header flex-hcenter">
+                <h2 class="f14">Interaction</h2>
+                <button class="na-addnew clickit"><i class="fa-solid fa-plus"></i> Add New</button>
+            </div>
+        <div class="wiz-inner-content">
+            <div class="usab-content">
+                <div class="useab-head">
+                    <div class="checkbx"></div>
+                    <div class="width40">Usability Dimensions</div>
+                    <div class="wid130">Reviewer - 1</div>
+                    <div class="wid130">Reviewer - 2</div>
+                    <div>Recommendations</div>
+                </div>
+                <ul class="dd-flex main-list">
+                    <li class="dd-flex list-row flex-hcenter list-color">
+                        <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
+                        <span class="width40 bold">Interaction</span>
+                        <span class="wid130"></span>
+                        <span class="wid130"></span>
+                        <span class="width300">
+                        </span>
+                        <span class="na-toggle"><i class="fa-solid fa-angle-down"></i></span>
+                    </li>
+                </ul>
+                </div>
+        </div>
+            <div class="buttonGroup bot-fix">
+                <button class="cancelit gobackbtn4" onclick="ChangeField(c4,f4) , removeBtn(c5)">Previous</button>
+                <button class="next-modif tabbt5" onclick="ChangeField(c6,f6)">Next</button>
+            </div>
+    </div>
+</fieldset>
+    </div>
+	
+	<div class="section">
+        <fieldset class="form-NS" id="f6">
+            <div class="innercont">
+            <div class="dd-flex flex-spacebtwn na-header flex-hcenter">
+                <h2 class="f14">Value & Usefulness</h2>
+                <button class="na-addnew clickit"><i class="fa-solid fa-plus"></i> Add New</button>
+            </div>
+        <div class="wiz-inner-content">
+            <div class="usab-content">
+                <div class="useab-head">
+                    <div class="checkbx"></div>
+                    <div class="width40">Usability Dimensions</div>
+                    <div class="wid130">Reviewer - 1</div>
+                    <div class="wid130">Reviewer - 2</div>
+                    <div>Recommendations</div>
+                </div>
+                <ul class="dd-flex main-list">
+                    <li class="dd-flex list-row flex-hcenter list-color">
+                        <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
+                        <span class="width40 bold">Value & Usefulness</span>
+                        <span class="wid130"></span>
+                        <span class="wid130"></span>
+                        <span class="width300">
+                        </span>
+                        <span class="na-toggle"><i class="fa-solid fa-angle-down"></i></span>
+                    </li>
+                    </ul>
+                    <ul class="main-list">
+                        <li class="dd-flex list-row flex-hcenter">
+                            <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
+                            <span class="width40 bold">Effective Navigation Approach</span>
+                            <span class="wid130">
+                                <select id="iconSelector">
+                                    <option value="box">😉 <i>1</i></option> 
+                                    <option value="piano">🙂 <i>2</i></option>    
+                                    <option value="books">😐 <i>3</i></option>
+                                    <option value="dog">😑 <i>4</i></option>     
+                                    <option value="car">😶 <i>5</i></option>
+                                </select>
+                            </span>
+                            <span class="wid130">
+                                </span>
+                            <span class="width300 recommend"><input type="text" placeholder="Enter your Comment's here"></span>
+                            <span class="na-toggle"></span>  
+                        </li>
+                </div>
+
+
+        </div>
+            <div class="buttonGroup bot-fix">
+                <button class="cancelit gobackbtn5" onclick="ChangeField(c5,f5) , removeBtn(c6)">Previous</button>
+                <button class="submit tabbt6 successmsg">Submit</button>
+            </div>
+        </div>
+    </fieldset>
+    </div>
+    <div class="footer" style="justify-content: center;">Copyrights @ All rights reserved group Heuristic Evaluation, 2023 <span>|</span> <a href="#">Privay Policy</a></div>
+    
+<!--Popup-->
+    <div class="popup-main"> 
+        <div class="popup-header dd-flex flex-spacebtwn">
+            <span>Add New</span>
+            <a href="" class="close-popup"><span><i class="fa-solid fa-xmark"></i></span></a>
+        </div>
+        
+        
+        <div class="popup-content">
+            <div class="dd-flex flex-spacebtwn">
+                <div class="dd-flex flex-dircol">
+                    <label>Usability Dimensions</label>
+                    <select id="iconSelector">
+                        <option value="box">Navigation & Information Architecture</option> 
+                        <option value="piano">Content</option>    
+                        <option value="books">Presentation</option>
+                        <option value="dog">Interaction</option>     
+                        <option value="car">Value & Usefulness</option>
+                    </select>
+                </div>
+                <div class="dd-flex flex-dircol">
+                    <label>Reviewer Name</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="inputadd mrt-3">
+                <input type="text">
+                <span id="add-class" class="add-classpop"><i class="fa-solid fa-plus"></i> Add</span>
+            </div>
+            <div class="button-grp">
+            <button class="popupcanelbtn">Cancel</button> 
+            <button class="popupsavebtn">Save</button>
+            </div>
+        </div>
+    </div>
+    <div class="backdrop">
+
+    </div>
+<!--PopupEnd-->
+
+<!--Success message-->
+<div class="success"> 
+    <div class="success-header ">
+        <a href="" class="close-suc"><span><i class="fa-solid fa-xmark"></i></span></a>
+    </div>
+    <div class="success-content">
+        <div class="">
+                <h2>Thanks</h2>
+                <p>This UI screens are successfully reviewed Do you want to publish? <strong>Click Yes or No</strong></p>
+        </div>
+		<div class="button-grp">
+		<button class="popupcanelbtn">Cancel</button> <button class="popupsavebtn">Save</button>
+		</div>
+    </div>
+</div>
+
+<div class="backdrop"></div>
+<!--Success message End-->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="js/layout.js"></script>
+<script>
+  
+	$(document).ready(function () {
+  $('#inputBtn').prop('disabled', true);
+  $('fieldset').keyup(function(){
+    var kname = $('#name').val();
+    var sname = $('#surname').val();
+    
+    if((kname != "") || (sname != "")){
+      if((kname.length < 4 ) || (sname.length < 4)){
+        $('#inputBtn').prop('disabled', true);
+        $('#nsMessage').text('Enter more the 4 letter.');
+      }
+      else{
+        $('#inputBtn').prop('disabled', false);
+        $('#nsMessage').text('');
+      }
+    }
+    else{
+      $('#inputBtn').prop('disabled', true);
+    }
+  })
+  
+//Custome Popup Click 
+
+  $(".clickit").click(function(){
+    $(".popup-main").addClass("addpop");
+    $(".backdrop").fadeTo(200, 1);
+  });
+
+  $(".close-popup").click(function(){
+    $(".popup-main").removeClass("addpop");
+    $(".backdrop").fadeOut(200);
+  });
+
+
+
+  
+//Popup End
+  //tab highlight bg
+
+  $(".tabbt1").click(function(){
+    $(".step1").addClass("Complete");
+  });
+  $(".gobackbtn").click(function(){
+    $(".step1").removeClass("Complete");
+  });
+  $(".tabbt2").click(function(){
+    $(".step2").addClass("completetwo");
+  });
+  $(".gobackbtn2").click(function(){
+    $(".step2").removeClass("completetwo");
+  });
+  $(".tabbt3").click(function(){
+    $(".step3").addClass("completethree");
+  });
+  $(".gobackbtnn3").click(function(){
+    $(".step3").removeClass("completethree");
+  });
+  $(".tabbt4").click(function(){
+    $(".stpe4").addClass("completefour");
+  });
+  $(".gobackbtn4").click(function(){
+    $(".stpe4").removeClass("completefour");
+  });
+  $(".tabbt5").click(function(){
+    $(".step5").addClass("completefive");
+  });
+  $(".gobackbtn5").click(function(){
+    $(".step5").removeClass("completefive");
+    $(".step6").removeClass("completesix");
+  });
+$(".tabbt6").click(function(){
+    $(".step6").addClass("completesix");
+});
+
+//success
+
+
+  $(".successmsg").click(function(){
+    $(".success").addClass("showsuccess");
+    $(".backdrop").fadeTo(200, 1);
+  });
+
+  $(".close-suc").click(function(){
+    $(".success").removeClass("showsuccess");
+    $(".backdrop").fadeOut(200);
+  });
+
+
+});
+
+
+
+function ChangeField(bId, fId) {
+    // $(bId).removeClass('active');
+    $(bId).addClass('active');
+    $('.form-NS').removeClass('activeForm');
+    $(fId).addClass('activeForm');
+};
+
+function removeBtn(btn) {
+    $(btn).removeClass('active');
+}
+
+
+
+//dragdrop
+function uploadFiles() {
+    var files = document.getElementById('file_upload').files;
+    if(files.length==0){
+        alert("Please first choose or drop any file(s)...");
+        return;
+    }
+    var filenames="";
+	
+    for(var i=0;i<files.length;i++){
+        filenames+= "<p>"+ files[i].name +"</p>";
+		
+    }
+	
+	document.getElementById('file_lable').innerHTML = filenames;
+	document.getElementById('file_lable').style.display = "block";
+    //alert("Selected file(s) :\n____________________\n"+filenames);
+}
+function imggrid() {
+var dispimg = document.getElementById('file_lable').innerHTML;
+document.getElementById('showimgs').innerHTML = dispimg;
+}
+
+
+//Drop down selection
+
+const addTaskBtn = document.querySelector("#newTaskBtn");
+addTaskBtn.addEventListener('click', () => {
+    let taskName = document.querySelector('#taskInput').value;
+    let taskIcon = document.querySelector('#iconSelector').value;
+    console.log(taskName);
+    console.log(taskIcon); // Getting <empty string> in console.log
+    document.querySelector('#taskInput').value = '';
+})
+
+
+</script>
+
+</body>
+</html>
