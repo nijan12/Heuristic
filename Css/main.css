@@ -409,6 +409,7 @@ input:focus-visible, input:focus, input:active {
 	height: 270px;
 	margin-right: 1rem;
     margin-bottom: 1rem;
+    background: transparent;
 }
 .card:nth-child(3n) {
 	margin-right: 0;
