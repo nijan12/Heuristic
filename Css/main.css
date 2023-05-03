@@ -248,7 +248,7 @@ input:focus-visible, input:focus, input:active {
 	border: 1px solid #E7E7E7;
 }
 .login-inner .unsername input:focus, .login-inner .password input:focus {
-    background: #ccc;
+    background: #ebeaea;
 }
 .form-container {
 	max-width: 450px;
@@ -403,7 +403,7 @@ input:focus-visible, input:focus, input:active {
 }
 .card {
 	border: 1px solid #E7E7E7;
-	flex-basis: 31.7%;
+	flex-basis: 31.5%;
 	padding: 1.3rem;
     border-radius: 10px;
 	height: 270px;
