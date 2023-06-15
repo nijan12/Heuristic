@@ -126,6 +126,9 @@ input:focus-visible, input:focus, input:active {
 .flex-dircol {
     flex-direction: column;
 }
+.flex-just-contecenter {
+    justify-content: center;
+}
 /*flex text alignment*/
 
 .mt-1 {
@@ -176,10 +179,7 @@ input:focus-visible, input:focus, input:active {
 .img-section, .login-inner {
 	flex: 50%;
 }
-.login-inner img {
-	width: 170px;
-	height: 45px;
-}
+
 .m-top {
 	margin-top: 5rem;
 	color: #28255B;
@@ -1498,6 +1498,83 @@ padding-left: 30px;
 }
 .welcomeuserpage {
     background: #fff;
+}
+
+.create-evaluation {
+    background: #F2F3F8;
+    padding: 0.6rem;
+}
+scection {
+    width: 100%;
+    background: #fff;
+}
+.evcreatehead p:first-child {
+    padding: 20px 30px;
+    border-bottom: 1px solid #D7D6D6;
+    color: #000;
+    font-weight: 500;
+    font-size: 14px;
+}
+.project-name {
+    padding: 20px 30px;
+}
+.project-name span {
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 0.5rem;
+}
+.project-name > div {
+    width: 376px;
+}
+.project-name > div input {
+    height: 31px;
+    border-radius: 5px;
+    border: 1px solid #D9D7D7;
+}
+.project-name .proj {
+    margin-right: 5rem;
+}
+
+.sectionone {
+    background: #fff;
+    margin-bottom: 1rem;
+    border: 1px solid #E9E9E9;
+}
+.sectiontwo {
+    background: #fff;
+    margin-bottom: 1rem; 
+    border: 1px solid #E9E9E9;
+}
+.evcreatelist ul {
+    padding: 20px 30px;
+}
+.sectiontwo input {
+    margin-right: 10px;
+}
+.evcreatelist ul li {
+    font-size: 14px;
+    padding-bottom: 30px;
+}
+.buttonsection {
+    margin-bottom: 3rem;
+}
+.buttonsection .cancelme {
+    color: #747474;
+    border: 1px solid #B6B6B6;
+    font-size: 12px;
+    padding: 5px 20px;
+    border-radius: 17px;
+    margin-right: 10px;
+    line-height: 18px;
+}
+.createneweval {
+    background: #B02270;
+    color: #fff;
+    height: auto;
+    line-height: 18px;
+    padding: 5px 20px;
+    border-radius: 17px;
+    font-size: 14px;
 }
 
 
