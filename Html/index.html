@@ -22,14 +22,15 @@
     <div class="container-wrap">
         <div class="logo-main dd-flex">
             <div class="logo">
-              <img src="../Image/Relevantz_Logo-png200.webp" alt="logo">
+              <img src="../Image/Latest-log.PNG" alt="logo">
             </div>
             <div class="notify-sec dd-flex flex-spacebtwn">
-                <p>Welcome Back, <span></span>John Wick!</p>
+                <p>Heuristics Analysis Tool - <span>Beta</span></p>
                 <div class="notification">
                   <div class="account dd-flex flex-hcenter">
+                    <span class="help-count"><i class="fa-solid fa-headphones-simple"></i></span>
                     <p class="notify-count">10</p>
-                      <span><i class="fa-sharp fa-regular fa-bell"></i></span>
+                      <span class="bell-count"><i class="fa-sharp fa-regular fa-bell"></i></span>
                       <span class="user">John Wick</span>
                       <span><img src="../Image/profile.PNG" alt=""></span>
                       <i class="fa-solid fa-angle-down" class="prof-downarrow"></i>
@@ -45,80 +46,163 @@
         <div class="navigation">
           <ul class="nav-link">
             <li><a href="index.html" class="active"> <img src="../Image/dashboard-icon.PNG" alt="dashboard icon"> Dashboard</a></li>
-            <li><a href="heuristic.html"> <img src="../Image/he-analysis.PNG" alt="he Analysis"> Heuristic Analysis</a></li>
-            <li><a href="#"> <img src="../Image/history-icon.PNG" alt="" style="margin-right:0.1rem; padding-left: 0.2rem;"> History</a></li>
-            <li><a href="#"> <img src="../Image/help-icon.PNG" alt=""> Help</a></li>
             <li><a href="#"> <img src="../Image/logout-icon.PNG" alt=""> Logout</a></li>
           </ul>
         </div>
-        <div class="inner-content dd-flex" style="border-left: 1px solid #E3E3E3;">
+        <div class="inner-content heuro-analysis dd-flex" style="border-left: 1px solid #E3E3E3;">
           
-          <div class="review mrt-1">
-            <h5 class="mb-28 h5">UX REVIEW ANALYTICS</h5> 
+          <div class="review">
 
+            <div class="current-analys">
+              <div class="heur-anal-head dd-flex flex-spacebtwn">
+                <h5 class="mb-28 h5">CURRENT HEURISTIC EVALUATION</h5> 
+                <a class="create-ev" href="#"><span class="space"><i class="fa-solid fa-plus"></i></span>Create New Evaluation</a>
+              </div>
               <div class="card-main dd-flex">
                 
                 <div class="card">
-                  <div class="card-header dd-flex flex-spacebtwn">
-                    <h5>Flipkart</h5>
-                    <i class="fa-sharp fa-solid fa-ellipsis"></i>
+                  <div class="card-img">
+                      <div class="card-header dd-flex flex-spacebtwn">
+                        <h5>RGP</h5>
+                        <i class="fa-sharp fa-solid fa-ellipsis"></i>
+                      </div>
+                      <div class="chart active" id="chart">
+                        <img src="../Image/chart3.png" alt="chart1" >
+                      </div>
                   </div>
-                  <div class="chart active" id="chart">
-                    <img src="../Image/chart3.png" alt="chart1" >
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header dd-flex flex-spacebtwn">
-                    <h5>AMAZON</h5>
-                    <i class="fa-sharp fa-solid fa-ellipsis"></i>
-                  </div>
-                  <div class="chart" id="chart">
-                    <img src="../Image/curve-chart.png" alt="bar chart" style="padding-top: 2rem;">
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header dd-flex flex-spacebtwn">
-                    <h5>TATA</h5>
-                    <i class="fa-sharp fa-solid fa-ellipsis"></i>
-                  </div>
-                  <div class="chart" id="chart">
-                    <img src="../Image/light-color-chart.png" alt="pie chart" style="height:170px">
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header dd-flex flex-spacebtwn">
-                    <h5>LKQ</h5>
-                    <i class="fa-sharp fa-solid fa-ellipsis"></i>
-                  </div>
-                  <div class="chart" id="chart">
-                    <img src="../Image/Line-Graph2.png" alt="line chart" style="margin-top:1rem;">
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header dd-flex flex-spacebtwn">
-                    <h5>SHINEUP</h5>
-                    <i class="fa-sharp fa-solid fa-ellipsis"></i>
-                  </div>
-                  <div class="chart" id="chart">
-                    <img src="../Image/Highlight-chart.png" alt="chart4">
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header dd-flex flex-spacebtwn">
-                    <h5>SKATE CANADA</h5>
-                    <i class="fa-sharp fa-solid fa-ellipsis"></i>
-                  </div>
-                  <div class="chart" id="chart">
-                    <img src="../Image/bar3.png" alt="">
-                  </div>
-                </div>
+                    <div class="card-cont">
+                      <h5>Url: <span>WWW.rgp.com</span></h5>
+                      <h5>Start Date: <span>06/01/2023</span></h5>
+                      <button>VIEW</button>
+                    </div>
 
+                    
+                </div>
+                <div class="card">
+                  <div class="card-img">
+                      <div class="card-header dd-flex flex-spacebtwn">
+                        <h5>CIRCUIT TREE</h5>
+                        <i class="fa-sharp fa-solid fa-ellipsis"></i>
+                        
+                      </div>
+                      <div class="chart active" id="chart">
+                        <p class="pending">Pending</p>
+                        <img src="../Image/pending.png" alt="chart1" >
+                        <p class="tx-center" style="font-weight: 500;">45%</p>
+                      </div>
+                  </div>
+                    <div class="card-cont">
+                      <h5>Url: <span></span></h5>
+                      <h5>Start Date: <span>07/01/2023</span></h5>
+                      <button>CONTINUE</button>
+                    </div>
 
+                    <div class="dropmedwon" style="display: none;">
+                      <ul>
+                        <li>Edit</li>
+                        <li>Delete</li>
+                        <li>Download</li>
+                      </ul>
+                    </div>
+                </div>
+              </div>
               </div>
 
+
+              <div class="previous-analys">
+                <div class="heur-anal-head dd-flex flex-spacebtwn">
+                  <h5 class="mb-28 h5">PREVIOUS HEURISTIC EVALUATION</h5> 
+                  
+                  <div class="next-pre">
+                    <a class="btn-" href="#">Previous</a>
+                    <a class="" href="#">Next</a>
+                  </div>
+                </div>
+                
+                <div class="card-main dd-flex">
+                  <div class="card">
+                    <div class="card-img">
+                        <div class="card-header dd-flex flex-spacebtwn">
+                          <h5>LKQ</h5>
+                          <i class="fa-sharp fa-solid fa-ellipsis"></i>
+                        </div>
+                        <div class="chart" id="chart">
+                         
+                          <img src="../Image/Highlight-chart.png" alt="chart1" >
+                          
+                        </div>
+                    </div>
+                      <div class="card-cont">
+                        <h5>Url: <span>WWW.lkq.com</span></h5>
+                        <h5>Start Date: <span>06/01/2023</span></h5>
+                        <button>VIEW</button>
+                      </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-img">
+                        <div class="card-header dd-flex flex-spacebtwn">
+                          <h5>SKATE CANADA</h5>
+                          <i class="fa-sharp fa-solid fa-ellipsis"></i>
+                        </div>
+                        <div class="chart" id="chart">
+                         
+                          <img src="../Image/Line-Graph2.png" alt="chart1" >
+                          
+                        </div>
+                    </div>
+                      <div class="card-cont">
+                        <h5>Url: <span>WWW.skatecanada.com</span></h5>
+                        <h5>Start Date: <span>06/01/2023</span></h5>
+                        <button>VIEW</button>
+                      </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-img">
+                        <div class="card-header dd-flex flex-spacebtwn">
+                          <h5>SHINEUP</h5>
+                          <i class="fa-sharp fa-solid fa-ellipsis"></i>
+                        </div>
+                        <div class="chart tx-center" id="chart">
+                         
+                          <img src="../Image/chart1.png" alt="chart1" style="width:130px;height:120px;">
+                          
+                        </div>
+                    </div>
+                      <div class="card-cont">
+                        <h5>Url: <span>WWW.shineup.com</span></h5>
+                        <h5>Start Date: <span>06/01/2023</span></h5>
+                        <button>VIEW</button>
+                      </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-img">
+                        <div class="card-header dd-flex flex-spacebtwn">
+                          <h5>TATA</h5>
+                          <i class="fa-sharp fa-solid fa-ellipsis"></i>
+                        </div>
+                        <div class="chart" id="chart">
+                         
+                          <img src="../Image/new-chart.png" alt="chart1" style="padding-top:1.5rem">
+                          
+                        </div>
+                    </div>
+                      <div class="card-cont">
+                        <h5>Url: <span>WWW.tata.com</span></h5>
+                        <h5>Start Date: <span>06/01/2023</span></h5>
+                        <button>VIEW</button>
+                      </div>
+                  </div>
+
+
+                  
+
+
+                </div>
+            </div>
               <div class="footer">Copyrights @ All rights reserved group Heuristic Evaluation, 2023 <span>|</span> <a href="#">Privay Policy</a></div>
             </div>
-            <div class="profile mrt-1">
+
+            <!--<div class="profile mrt-1">
               <div class="profile-head dd-flex flex-spacebtwn mb-28">
                 <h5 class="h5">PROFILE</h5>
                 <span><i class="fa-solid fa-pen-to-square"></i></span>
@@ -154,7 +238,7 @@
                     </li>
                   </ul>
                 </div>
-              </div>
+              </div>-->
             </div>
             
         </div>
@@ -200,6 +284,14 @@ var myChart = new Chart(ctx, {
             }]
         }
     }
+});
+
+$(document).ready(function(){ 
+
+  $(".dropclick").click(function(){
+    $(".dropmedwon").addClass("showmedrop");
+  });
+
 });
 </script>
 </body>

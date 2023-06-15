@@ -298,17 +298,18 @@ input:focus-visible, input:focus, input:active {
     z-index: 999;
 }
 .logo {
-    width: 18%;
-    padding: 1rem;
+    width: 15%;
+    padding: 0.5rem;
 	box-sizing: border-box;
     background: #FCFBFF;
     padding-bottom: 0.4rem;
     padding-bottom: 0;
-    margin-bottom: 1rem;
+    padding-top: 0.3rem;
 }
 .logo img {
     padding-left: 1rem;
-    width: 12rem;
+    width: 8rem;
+    height: 40px;
 }
 .notify-sec {
 	flex: 1;
@@ -323,9 +324,17 @@ input:focus-visible, input:focus, input:active {
     margin-bottom: 0;
     font-size: 17px;
 }
-.notification span:first-child {
-	border-right: 1px solid #ccc;
-    margin-right: 0.5rem;
+.notify-sec p span {
+    font-weight: 400;
+}
+.help-count::before {
+    content: "";
+    border-right: 1px solid #ccc;
+    position: absolute;
+    width: 5px;
+    height: 14px;
+    top: 5px;
+    right: 0;
 }
 .notification span i {
 	border: 1px solid #ccc;
@@ -334,9 +343,7 @@ input:focus-visible, input:focus, input:active {
     padding: 0.3rem;
     border-radius: 50%;
 }
-.notification span:nth-child(3) i {
-	background: #ccc;
-}
+
 .notification span i {
     font-size: 12px;
 }
@@ -355,7 +362,7 @@ input:focus-visible, input:focus, input:active {
 
 /*Dash Content area*/
 .navigation {
-	width: 18%;
+	width: 15%;
 	min-height: 60vh;
     background: #FCFBFF;
 }
@@ -387,14 +394,6 @@ input:focus-visible, input:focus, input:active {
 .inner-content {
 	flex: 1;
 }
-.inner-content .review {
-	flex-basis: 65%;
-	padding-right:0;
-    padding-left: 2rem;
-}
-.review, .profile {
-	padding: 1rem;
-}
 .card-main {
 	flex-wrap: wrap;
 }
@@ -403,19 +402,44 @@ input:focus-visible, input:focus, input:active {
 }
 .card {
 	border: 1px solid #E7E7E7;
-	flex-basis: 31.5%;
-	padding: 1.3rem;
+	flex-basis: 20%;
     border-radius: 10px;
-	height: 270px;
+	min-height: 270px;
 	margin-right: 1rem;
     margin-bottom: 1rem;
     background: transparent;
 }
-.card:nth-child(3n) {
-	margin-right: 0;
+.card-cont button {
+    background: no-repeat;
+    color: #28255B;
+    border: 1px solid #28255B;
+    padding: 5px 1rem;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-left: 2.5rem;
+}
+.card-cont h5 {
+    font-size: 13px;
+    color: #343434;
+    margin-bottom: 0.7rem;
+} 
+.card-cont h5 span {
+    font-weight: 500;
+}
+.card-img {
+    padding-bottom: 3px;
+}
+.card-img {
+    padding-bottom: 3px !important;
+    border-bottom: 1px solid #DCDCDC;
+}
+.card-cont {
+    padding-right: 5px!important;
 }
 .chart{
     padding-top: 1rem;
+    min-height: 145px;
 }
 .card .card-header h5 {
     color: #19164D;
@@ -442,6 +466,12 @@ input:focus-visible, input:focus, input:active {
 	font-size: 14px;
 	color: #19164D;
 	font-weight: 600;
+}
+.review .h5 {
+    color: #B02270;
+}
+.review {
+    width: 100%;
 }
 .upcomming .h5 {
     font-size: 16px;
@@ -564,9 +594,8 @@ input:focus-visible, input:focus, input:active {
 .footer {
 	text-align: center;
     font-size: 0.75rem;
-    display: flex;
     justify-content: flex-end;
-    margin-top: 2rem;
+    margin: 1rem;
     color: #101417;
 }
 .footer span {
@@ -582,7 +611,7 @@ input:focus-visible, input:focus, input:active {
     background: #B02270;
     position: absolute;
     top: 11px;
-    left: 11px;
+    left: 62px;
     border-radius: 10px;
     font-size: 8px;
     padding: 0.16rem 0.27rem;
@@ -594,7 +623,12 @@ input:focus-visible, input:focus, input:active {
     margin-right: 0.5rem;
     padding-right: 0.5rem;
 }
-.notification .account span:nth-of-type(1)::before {
+span.bell-count {
+    position: relative;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+.notification .account span.bell-count::before {
     content: "";
     border-right: 1px solid #ccc;
     position: absolute;
@@ -1375,6 +1409,96 @@ padding-left: 30px;
     display: none;
     overflow-y: hidden;
   }
+
+/*150623*/
+.heuro-analysis {
+    background: #FCFBFF;
+}
+.current-analys, .previous-analys {
+    margin-bottom: 1rem;
+    border: 1px solid #E9E9E9;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    padding: 2rem;
+}
+.create-ev {
+    background: none;
+    border: 1px solid #B02270;
+    color: #B02270;
+    font-size: 15px;
+    padding: 8px 22px;
+    line-height: 13px;
+    border-radius: 17px;
+    height: 37px;
+    padding-top: 10px;
+    font-weight: 500;
+}
+.space {
+    padding-right: 8px;
+}
+.card-img, .card-cont {
+    padding: 1.3rem 1rem;
+}
+
+.pending {
+    color: #E21952;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+.status-per {
+    text-align: center;
+}
+.next-pre a {
+    border: 1px solid #28255B;
+    padding: 2px 16px;
+    border-radius: 17px;
+    margin-right: 0.5rem;
+    height: 15px;
+    font-weight: 500;
+}
+.dropmedwon ul {
+    border: 1px solid #ccc;
+    width: 150px;
+}
+.dropmedwon ul li {
+    border-bottom: 1px solid #ccc;
+    padding: 0.3rem;
+}
+
+.showmedrop {
+    display: block;
+}
+/*user welcome*/
+.welcomeuser {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    margin-top: 8rem;
+}
+.welcomeuser h2 {
+    font-weight: 500;
+    color: #28255B;
+    margin-bottom: 1.2rem;
+}
+.welcomeuser h2 span {
+    font-weight: 400;
+}
+.content-area {
+    min-height: 91vh;
+}
+.user-titel p {
+    margin-bottom: 5rem;
+    color: #141414;
+}
+.user-titel div > a.create-ev {
+    font-size: 19px;
+    font-weight: 400;
+}
+.welcomeuserpage {
+    background: #fff;
+}
 
 
 
