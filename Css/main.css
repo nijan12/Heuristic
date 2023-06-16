@@ -396,6 +396,7 @@ input:focus-visible, input:focus, input:active {
 }
 .card-main {
 	flex-wrap: wrap;
+    padding: 1rem 1.5rem;
 }
 .card-main .card .chart img {
     width: 100%;
@@ -1418,19 +1419,18 @@ padding-left: 30px;
     margin-bottom: 1rem;
     border: 1px solid #E9E9E9;
     background: #FFFFFF 0% 0% no-repeat padding-box;
-    padding: 2rem;
 }
 .create-ev {
     background: none;
     border: 1px solid #B02270;
     color: #B02270;
     font-size: 15px;
-    padding: 8px 22px;
+    padding: 7px 22px;
     line-height: 13px;
     border-radius: 17px;
-    height: 37px;
-    padding-top: 10px;
+    height: 32px;
     font-weight: 500;
+    margin-right: 1rem;
 }
 .space {
     padding-right: 8px;
@@ -1576,7 +1576,12 @@ scection {
     border-radius: 17px;
     font-size: 14px;
 }
-
+.heur-anal-head {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+    align-items: center;
+}
 
 
 /*Media query*/
