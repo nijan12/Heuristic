@@ -15,6 +15,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
   </head>
 <body>
   <div class="maincontainer-wrapper">
@@ -32,7 +38,7 @@
                     <p class="notify-count">10</p>
                       <span class="bell-count"><i class="fa-sharp fa-regular fa-bell"></i></span>
                       <span class="user">John Wick</span>
-                      <span><img src="../Image/profile.PNG" alt=""></span>
+                      <span><img src="../Image/profile.PNG" alt="" ></span>
                       <i class="fa-solid fa-angle-down" class="prof-downarrow"></i>
                       
                   </div>
@@ -73,14 +79,14 @@
                         <i class="fa-sharp fa-solid fa-ellipsis"></i>
                       </div>
                       <div class="chart active" id="chart">
-                        <img src="../Image/chart3.png" alt="chart1" >
+                        <img src="../Image/chart3.png" alt="chart1" class="overgrclk">
                       </div>
                   </div>
-                    <div class="card-cont">
-                      <h5>Url: <span>WWW.rgp.com</span></h5>
-                      <h5>Start Date: <span>06/01/2023</span></h5>
-                      <button>VIEW</button>
-                    </div>
+                  <div class="card-cont">
+                    <h5>Url: <span>WWW.rgp.com</span></h5>
+                    <h5>Start Date: <span>06/01/2023</span></h5>
+                    <button>VIEW</button>
+                  </div>
 
                     
                 </div>
@@ -88,7 +94,7 @@
                   <div class="card-img">
                       <div class="card-header dd-flex flex-spacebtwn">
                         <h5>CIRCUIT TREE</h5>
-                        <i class="fa-sharp fa-solid fa-ellipsis click-pop"></i>
+                        <a href="#" class="click-pop"><i class="fa-sharp fa-solid fa-ellipsis "></i></a>
                         
                       </div>
                       <div class="chart active" id="chart">
@@ -208,52 +214,64 @@
               <div class="footer">Copyrights @ All rights reserved group Heuristic Evaluation, 2023 <span>|</span> <a href="#">Privay Policy</a></div>
             </div>
 
-            <!--<div class="profile mrt-1">
-              <div class="profile-head dd-flex flex-spacebtwn mb-28">
-                <h5 class="h5">PROFILE</h5>
-                <span><i class="fa-solid fa-pen-to-square"></i></span>
-              </div>
-              <div class="profile-content">
-                <img src="../Image/userthumb.PNG" alt="man" class="man-image">
-                <h5 id="user-name" class="user-name mt-1">John Wick</h5>
-                <button id="designation" class="role mt-1 f14">UX Designer</button>
-                <p class="rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-              </div>
-              <div class="upcomming">
-                <h5 class="h5 upcome-title mb-2">Upcoming</h5>
-                <div class="upcoming-content">
-                  <ul class="upcomelist">
-                    <li class="mb-2 active">
-
-                      <div class="listcont">
-                        <p class="dd-flex flex-spacebtwn padd10"><span class="font14 upcolor">Viedoc</span><span class="font11 cpink">19 Jan</span></p>
-                        <p class="dd-flex flex-spacebtwn"><span class="font11 cgray">Carry out writing exams in scholl</span><span class="font11 cgray">45 Minutes</span></p>
-                      </div>
-                    </li>
-                    <li class="mb-2">
-                      <div class="listcont">
-                        <p class="dd-flex flex-spacebtwn padd10"><span class="font14 upcolor">Lendwill</span><span class="font11 cpink">19 Jan</span></p>
-                        <p class="dd-flex flex-spacebtwn"><span class="font11 cgray">Carry out writing exams in scholl</span><span class="font11 cgray">45 Minutes</span></p>
-                      </div>
-                    </li>
-                    <li class="mb-2">
-                      <div class="listcont">
-                        <p class="dd-flex flex-spacebtwn padd10"><span class="font14 upcolor">Together Works</span><span class="font11 cpink">19 Jan</span></p>
-                        <p class="dd-flex flex-spacebtwn"><span class="font11 cgray">Carry out writing exams in scholl</span><span class="font11 cgray">45 Minutes</span></p>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>-->
+            
             </div>
             
         </div>
         
     </div>
+
+    <div class="graphratingpop" style="display:none;">
+      <div class="graphhead dd-flex flex-spacebtwn">
+        <p>Amazon</p>
+        <a href="#" class="overgrclose"><i class="fa-solid fa-xmark"></i></a>
+      </div>
+      <div class="graphcontent dd-flex">
+        <div class="overallimg">
+          <img src="../Image/overall.PNG" alt="overall rating popup">
+        </div>
+        <div class="overdropdown">
+          <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+              All
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#"><input type="checkbox">Navigation</a>
+              <a class="dropdown-item" href="#"><input type="checkbox">Content</a>
+              <a class="dropdown-item" href="#"><input type="checkbox">Presentation</a>
+              <a class="dropdown-item" href="#"><input type="checkbox">Interaction</a>
+              <a class="dropdown-item" href="#"><input type="checkbox">Value & Usefulness</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
+
+    <div class="backdrop">
+      
+    </div>
+  </div>
 
 <script>
+
+$(document).ready(function () {
+
+  $(".click-pop").click(function(){
+    $(".dropmedwon").addClass("showmedrop");
+  });
+
+  $(".chart").click(function(){
+    $(".graphratingpop").addClass("addpop");
+    $(".backdrop").fadeTo(200, 1);
+  });
+
+  $(".overgrclose").click(function(){
+    $(".graphratingpop").removeClass("addpop");
+    $(".backdrop").fadeOut(200);
+  });
+
+});
+
   var ctx = document.getElementById("canvas");
 var myChart = new Chart(ctx, {
     type: 'line',
@@ -292,13 +310,7 @@ var myChart = new Chart(ctx, {
     }
 });
 
-$(document).ready(function(){ 
 
-  $(".click-pop").click(function(){
-    $(".dropmedwon").addClass("showmedrop");
-  });
-
-});
 </script>
 </body>
 </html>
