@@ -1367,7 +1367,7 @@ padding-left: 30px;
 .create-ev {
     background: none;
     border: 1px solid #B02270;
-    color: #B02270;
+    color: #B02270 !important;
     font-size: 15px;
     padding: 7px 22px;
     line-height: 13px;
