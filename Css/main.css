@@ -91,6 +91,12 @@ a {
     text-decoration: none;
     color: #101417;
 }
+a:hover {
+    text-decoration: none;
+}
+a.create-ev:hover {
+    text-decoration: none !important;
+}
 input {
 	box-sizing: border-box;
 }
@@ -389,7 +395,7 @@ input:focus-visible, input:focus, input:active {
 	padding-right: 0.8rem;
 }
 .nav-link li:first-child {
-    padding-top: 2.2rem;
+    padding-top: 1.3rem;
 }
 .inner-content {
 	flex: 1;
@@ -1381,6 +1387,10 @@ padding-left: 30px;
     height: 32px;
     text-decoration: none;
 }
+a.create-ev:hover {
+    background: #B02270;
+    color: #fff !important;
+}
 .space {
     padding-right: 8px;
 }
@@ -1410,6 +1420,7 @@ padding-left: 30px;
     border: 1px solid #DCDCDC;
     width: 113px;
     border-radius: 5px;
+    margin-bottom: 0;
 }
 .dropmedwon ul li {
     border-bottom: 1px solid #DCDCDC;
@@ -1533,7 +1544,7 @@ scection {
     color: #fff;
 }
 .heur-anal-head {
-    padding: 1rem 1rem 1rem 1.5rem;
+    padding: 1rem 1rem 1rem 1rem;
     border-bottom: 1px solid #E3E3E3;
     margin-bottom: 1rem;
     align-items: center;
@@ -1612,23 +1623,24 @@ font-size: 18px;
 top: 11px;
 }
 .graphcontent .overdropdown .dropdown-menu.show > a {
-border-bottom: 1px solid #9B9B9B;
-padding: 10px 15px;
-font-size: 12px;
-align-items: center;
-display: flex;
+    border-bottom: 1px solid #9B9B9B;
+    padding: 10px 15px;
+    font-size: 12px;
+    align-items: center;
+    display: flex;
+    color: #646464;
 }
 .graphcontent .overdropdown .dropdown-menu {
-padding: 0;
-border: 1px solid #9B9B9B;
-border-radius: 9px;
-width: 170px;
+    padding: 0;
+    border: 1px solid #9B9B9B;
+    border-radius: 9px;
+    width: 170px;
 }
 .graphcontent .overdropdown .dropdown-menu.show > a:last-child {
-border-bottom: none;
+    border-bottom: none;
 }
 .graphcontent .overdropdown .dropdown-menu.show > a > input {
-margin-right: 8px;
+    margin-right: 8px;
 }
 .overdropdown .dropdown {
     padding: 2.5rem 2rem 0 3rem;
@@ -1662,12 +1674,14 @@ a.card-next-btn {
     left: 44%;
 }
 
+
+
 /*popup checkbox color*/
-.graphratingpop input[type='checkbox'] {
+input[type='checkbox'] {
     accent-color: #fff;
 }
 
-.graphratingpop input[type="checkbox"]:checked {
+input[type="checkbox"]:checked {
     width: 13px;
     outline: #565656 solid 1px;
     border-radius: 17px;
