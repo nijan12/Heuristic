@@ -180,7 +180,7 @@ input:focus-visible, input:focus, input:active {
 	display: flex;
 	justify-content: center;
 	height: 100%;
-	padding: 10px;
+	padding: 0 10px;
 }
 .img-section, .login-inner {
 	flex: 50%;
@@ -232,6 +232,11 @@ input:focus-visible, input:focus, input:active {
 	color: #fff;
 	text-decoration: none;
 }
+.login-container .img-section img {
+    height: 585px;
+    width: 733px;
+}
+
 .img-section img {
 	width: 100%;
 	height: 100%;
@@ -276,9 +281,13 @@ input:focus-visible, input:focus, input:active {
 .checkit span {
     padding-left: 0.3rem;
 }
+.checkit {
+    display: flex;
+    align-items: center;
+}
 .forgotpass a {
 	font-size: 0.8rem;
-    color: #26255B;
+    color: #28255B;
 }
 .create-account {
 	font-size: 0.8rem;
@@ -305,12 +314,10 @@ input:focus-visible, input:focus, input:active {
 }
 .logo {
     width: 15%;
-    padding: 0.5rem;
+    padding: 0.4rem;
 	box-sizing: border-box;
     background: #FCFBFF;
-    padding-bottom: 0.4rem;
-    padding-bottom: 0;
-    padding-top: 0.3rem;
+    
 }
 .logo img {
     padding-left: 1rem;
@@ -331,7 +338,7 @@ input:focus-visible, input:focus, input:active {
     font-size: 18px;
 }
 .notify-sec p span {
-    font-weight: 400;
+    font-weight: 300;
 }
 .help-count::before {
     content: "";
@@ -648,11 +655,21 @@ span.bell-count {
     border-right: 1px solid #ccc;
     position: absolute;
     width: 5px;
-    height: 14px;
-    top: 5px;
+    height: 16px;
+    top: 4px;
     right: 0;
 }
-
+.userwelfooter {
+    padding-top: 3rem;
+    font-size: 12px;
+    background: #FCFBFF;
+    padding-bottom: 1rem;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    width: 84%;
+    text-align: center;
+}
 /*Dashboard*/
 
 /*Heuristic Analysis*/
@@ -1373,7 +1390,6 @@ padding-left: 30px;
 }
 .current-analys, .previous-analys {
     margin-bottom: 1rem;
-    border: 1px solid #E9E9E9;
     background: #FFFFFF 0% 0% no-repeat padding-box;
 }
 .create-ev {
@@ -1473,10 +1489,20 @@ scection {
 }
 .evcreatehead p:first-child {
     padding: 20px 30px;
-    border-bottom: 1px solid #D7D6D6;
     color: #000;
     font-weight: 500;
     font-size: 14px;
+}
+.evcreateaddnew {
+    color: #B02270;
+    border: 1px solid #B02270;
+}
+.evcreateaddnew:hover {
+    background: #B02270;
+    color: #fff;
+}
+.evcreatehead {
+    border-bottom: 1px solid #D7D6D6;
 }
 .project-name {
     padding: 20px 30px;
@@ -1497,6 +1523,13 @@ scection {
 .project-name .proj {
     margin-right: 5rem;
 }
+.project-name .proj span i:before {
+	color: #E21952;
+    font-size: 7px;
+    position: relative;
+    bottom: 5px;
+}
+
 
 .sectionone {
     background: #fff;
@@ -1643,7 +1676,7 @@ top: 11px;
     margin-right: 8px;
 }
 .overdropdown .dropdown {
-    padding: 2.5rem 2rem 0 3rem;
+    padding: 1.5rem 2rem 0 3rem;
 }
 .card-prev-btn i, .card-next-btn i {
     line-height: 0.5;
@@ -1708,6 +1741,10 @@ input[type="checkbox"]:checked {
     }
     .overallimg {
         width: 450px;
+    }
+    .userwelfooter {
+        bottom: 22px;
+        width: 84%;
     }
 }
 
