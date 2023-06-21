@@ -1639,6 +1639,11 @@ position: relative;
 .overdropdown .dropdown button:focus{
     box-shadow:none !important;
 }
+.overdropdown .dropdown button:active {
+    background-color: transparent !important;
+    border-color: #9B9B9B !important;
+    color: #646464!important;
+}
 .overdropdown .show>.btn-primary.dropdown-toggle {
 background-color: transparent;
 color: #454141;
