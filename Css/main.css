@@ -305,7 +305,6 @@ input:focus-visible, input:focus, input:active {
 .logo-main {
 	border: 1px solid #E3E3E3;
 	align-items: center;
-    height: 58px;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
@@ -374,9 +373,14 @@ input:focus-visible, input:focus, input:active {
 }
 
 /*Dash Content area*/
+.container-wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
 .navigation {
 	width: 15%;
-	min-height: 60vh;
     background: #FCFBFF;
 }
 .navigation .nav-link li a img {
@@ -660,14 +664,10 @@ span.bell-count {
     right: 0;
 }
 .userwelfooter {
-    padding-top: 3rem;
+    padding: 1rem;
     font-size: 12px;
     background: #FCFBFF;
-    padding-bottom: 1rem;
     margin: 0;
-    position: absolute;
-    bottom: 0;
-    width: 84%;
     text-align: center;
 }
 /*Dashboard*/
@@ -1392,6 +1392,9 @@ padding-left: 30px;
     margin-bottom: 1rem;
     background: #FFFFFF 0% 0% no-repeat padding-box;
 }
+.previous-analys .heur-anal-head {
+    border-top: 1px solid #E3E3E3;
+}
 .create-ev {
     background: none;
     border: 1px solid #B02270;
@@ -1455,6 +1458,7 @@ a.create-ev:hover {
     width: 100%;
     text-align: center;
     margin-top: 8rem;
+    height: 100%;
 }
 .welcomeuser h2 {
     font-weight: 500;
@@ -1464,9 +1468,7 @@ a.create-ev:hover {
 .welcomeuser h2 span {
     font-weight: 400;
 }
-.content-area {
-    min-height: 91vh;
-}
+
 .user-titel p {
     margin-bottom: 5rem;
     color: #141414;
@@ -1477,15 +1479,20 @@ a.create-ev:hover {
 }
 .welcomeuserpage {
     background: #fff;
+    flex-direction: column;
+    flex: 1;
 }
 
 .create-evaluation {
     background: #F2F3F8;
     padding: 0.6rem;
+    display: flex;
+    flex-direction: column;
 }
 scection {
     width: 100%;
     background: #fff;
+    margin-bottom: 1rem;
 }
 .evcreatehead p:first-child {
     padding: 20px 30px;
@@ -1531,16 +1538,7 @@ scection {
 }
 
 
-.sectionone {
-    background: #fff;
-    margin-bottom: 1rem;
-    border: 1px solid #E9E9E9;
-}
-.sectiontwo {
-    background: #fff;
-    margin-bottom: 1rem; 
-    border: 1px solid #E9E9E9;
-}
+
 .evcreatelist ul {
     padding: 20px 30px;
 }
@@ -1712,8 +1710,6 @@ a.card-next-btn {
     left: 44%;
 }
 
-
-
 /*popup checkbox color*/
 input[type='checkbox'] {
     accent-color: #fff;
@@ -1725,6 +1721,31 @@ input[type="checkbox"]:checked {
     border-radius: 17px;
 }
 /*popup checkbox color end*/
+
+/*220623*/
+.content-area {
+    flex: 1;
+}
+.sectiontwo {
+    flex: 1;
+}
+.sectiontwo-fixbtm {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.evcreatelist {
+    flex: 1;
+}
+.evcreatelist ul li:last-child {
+    padding-bottom: 0;
+}
+.sectiontwo-fixbtm .buttonsection {
+    margin-bottom: 2rem;
+}
+.user-titel .create-ev {
+    border-radius: 25px;
+}
 
 /*Media query*/
 @media screen and (min-width:1824px) {
@@ -1747,10 +1768,45 @@ input[type="checkbox"]:checked {
     .overallimg {
         width: 450px;
     }
-    .userwelfooter {
-        bottom: 22px;
-        width: 84%;
+    .sectiontwo-fixbtm .buttonsection {
+        margin-bottom: 5rem;
     }
+    .welcomeuser {
+        margin-top: 12rem;
+        padding: 1.5rem;
+    }
+    .footer.userwelfooter {
+        margin: 0;
+        padding: 1.5rem;
+    }
+    .footer {
+        margin: 1.5rem;
+    }
+    .nav-link li a {
+        font-size: 18px;  
+    }
+    .navigation .nav-link li a img {
+        padding-right: 0.7rem;
+    }
+    .nav-link li {
+        padding-bottom: 2rem;
+    }
+    .logo, .navigation {
+        width: 12%;
+    }
+    .card-main {
+        padding: 1.8rem;
+    }
+    .current-analys, .previous-analys {
+        margin-bottom: 1.5rem;
+    }
+    .card-main .card {
+        flex-basis: 16%;
+    }
+    .sectiontwo {
+        margin-bottom: 0;
+    }
+    
 }
 
 
@@ -1797,9 +1853,7 @@ input[type="checkbox"]:checked {
     .card {
         height: 230px;
     }
-    .logo-main {
-        height: 46px;
-    }
+    
     .notification .account span:nth-of-type(3) img {
         height: 42px;
     }
