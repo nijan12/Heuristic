@@ -1801,7 +1801,8 @@ input[type="checkbox"]:checked {
         margin-bottom: 1.5rem;
     }
     .card-main .card {
-        flex-basis: 16%;
+        flex-basis: 15.5%;
+        margin-right: 1.5rem;
     }
     .sectiontwo {
         margin-bottom: 0;
