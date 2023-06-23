@@ -410,6 +410,8 @@ input:focus-visible, input:focus, input:active {
 }
 .inner-content {
 	flex: 1;
+    overflow: auto;
+    min-height: 0;
 }
 .card-main {
 	flex-wrap: wrap;
