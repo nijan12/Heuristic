@@ -376,7 +376,7 @@ input:focus-visible, input:focus, input:active {
 .container-wrap {
     display: flex;
     flex-direction: column;
-    min-height: 100%;
+    height: 100vh;
 }
 
 .navigation {
@@ -1727,6 +1727,8 @@ input[type="checkbox"]:checked {
 /*220623*/
 .content-area {
     flex: 1;
+    min-height: 0;
+    overflow: auto;
 }
 .sectiontwo {
     flex: 1;
