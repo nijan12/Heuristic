@@ -475,7 +475,8 @@ input:focus-visible, input:focus, input:active {
     font-size: 14px;
     text-transform: uppercase;
     margin-bottom: 0;
-    font-weight: 600;
+    font-weight: 500;
+    height: 15px;
 }
 .card-header.dd-flex.flex-spacebtwn {
     background: #fff;
@@ -950,7 +951,6 @@ button:disabled {
     font-size: 0.75rem;
 }
 fieldset .f14 {
-    border-bottom: 1px solid #E0E0E0;
     padding-left: 0.7rem;
 }
 .heuristic-inner .section fieldset .f14 {
@@ -959,61 +959,9 @@ fieldset .f14 {
     display: flex;
     align-items: center;
     font-weight: 500;
-    color: #000000;
     font-size: 14px;
 }
-.upload-container {
-    border: 2px dashed #D9D7D7;
-    padding: 1rem;
-    text-align: center;
-    max-width: 625px;
-    margin: 0 auto;
-    margin-top: 60px;
-    border-radius: 20px;
-}
-.form-NS .upload-container input {
-    border: none;
-    max-width: 300px;
-    margin: 0 auto;
-}
-.fa-folder-open:before {
-    font-size: 30px;
-    color: #0530a7;
-}
-.dropped-img {
-    max-width: 725px;
-    margin: 0 auto;
-}
-.dropped-img p{
-    margin-bottom: 0.8rem;
-    line-height: 20px;
-    text-transform: capitalize;
-    position: relative;
-    padding-bottom: 10px;
-}
 
-#showimgs {
-    display: flex;
-    flex-wrap: wrap;
-}
-#showimgs p {
-    width: 45%;
-    padding: 1REM;
-    font-size: 12px;
-    border: 1px solid #ccc;
-    margin: 5px;
-    box-sizing: border-box;
-    border-radius: 5px;
-}
-.dropped-img p::after {
-    content: "";
-    border-bottom: 3px solid #495DDD;
-    position: absolute;
-    height: 5px;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-}
 .wiz-inner-content {
     height: 460px;
     overflow-y: scroll;
@@ -1760,6 +1708,12 @@ input[type="checkbox"]:checked {
 .user-titel .create-ev {
     border-radius: 25px;
 }
+/*260623*/
+#accordion .list-cont {
+    font-size: 14px;
+    font-weight: 300;
+}
+
 
 /*Media query*/
 @media screen and (min-width:1824px) {
