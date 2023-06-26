@@ -1759,10 +1759,10 @@ input[type="checkbox"]:checked {
     }
     .footer.userwelfooter {
         margin: 0;
-        padding: 1.5rem;
+        padding: 1rem;
     }
     .footer {
-        margin: 1.5rem;
+        margin: 1rem;
     }
     .nav-link li a {
         font-size: 18px;  
@@ -1782,8 +1782,11 @@ input[type="checkbox"]:checked {
     }
     .current-analys, .previous-analys {
         margin-bottom: 1.5rem;
-        height: 46%;
         margin: 1rem;
+    }
+    .previous-analys {
+        margin-top: 0;
+        margin-bottom: 0;
     }
     .card-main .card {
         flex-basis: 17%;
