@@ -631,7 +631,6 @@ input:focus-visible, input:focus, input:active {
     justify-content: flex-end;
     margin: 1rem;
     color: #101417;
-    height: 61px;
 }
 .footer span {
     padding: 0 0.5rem;
