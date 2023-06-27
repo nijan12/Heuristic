@@ -28,7 +28,7 @@
 
 </head>
 <body>
-  <div class="maincontainer-wrapper"> 
+  
     <!--header start here-->
     <div class="container-wrap">
         <div class="logo-main dd-flex">
@@ -61,68 +61,80 @@
           
           <div id="showimgs"></div>
         </div>
-<div class="dynamic-container" style="flex:1;">
+    <div class="inner-content dynamic-container" style="flex:1;">
     <div class="heuristic-inner">
+                <div class="reviewer-info bg-white dd-flex flex-spacebtwn">
+                    <div class="reviewername dd-flex">
+<p class="f14">Title: <span>RGP</span></p>
+<p class="f14">Reviewer Name: <span>John Wick</span></p>
+                    </div>
+                    <div class="urlsection dd-flex">
+                        <p class="f14">Date: <span>05/02/2023</span></p>
+                        <p class="f14">URL: <span>www.rgp.com</span></p>
+                    </div>
+                </div>
                 
-                <h1 class="f14 bg-white p1">Heuristic Analysis</h1>
-          <div class="section">
+
+
+          <div class="section" style="background: transparent;">
+            <div class="dd-flex flex-just-contecenter">
             <div id="c1" class="circle active step1" >
                 <p class="round"><i class="fa-solid fa-check"></i></p>
                 <div class="circle-content ">
                     Stage 1 <br/><span>Navigation</span>
                 </div>
             </div>
-        <div id="c2" class="circle step2">
-            <p class="round"><i class="fa-solid fa-check"></i></p>
-            <div class="circle-content">
-                Stage 2 <br/><span>Content</span>
+            <div id="c2" class="circle step2">
+                <p class="round"><i class="fa-solid fa-check"></i></p>
+                <div class="circle-content">
+                    Stage 2 <br/><span>Content</span>
+                </div>
+            </div>
+            <div id="c3" class="circle step3">
+                <p class="round"><i class="fa-solid fa-check"></i></p>
+                <div class="circle-content">
+                    Stage 3 <br/><span>Presentation</span>
+                </div>
+            </div>
+            <div id="c4" class="circle stpe4">
+                <p class="round"><i class="fa-solid fa-check"></i></p>
+                <div class="circle-content">
+                    Stage 4 <br/><span>Interaction</span>
+                </div>
+            </div>
+            <div id="c5" class="circle step5">
+                <p class="round"><i class="fa-solid fa-check"></i></p>
+                <div class="circle-content">
+                    Stage 5 <br/><span>Value & Usefulness</span>
+                </div>
             </div>
         </div>
-        <div id="c3" class="circle step3">
-            <p class="round"><i class="fa-solid fa-check"></i></p>
-            <div class="circle-content">
-                Stage 3 <br/><span>Presentation</span>
-            </div>
-        </div>
-        <div id="c4" class="circle stpe4">
-            <p class="round"><i class="fa-solid fa-check"></i></p>
-            <div class="circle-content">
-                Stage 4 <br/><span>Interaction</span>
-            </div>
-        </div>
-		<div id="c5" class="circle step5">
-            <p class="round"><i class="fa-solid fa-check"></i></p>
-            <div class="circle-content">
-                Stage 5 <br/><span>Value & Usefulness</span>
-            </div>
-        </div>
-		
     </div>
 
     <div class="section">
         <fieldset class="form-NS activeForm" id="f1">
         <div class="innercont">
             
-            <div class="dd-flex flex-spacebtwn na-header flex-hcenter">
-                
-                
-
-            </div>
+            
             <div class="wiz-inner-content">
-                <div class="useab-head">
-                    <h2 class="f14">Navigation & Information Architecture (You have to finish 8 metrics)</h2>
-                </div>
+                
                 <div id="accordion">
+                    <h4 class="mb-0 useab-head">
+                        Navigation & Information Architecture (You have to finish 8 metrics)
+                    </h4>
                     <div class="card">
-                      <div class="card-header" id="headingOne">
-                        <h5 class="mb-0 dd-flex flex-spacebtwn">
-                            <span class="width40 bold list-cont">Navigation & Information Architecture</span>
-                          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
-                               
-                          </button>
-                        </h5>
-                      </div>
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                <div class="wzcardcheck">
+                                    <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                                    <span class="width40 bold list-cont">Navigation options are visible and clear</span>
+                                </div>
+                              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
+                                   
+                              </button>
+                            </h5>
+                          </div>
                   
                       <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                         <div class="card-body">
@@ -137,9 +149,9 @@
                                 </select>
 
                                 <div class="recoment-sect dd-flex">
-                                    <p class="wiz-border"><i class="fa-solid fa-message"></i></p>
-                                    <p><i class="fa-solid fa-down-to-bracket"></i></p>
-                                    <p><i class="fa-solid fa-calendar-lines"></i></p>
+                                    <p class="wiz-border"><img src="../Image/Recomend.PNG"></p>
+                                    <p class="wiz-border"><img src="../Image/Download.PNG"></p>
+                                    <p class="wiz-border"><img src="../Image/notes.PNG"</i></p>
                                     <i class="fa-solid fa-calendar-lines"></i>
                                 </div>
                             </div>
@@ -147,17 +159,20 @@
                       </div>
                     </div>
                     <div class="card">
-                        <div class="card-header" id="headingOne">
+                        <div class="card-header" id="headingTwo">
                           <h5 class="mb-0 dd-flex flex-spacebtwn">
-                              <span class="width40 bold list-cont">Navigation & Information Architecture</span>
-                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <div class="wzcardcheck">
+                                <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                              <span class="width40 bold list-cont">Overall navigation supports primary task flows and works as an integrated whole</span>
+                            </div>
+                              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                               <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
                                  
                             </button>
                           </h5>
                         </div>
                     
-                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                           <div class="card-body">
                               <ul class="dd-flex main-list">
                                   <li class="dd-flex list-row flex-hcenter ">
@@ -175,17 +190,57 @@
                         </div>
                       </div>
                       <div class="card">
-                        <div class="card-header" id="headingOne">
+                        <div class="card-header" id="headingThree">
                           <h5 class="mb-0 dd-flex flex-spacebtwn">
-                              <span class="width40 bold list-cont">Navigation & Information Architecture</span>
-                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <div class="wzcardcheck">
+                                <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                              <span class="width40 bold list-cont">Sense of place is clear</span>
+                              </div>
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
                               <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
                                  
                             </button>
                           </h5>
                         </div>
                     
-                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                          <div class="card-body">
+                            <div class="dd-flex flex-spacebtwn">
+                                <select id="iconSelector">
+                                    <option value="box"><i>Select Rating</i></option> 
+                                    <option value="box">😉 <i>1</i></option> 
+                                    <option value="piano">🙂 <i>2</i></option>    
+                                    <option value="books">😐 <i>3</i></option>
+                                    <option value="dog">😑 <i>4</i></option>     
+                                    <option value="car">😶 <i>5</i></option>
+                                </select>
+
+                                <div class="recoment-sect dd-flex">
+                                    <p class="wiz-border"><i class="fa-solid fa-message"></i></p>
+                                    <p class="wiz-border"><i class="fa-solid fa-down"></i></p>
+                                    <p class="wiz-border"><i class="fa-solid fa-calendar-lines"></i></p>
+                                    <i class="fa-solid fa-calendar-lines"></i>
+                                </div>
+                            </div>  
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingFour">
+                          <h5 class="mb-0 dd-flex flex-spacebtwn">
+                            <div class="wzcardcheck">
+                                <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                              <span class="width40 bold list-cont">Number of pages to complete task is appropriate Effective Information approach</span>
+                            </div>
+                              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                              <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
+                                 
+                            </button>
+                          </h5>
+                        </div>
+                    
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
                           <div class="card-body">
                               <ul class="dd-flex main-list">
                                   <li class="dd-flex list-row flex-hcenter ">
@@ -203,44 +258,20 @@
                         </div>
                       </div>
                       <div class="card">
-                        <div class="card-header" id="headingOne">
+                        <div class="card-header" id="headingFive">
                           <h5 class="mb-0 dd-flex flex-spacebtwn">
-                              <span class="width40 bold list-cont">Navigation & Information Architecture</span>
-                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <div class="wzcardcheck">
+                                <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                              <span class="width40 bold list-cont">Breadth and depth fit user needs</span>
+                              </div>
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
                               <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
                                  
                             </button>
                           </h5>
                         </div>
                     
-                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                          <div class="card-body">
-                              <ul class="dd-flex main-list">
-                                  <li class="dd-flex list-row flex-hcenter ">
-                                      <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
-                                      <span class="width40 bold">Navigation & Information Architecture</span>
-                                      <span class="wid130"></span>
-                                      <span class="wid130"></span>
-                                      <span class="width300">
-                                           
-                                      </span>
-                                      
-                                  </li>
-                              </ul>
-                          </div>
-                        </div>
-                      </div><div class="card">
-                        <div class="card-header" id="headingOne">
-                          <h5 class="mb-0 dd-flex flex-spacebtwn">
-                              <span class="width40 bold list-cont">Navigation & Information Architecture</span>
-                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                              <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
-                                 
-                            </button>
-                          </h5>
-                        </div>
-                    
-                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
                           <div class="card-body">
                               <ul class="dd-flex main-list">
                                   <li class="dd-flex list-row flex-hcenter ">
@@ -258,17 +289,20 @@
                         </div>
                       </div>
                       <div class="card">
-                        <div class="card-header" id="headingOne">
+                        <div class="card-header" id="headingSix">
                           <h5 class="mb-0 dd-flex flex-spacebtwn">
-                              <span class="width40 bold list-cont">Navigation & Information Architecture</span>
-                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <div class="wzcardcheck">
+                                <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                              <span class="width40 bold list-cont">Labels are distinctive and descriptive</span>
+                            </div>
+                              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
                               <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
                                  
                             </button>
                           </h5>
                         </div>
                     
-                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
                           <div class="card-body">
                               <ul class="dd-flex main-list">
                                   <li class="dd-flex list-row flex-hcenter ">
@@ -286,17 +320,20 @@
                         </div>
                       </div>
                       <div class="card">
-                        <div class="card-header" id="headingOne">
+                        <div class="card-header" id="headingSeven">
                           <h5 class="mb-0 dd-flex flex-spacebtwn">
-                              <span class="width40 bold list-cont">Navigation & Information Architecture</span>
-                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <div class="wzcardcheck">
+                                <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                              <span class="width40 bold list-cont">Menu items trigger actions that meet user needs</span>
+                            </div>
+                              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
                               <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
                                  
                             </button>
                           </h5>
                         </div>
                     
-                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
                           <div class="card-body">
                               <ul class="dd-flex main-list">
                                   <li class="dd-flex list-row flex-hcenter ">
@@ -314,17 +351,20 @@
                         </div>
                       </div>
                       <div class="card">
-                        <div class="card-header" id="headingOne">
+                        <div class="card-header" id="headingEight">
                           <h5 class="mb-0 dd-flex flex-spacebtwn">
-                              <span class="width40 bold list-cont">Navigation & Information Architecture</span>
-                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <div class="wzcardcheck">
+                                <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                              <span class="width40 bold list-cont">Menu items promote content which meets user needs</span>
+                            </div>
+                              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
                               <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
                                  
                             </button>
                           </h5>
                         </div>
                     
-                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
                           <div class="card-body">
                               <ul class="dd-flex main-list">
                                   <li class="dd-flex list-row flex-hcenter ">
@@ -341,262 +381,17 @@
                           </div>
                         </div>
                       </div>
-                    <div class="card">
-                      <div class="card-header" id="headingTwo">
-                        <h5 class="mb-0">
-                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Collapsible Group Item #2
-                          </button>
-                        </h5>
-                      </div>
-                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                        <div class="card-body">
-                            <ul class="dd-flex main-list">
-                                <li class="dd-flex list-row flex-hcenter ">
-                                    <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
-                                    <span class="width40 bold">Navigation & Information Architecture</span>
-                                    <span class="wid130"></span>
-                                    <span class="wid130"></span>
-                                    <span class="width300">
-                                         
-                                    </span>
-                                    <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
-                                </li>
-                            </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <div class="card-header" id="headingThree">
-                        <h5 class="mb-0">
-                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Collapsible Group Item #3
-                          </button>
-                        </h5>
-                      </div>
-                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                        <div class="card-body">
-                            <ul class="dd-flex main-list">
-                                <li class="dd-flex list-row flex-hcenter ">
-                                    <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
-                                    <span class="width40 bold">Navigation & Information Architecture</span>
-                                    <span class="wid130"></span>
-                                    <span class="wid130"></span>
-                                    <span class="width300">
-                                         
-                                    </span>
-                                    <span class="na-toggle"><i class="fa-solid fa-angle-down"></i></span>
-                                </li>
-                            </ul>
-                        
-                        </div>
-                      </div>
+                      <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics go to the next step</p>
+                   
                     </div>
                   </div>
-
-                <!--
-                <div class="usab-content">
-                    <div class="useab-head">
-                        <h2 class="f14">Navigation & Information Architecture (You have to finish 8 metrics)</h2>
-                    </div>
-                    <ul class="dd-flex main-list">
-                        <li class="dd-flex list-row flex-hcenter list-color">
-                            <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
-                            <span class="width40 bold">Navigation & Information Architecture</span>
-                            <span class="wid130"></span>
-                            <span class="wid130"></span>
-                            <span class="width300">
-                                 
-                            </span>
-                            <span class="na-toggle"><i class="fa-solid fa-angle-down"></i></span>
-                        </li>
-                    </ul>
-                        <ul class="main-list">
-                            <li class="dd-flex list-row flex-hcenter">
-                                <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
-                                <span class="width40 bold">Effective Navigation Approach</span>
-                                <span class="wid130">
-                                    
-                                </span>
-                                <span class="wid130">
-                                    </span>
-                                <span class="width300 recommend"></span>
-                                <span class="na-toggle"></span>  
-                            </li>
-                            <li class="dd-flex list-row flex-hcenter"><span class="checkme"><input type="checkbox" id="" name="" value=""></span>
-                                <span class="width40">Navigation options are visible and clear</span>
-                                <span class="wid130">
-                                    <select id="iconSelector">
-                                        <option value="box">😉 <i>1</i></option> 
-                                        <option value="piano">🙂 <i>2</i></option>    
-                                        <option value="books">😐 <i>3</i></option>
-                                        <option value="dog">😑 <i>4</i></option>     
-                                        <option value="car">😶 <i>5</i></option>
-                                    </select>
-                                </span>
-                                <span class="wid130">
-                                    
-                                </span>
-                                <span class="width300 recommend"><input type="text" placeholder="Enter your Comment's here"></span>
-                                <span class="na-toggle"></span></li>
-                            <li class="dd-flex list-row flex-hcenter">
-                                <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
-                                <span class="width40">Overall navigation supports primary task flows and works as an integrated whole</span>
-                                <span class="wid130">
-                                    <select id="iconSelector">
-                                        <option value="box">😉 <i>1</i></option> 
-                                        <option value="piano">🙂 <i>2</i></option>    
-                                        <option value="books">😐 <i>3</i></option>
-                                        <option value="dog">😑 <i>4</i></option>     
-                                        <option value="car">😶 <i>5</i></option>
-                                    </select>
-                                </span>
-                                <span class="wid130"></span>
-                                <span class="width300 recommend"><input type="text" placeholder="Enter your Comment's here"></span>
-                                <span class="na-toggle"></span>
-                            </li>
-                            <li class="dd-flex list-row flex-hcenter">
-                                <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
-                                <span class="width40">Sense of place is clear</span>
-                                <span class="wid130">
-                                    <select id="iconSelector">
-                                        <option value="box">😉 <i>1</i></option> 
-                                        <option value="piano">🙂 <i>2</i></option>    
-                                        <option value="books">😐 <i>3</i></option>
-                                        <option value="dog">😑 <i>4</i></option>     
-                                        <option value="car">😶 <i>5</i></option>
-                                    </select>
-                                </span>
-                                <span class="wid130"></span>
-                                <span class="width300 recommend"><input type="text" placeholder="Enter your Comment's here"></span>
-                                <span class="na-toggle"></span>
-                            </li>
-                            <li class="dd-flex list-row flex-hcenter">
-                                <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
-                                <span class="width40">Number of pages to complete task is appropriate</span>
-                                <span class="wid130">
-                                    <select id="iconSelector">
-                                        <option value="box">😉 <i>1</i></option> 
-                                        <option value="piano">🙂 <i>2</i></option>    
-                                        <option value="books">😐 <i>3</i></option>
-                                        <option value="dog">😑 <i>4</i></option>     
-                                        <option value="car">😶 <i>5</i></option>
-                                    </select>
-                                </span>
-                                <span class="wid130"></span>
-                                <span class="width300 recommend"><input type="text" placeholder="Enter your Comment's here"></span>
-                                <span class="na-toggle"></span>
-                            </li>
-                            <li class="dd-flex list-row flex-hcenter">
-                                <span class="checkme"></span>
-                                <span class="width40 bold">Average Total Score</span>
-                                <span class="wid130">
-                                    
-                                </span>
-                                <span class="wid130"></span>
-                                <span class="width300 recommend"></span>
-                                <span class="na-toggle"></span>
-                            </li>
-                        </ul>
-
-                        <ul class="main-list">
-                            <li class="dd-flex list-row flex-hcenter">
-                                <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
-                                <span class="width40 bold">Effective Information Approach</span>
-                                <span class="wid130">
-                                    
-                                </span>
-                                <span class="wid130">
-                                    </span>
-                                <span class="width300 recommend"></span>
-                                <span class="na-toggle"></span>  
-                            </li>
-                            <li class="dd-flex list-row flex-hcenter"><span class="checkme"><input type="checkbox" id="" name="" value=""></span>
-                                <span class="width40">Effective Information Approach</span>
-                                <span class="wid130">
-                                    <select id="iconSelector">
-                                        <option value="box">😉 <i>1</i></option> 
-                                        <option value="piano">🙂 <i>2</i></option>    
-                                        <option value="books">😐 <i>3</i></option>
-                                        <option value="dog">😑 <i>4</i></option>     
-                                        <option value="car">😶 <i>5</i></option>
-                                    </select>
-                                </span>
-                                <span class="wid130">
-                                    
-                                </span>
-                                <span class="width300 recommend"><input type="text" placeholder="Enter your Comments here"></span>
-                                <span class="na-toggle"></span></li>
-                            <li class="dd-flex list-row flex-hcenter">
-                                <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
-                                <span class="width40">Labels are distinctive and descriptive</span>
-                                <span class="wid130">
-                                    <select id="iconSelector">
-                                        <option value="box">😉 <i>1</i></option> 
-                                        <option value="piano">🙂 <i>2</i></option>    
-                                        <option value="books">😐 <i>3</i></option>
-                                        <option value="dog">😑 <i>4</i></option>     
-                                        <option value="car">😶 <i>5</i></option>
-                                    </select>
-                                </span> 
-                                <span class="wid130"></span>
-                                <span class="width300 recommend"><input type="text" placeholder="Enter your Comment's here"></span>
-                                <span class="na-toggle"></span>
-                            </li>
-                            <li class="dd-flex list-row flex-hcenter">
-                                <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
-                                <span class="width40">Menu items trigger action that meet user needs</span>
-                                <span class="wid130">
-                                    <select id="iconSelector">
-                                        <option value="box">😉 <i>1</i></option> 
-                                        <option value="piano">🙂 <i>2</i></option>    
-                                        <option value="books">😐 <i>3</i></option>
-                                        <option value="dog">😑 <i>4</i></option>     
-                                        <option value="car">😶 <i>5</i></option>
-                                    </select>
-                                </span>
-                                <span class="wid130"></span>
-                                <span class="width300 recommend"><input type="text" placeholder="Enter your Comment's here"></span>
-                                <span class="na-toggle"></span>
-                            </li>
-                            <li class="dd-flex list-row flex-hcenter">
-                                <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
-                                <span class="width40">Menu item promote content which meets user needs</span>
-                                <span class="wid130">
-                                    <select id="iconSelector">
-                                        <option value="box">😉 <i>1</i></option> 
-                                        <option value="piano">🙂 <i>2</i></option>    
-                                        <option value="books">😐 <i>3</i></option>
-                                        <option value="dog">😑 <i>4</i></option>     
-                                        <option value="car">😶 <i>5</i></option>
-                                    </select>
-                                </span>
-                                <span class="wid130"></span>
-                                <span class="width300 recommend"><input type="text" placeholder="Enter your Comment's here"></span>
-                                <span class="na-toggle"></span>
-                            </li>
-                            <li class="dd-flex list-row flex-hcenter">
-                                <span class="checkme"></span>
-                                <span class="width40 bold">Average Total Score</span>
-                                <span class="wid130">
-                                    
-                                </span>
-                                <span class="wid130"></span>
-                                <span class="width300 recommend"></span>
-                                <span class="na-toggle"></span>
-                            </li>
-                        </ul>
-
-                    
-                </div>-->
-
             </div>
             <div class="buttonGroup bot-fix">
                 <button class="cancelit gobackbtn" onclick="ChangeField(c1,f1), removeBtn(c2)">Previous</button>
                 <button class="next-modif tabbt1" onclick="ChangeField(c2,f2)">Next</button>
             </div>
-        </div>
-    </fieldset>
+        
+        </fieldset>
     </div>
     
         <div class="section">
@@ -604,122 +399,218 @@
             <fieldset class="form-NS" id="f2">
                 
                 <div class="innercont">
-                    <div class="dd-flex flex-spacebtwn na-header flex-hcenter">
-                        <h2 class="f14">Content</h2>
-                        <button class="na-addnew clickit"><i class="fa-solid fa-plus"></i> Add New</button>
-                    </div>
+                    
                     <div class="wiz-inner-content">
-                        <div class="usab-content">
-                            <div class="useab-head">
-                                <div class="checkbx"></div>
-                                <div class="width40">Usability Dimensions</div>
-                                <div class="wid130">Reviewer - 1</div>
-                                <div class="wid130">Reviewer - 2</div>
-                                <div>Recommendations</div>
-                            </div>
-                            <ul class="dd-flex main-list">
-                                <li class="dd-flex list-row flex-hcenter list-color">
-                                    <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
-                                    <span class="width40 bold">Content</span>
-                                    <span class="wid130"></span>
-                                    <span class="wid130"></span>
-                                    <span class="width300">
-                                         
-                                    </span>
-                                    <span class="na-toggle"><i class="fa-solid fa-angle-down"></i></span>
-                                </li>
-                            </ul>
-                            <ul class="main-list">
-                                    
-                                <li class="dd-flex list-row flex-hcenter">
-                                    <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
-                                    <span class="width40 bold">Good content, good writing, message on target</span>
-                                    <span class="wid130"></span>
-                                    <span class="wid130"></span>
-                                    <span class="width300 recommend"></span>
-                                    <span class="na-toggle"></span>
-                                </li>
-                                <li class="dd-flex list-row flex-hcenter">
-                                    <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
-                                    <span class="width40">Content written for scanning</span>
-                                    <span class="wid130">
+                       
+                        <div id="accordion">
+                            <h4 class="mb-0 useab-head">
+                                Content
+                            </h4>
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                        <div class="wzcardcheck">
+                                            <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                                            <span class="width40 bold list-cont">Good content, good writing, message on target</span>
+                                        </div>
+                                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
+                                           
+                                      </button>
+                                    </h5>
+                                  </div>
+                          
+                              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                    <div class="dd-flex flex-spacebtwn">
                                         <select id="iconSelector">
+                                            <option value="box"><i>Select Rating</i></option> 
                                             <option value="box">😉 <i>1</i></option> 
                                             <option value="piano">🙂 <i>2</i></option>    
                                             <option value="books">😐 <i>3</i></option>
                                             <option value="dog">😑 <i>4</i></option>     
                                             <option value="car">😶 <i>5</i></option>
                                         </select>
-                                    </span>
-                                    <span class="wid130"></span>
-                                    <span class="width300 recommend"> <input type="text" placeholder="Enter your Comment's here"> </span>
-                                    <span class="na-toggle"></span>
-                                </li>
-                                <li class="dd-flex list-row flex-hcenter">
-                                    <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
-                                    <span class="width40">Content follows summary / detail format</span>
-                                    <span class="wid130">
-                                        <select id="iconSelector">
-                                            <option value="box">😉 <i>1</i></option> 
-                                            <option value="piano">🙂 <i>2</i></option>    
-                                            <option value="books">😐 <i>3</i></option>
-                                            <option value="dog">😑 <i>4</i></option>     
-                                            <option value="car">😶 <i>5</i></option>
-                                        </select>
-                                    </span>
-                                    <span class="wid130"></span>
-                                    <span class="width300 recommend"> <input type="text" placeholder="Enter your Comment's here"> </span>
-                                    <span class="na-toggle"></span>
-                                </li>
         
-                                <li class="dd-flex list-row flex-hcenter">
-                                    <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
-                                    <span class="width40">Tone of writing is appropriate</span>
-                                    <span class="wid130">
+                                        <div class="recoment-sect dd-flex">
+                                            <p class="wiz-border"><img src="../Image/Recomend.PNG"></p>
+                                            <p class="wiz-border"><img src="../Image/Download.PNG"></p>
+                                            <p class="wiz-border"><img src="../Image/notes.PNG"</i></p>
+                                            <i class="fa-solid fa-calendar-lines"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                  <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck">
+                                        <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                                      <span class="width40 bold list-cont">Content written for scanning</span>
+                                    </div>
+                                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                      <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
+                                         
+                                    </button>
+                                  </h5>
+                                </div>
+                            
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                  <div class="card-body">
+                                      <ul class="dd-flex main-list">
+                                          <li class="dd-flex list-row flex-hcenter ">
+                                              <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
+                                              <span class="width40 bold">Navigation & Information Architecture</span>
+                                              <span class="wid130"></span>
+                                              <span class="wid130"></span>
+                                              <span class="width300">
+                                                   
+                                              </span>
+                                              
+                                          </li>
+                                      </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingThree">
+                                  <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck">
+                                        <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                                      <span class="width40 bold list-cont">Content follows summary / detail format</span>
+                                      </div>
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                      <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
+                                         
+                                    </button>
+                                  </h5>
+                                </div>
+                            
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                  <div class="card-body">
+                                    <div class="dd-flex flex-spacebtwn">
                                         <select id="iconSelector">
+                                            <option value="box"><i>Select Rating</i></option> 
                                             <option value="box">😉 <i>1</i></option> 
                                             <option value="piano">🙂 <i>2</i></option>    
                                             <option value="books">😐 <i>3</i></option>
                                             <option value="dog">😑 <i>4</i></option>     
                                             <option value="car">😶 <i>5</i></option>
                                         </select>
-                                    </span>
-                                    <span class="wid130"></span>
-                                    <span class="width300 recommend"> <input type="text" placeholder="Enter your Comment's here"> </span>
-                                    <span class="na-toggle"></span>
-                                </li>
-                                <li class="dd-flex list-row flex-hcenter">
-                                    <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
-                                    <span class="width40">Content facilitates decision making</span>
-                                    <span class="wid130">
-                                        <select id="iconSelector">
-                                            <option value="box">😉 <i>1</i></option> 
-                                            <option value="piano">🙂 <i>2</i></option>    
-                                            <option value="books">😐 <i>3</i></option>
-                                            <option value="dog">😑 <i>4</i></option>     
-                                            <option value="car">😶 <i>5</i></option>
-                                        </select>
-                                    </span>
-                                    <span class="wid130"></span>
-                                    <span class="width300 recommend"> <input type="text" placeholder="Enter your Comment's here"> </span>
-                                    <span class="na-toggle"></span>
-                                </li>
-                                <li class="dd-flex list-row flex-hcenter">
-                                    <span class="checkme"></span>
-                                    <span class="width40 bold">Average Total Score</span>
-                                    <span class="wid130">
-                                        
-                                    </span>
-                                    <span class="wid130"></span>
-                                    <span class="width300 recommend"></span>
-                                    <span class="na-toggle"></span>
-                                </li>
-                            </ul>
+        
+                                        <div class="recoment-sect dd-flex">
+                                            <p class="wiz-border"><i class="fa-solid fa-message"></i></p>
+                                            <p class="wiz-border"><i class="fa-solid fa-down"></i></p>
+                                            <p class="wiz-border"><i class="fa-solid fa-calendar-lines"></i></p>
+                                            <i class="fa-solid fa-calendar-lines"></i>
+                                        </div>
+                                    </div>  
+        
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingFour">
+                                  <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck">
+                                        <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                                      <span class="width40 bold list-cont">Content follows summary / detail format</span>
+                                    </div>
+                                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                      <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
+                                         
+                                    </button>
+                                  </h5>
+                                </div>
+                            
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                                  <div class="card-body">
+                                      <ul class="dd-flex main-list">
+                                          <li class="dd-flex list-row flex-hcenter ">
+                                              <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
+                                              <span class="width40 bold">Navigation & Information Architecture</span>
+                                              <span class="wid130"></span>
+                                              <span class="wid130"></span>
+                                              <span class="width300">
+                                                   
+                                              </span>
+                                              
+                                          </li>
+                                      </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingFive">
+                                  <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck">
+                                        <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                                      <span class="width40 bold list-cont">Tone of writing is appropriate</span>
+                                      </div>
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                      <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
+                                         
+                                    </button>
+                                  </h5>
+                                </div>
+                            
+                                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                                  <div class="card-body">
+                                      <ul class="dd-flex main-list">
+                                          <li class="dd-flex list-row flex-hcenter ">
+                                              <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
+                                              <span class="width40 bold">Navigation & Information Architecture</span>
+                                              <span class="wid130"></span>
+                                              <span class="wid130"></span>
+                                              <span class="width300">
+                                                   
+                                              </span>
+                                              
+                                          </li>
+                                      </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingSix">
+                                  <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck">
+                                        <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                                      <span class="width40 bold list-cont">Content facilitates decision making</span>
+                                    </div>
+                                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                      <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
+                                         
+                                    </button>
+                                  </h5>
+                                </div>
+                            
+                                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                                  <div class="card-body">
+                                      <ul class="dd-flex main-list">
+                                          <li class="dd-flex list-row flex-hcenter ">
+                                              <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
+                                              <span class="width40 bold">Navigation & Information Architecture</span>
+                                              <span class="wid130"></span>
+                                              <span class="wid130"></span>
+                                              <span class="width300">
+                                                   
+                                              </span>
+                                              
+                                          </li>
+                                      </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            
+                              <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics go to the next step</p>
+                           
+                            </div>
+                        <div class="buttonGroup bot-fix">
+                            <button class="cancelit gobackbtn" onclick="ChangeField(c1,f1) , removeBtn(c2)">Previous</button>
+                            <button class="next-modif tabbt2" onclick="ChangeField(c3,f3)">Next</button>
                         </div>
-                    <div class="buttonGroup bot-fix">
-                        <button class="cancelit gobackbtn" onclick="ChangeField(c1,f1) , removeBtn(c2)">Previous</button>
-                        <button class="next-modif tabbt2" onclick="ChangeField(c3,f3)">Next</button>
-                    </div>
                     </div>
                 </div>
             </fieldset>
@@ -728,116 +619,153 @@
         <div class="section">
             <fieldset class="form-NS" id="f3">
                 <div class="innercont">
-                    <div class="dd-flex flex-spacebtwn na-header flex-hcenter">
-                        <h2 class="f14">Presentation</h2>
-                        <button class="na-addnew clickit"><i class="fa-solid fa-plus"></i> Add New</button>
-                    </div>
+                    
                     <div class="wiz-inner-content">
-                        <div class="usab-content">
-                            <div class="useab-head">
-                                <div class="checkbx"></div>
-                                <div class="width40">Usability Dimensions</div>
-                                <div class="wid130">Reviewer - 1</div>
-                                <div class="wid130">Reviewer - 2</div>
-                                <div>Recommendations</div>
+                        
+                        <div id="accordion">
+                            <h4 class="mb-0 useab-head">
+                                Presentation
+                            </h4>
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                        <div class="wzcardcheck">
+                                            <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                                            <span class="width40 bold list-cont">Layout - good balance, low visual complexity, clear visual hierarchy</span>
+                                        </div>
+                                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
+                                           
+                                      </button>
+                                    </h5>
+                                  </div>
+                          
+                              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                    <div class="dd-flex flex-spacebtwn">
+                                        <select id="iconSelector">
+                                            <option value="box"><i>Select Rating</i></option> 
+                                            <option value="box">😉 <i>1</i></option> 
+                                            <option value="piano">🙂 <i>2</i></option>    
+                                            <option value="books">😐 <i>3</i></option>
+                                            <option value="dog">😑 <i>4</i></option>     
+                                            <option value="car">😶 <i>5</i></option>
+                                        </select>
+        
+                                        <div class="recoment-sect dd-flex">
+                                            <p class="wiz-border"><img src="../Image/Recomend.PNG"></p>
+                                            <p class="wiz-border"><img src="../Image/Download.PNG"></p>
+                                            <p class="wiz-border"><img src="../Image/notes.PNG"</i></p>
+                                            <i class="fa-solid fa-calendar-lines"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
                             </div>
-                            <ul class="dd-flex main-list">
-                                <li class="dd-flex list-row flex-hcenter list-color">
-                                    <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
-                                    <span class="width40 bold">Presentation</span>
-                                    <span class="wid130"></span>
-                                    <span class="wid130"></span>
-                                    <span class="width300">
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                  <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck">
+                                        <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                                      <span class="width40 bold list-cont"> Color - appropriate for brand, guides attention, aids in grouping</span>
+                                    </div>
+                                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                      <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
                                          
-                                    </span>
-                                    <span class="na-toggle"><i class="fa-solid fa-angle-down"></i></span>
-                                </li>
-                            </ul>
-                            <ul class="main-list">
-                                <li class="dd-flex list-row flex-hcenter">
-                                    <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
-                                    <span class="width40 bold">Visual language</span>
-                                    <span class="wid130"></span>
-                                    <span class="wid130"></span>
-                                    <span class="width300 recommend"></span>
-                                    <span class="na-toggle"></span>
-                                </li>
-                                <li class="dd-flex list-row flex-hcenter">
-                                    <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
-                                    <span class="width40">Layout - good balance, low visual complexity, clear visual hierarchy</span>
-                                    <span class="wid130">
+                                    </button>
+                                  </h5>
+                                </div>
+                            
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                  <div class="card-body">
+                                      <ul class="dd-flex main-list">
+                                          <li class="dd-flex list-row flex-hcenter ">
+                                              <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
+                                              <span class="width40 bold">Navigation & Information Architecture</span>
+                                              <span class="wid130"></span>
+                                              <span class="wid130"></span>
+                                              <span class="width300">
+                                                   
+                                              </span>
+                                              
+                                          </li>
+                                      </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingThree">
+                                  <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck">
+                                        <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                                      <span class="width40 bold list-cont">Graphics - supports brand, follows a clear purpose, enhances layout</span>
+                                      </div>
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                      <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
+                                         
+                                    </button>
+                                  </h5>
+                                </div>
+                            
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                  <div class="card-body">
+                                    <div class="dd-flex flex-spacebtwn">
                                         <select id="iconSelector">
+                                            <option value="box"><i>Select Rating</i></option> 
                                             <option value="box">😉 <i>1</i></option> 
                                             <option value="piano">🙂 <i>2</i></option>    
                                             <option value="books">😐 <i>3</i></option>
                                             <option value="dog">😑 <i>4</i></option>     
                                             <option value="car">😶 <i>5</i></option>
                                         </select>
-                                    </span>
-                                    <span class="wid130"></span>
-                                    <span class="width300 recommend"> <input type="text" placeholder="Enter your Comment's here"> </span>
-                                    <span class="na-toggle"></span>
-                                </li>
-                                <li class="dd-flex list-row flex-hcenter">
-                                    <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
-                                    <span class="width40">Color - appropriate for brand, guides attention, aids in grouping</span>
-                                    <span class="wid130">
-                                        <select id="iconSelector">
-                                            <option value="box">😉 <i>1</i></option> 
-                                            <option value="piano">🙂 <i>2</i></option>    
-                                            <option value="books">😐 <i>3</i></option>
-                                            <option value="dog">😑 <i>4</i></option>     
-                                            <option value="car">😶 <i>5</i></option>
-                                        </select>
-                                    </span>
-                                    <span class="wid130"></span>
-                                    <span class="width300 recommend"> <input type="text" placeholder="Enter your Comment's here"> </span>
-                                    <span class="na-toggle"></span>
-                                </li>
-                                <li class="dd-flex list-row flex-hcenter">
-                                    <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
-                                    <span class="width40">Graphics - supports brand, follows a clear purpose, enhances layout</span>
-                                    <span class="wid130">
-                                        <select id="iconSelector">
-                                            <option value="box">😉 <i>1</i></option> 
-                                            <option value="piano">🙂 <i>2</i></option>    
-                                            <option value="books">😐 <i>3</i></option>
-                                            <option value="dog">😑 <i>4</i></option>     
-                                            <option value="car">😶 <i>5</i></option>
-                                        </select>
-                                    </span>
-                                    <span class="wid130"></span>
-                                    <span class="width300 recommend"> <input type="text" placeholder="Enter your Comment's here"> </span>
-                                    <span class="na-toggle"></span>
-                                </li>
-                                <li class="dd-flex list-row flex-hcenter">
-                                    <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
-                                    <span class="width40">Typography - clear type hierarchy, appropriate size, good legibility</span>
-                                    <span class="wid130">
-                                        <select id="iconSelector">
-                                            <option value="box">😉 <i>1</i></option> 
-                                            <option value="piano">🙂 <i>2</i></option>    
-                                            <option value="books">😐 <i>3</i></option>
-                                            <option value="dog">😑 <i>4</i></option>     
-                                            <option value="car">😶 <i>5</i></option>
-                                        </select>
-                                    </span>
-                                    <span class="wid130"></span>
-                                    <span class="width300 recommend"> <input type="text" placeholder="Enter your Comment's here"> </span>
-                                    <span class="na-toggle"></span>
-                                </li>
-                                <li class="dd-flex list-row flex-hcenter">
-                                    <span class="checkme"></span>
-                                    <span class="width40 bold">Average Total Score</span>
-                                    <span class="wid130">
-                                        
-                                    </span>
-                                    <span class="wid130"></span>
-                                    <span class="width300 recommend"></span>
-                                    <span class="na-toggle"></span>
-                                </li>
-                            </ul>
+        
+                                        <div class="recoment-sect dd-flex">
+                                            <p class="wiz-border"><i class="fa-solid fa-message"></i></p>
+                                            <p class="wiz-border"><i class="fa-solid fa-down"></i></p>
+                                            <p class="wiz-border"><i class="fa-solid fa-calendar-lines"></i></p>
+                                            <i class="fa-solid fa-calendar-lines"></i>
+                                        </div>
+                                    </div>  
+        
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingFour">
+                                  <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck">
+                                        <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                                      <span class="width40 bold list-cont">Typography - clear type hierarchy, appropriate size, good legibility</span>
+                                    </div>
+                                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                      <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
+                                         
+                                    </button>
+                                  </h5>
+                                </div>
+                            
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                                  <div class="card-body">
+                                      <ul class="dd-flex main-list">
+                                          <li class="dd-flex list-row flex-hcenter ">
+                                              <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
+                                              <span class="width40 bold">Navigation & Information Architecture</span>
+                                              <span class="wid130"></span>
+                                              <span class="wid130"></span>
+                                              <span class="width300">
+                                                   
+                                              </span>
+                                              
+                                          </li>
+                                      </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                              <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics go to the next step</p>
+                           
                             </div>
+
                     <div class="buttonGroup bot-fix">
                         <button class="cancelit gobackbtn2" onclick="ChangeField(c2,f2) , removeBtn(c3)">Previous</button>
                         <button class="next-modif tabbt3" onclick="ChangeField(c4,f4)">Next</button>
@@ -850,172 +778,276 @@
         <div class="section">
             <fieldset class="form-NS" id="f4">
                 <div class="innercont">
-                    <div class="dd-flex flex-spacebtwn na-header flex-hcenter">
-                        <h2 class="f14">Interaction</h2>
-                        <button class="na-addnew clickit"><i class="fa-solid fa-plus"></i> Add New</button>
-                    </div>
+                    
                     <div class="wiz-inner-content">
-                        <div class="usab-content">
-                            <div class="useab-head">
-                                <div class="checkbx"></div>
-                                <div class="width40">Usability Dimensions</div>
-                                <div class="wid130">Reviewer - 1</div>
-                                <div class="wid130">Reviewer - 2</div>
-                                <div>Recommendations</div>
+                        
+                        <div id="accordion">
+                            <h4 class="mb-0 useab-head">
+                                Interaction
+                            </h4>
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                        <div class="wzcardcheck">
+                                            <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                                            <span class="width40 bold list-cont">Good use of controls and interaction model</span>
+                                        </div>
+                                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
+                                           
+                                      </button>
+                                    </h5>
+                                  </div>
+                          
+                              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                    <div class="dd-flex flex-spacebtwn">
+                                        <select id="iconSelector">
+                                            <option value="box"><i>Select Rating</i></option> 
+                                            <option value="box">😉 <i>1</i></option> 
+                                            <option value="piano">🙂 <i>2</i></option>    
+                                            <option value="books">😐 <i>3</i></option>
+                                            <option value="dog">😑 <i>4</i></option>     
+                                            <option value="car">😶 <i>5</i></option>
+                                        </select>
+        
+                                        <div class="recoment-sect dd-flex">
+                                            <p class="wiz-border"><img src="../Image/Recomend.PNG"></p>
+                                            <p class="wiz-border"><img src="../Image/Download.PNG"></p>
+                                            <p class="wiz-border"><img src="../Image/notes.PNG"</i></p>
+                                            <i class="fa-solid fa-calendar-lines"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
                             </div>
-                            <ul class="dd-flex main-list">
-                                <li class="dd-flex list-row flex-hcenter list-color">
-                                    <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
-                                    <span class="width40 bold">Interaction</span>
-                                    <span class="wid130"></span>
-                                    <span class="wid130"></span>
-                                    <span class="width300">
-                                    </span>
-                                    <span class="na-toggle"><i class="fa-solid fa-angle-down"></i></span>
-                                </li>
-                            </ul>
-                            <ul class="main-list">
-                                <li class="dd-flex list-row flex-hcenter">
-                                    <span class="checkme"></span>
-                                    <span class="width40 bold">Controls and micro-interactions</span>
-                                    <span class="wid130"></span>
-                                    <span class="wid130"></span>
-                                    <span class="width300">
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                  <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck">
+                                        <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                                      <span class="width40 bold list-cont">Number of micro-interactions to complete task is suitable</span>
+                                    </div>
+                                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                      <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
                                          
-                                    </span>
-                                    <span class="na-toggle"></span>
-                                </li>
-                                <li class="dd-flex list-row flex-hcenter">
-                                    <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
-                                    <span class="width40">Good use of controls and interaction model</span>
-                                    <span class="wid130">
+                                    </button>
+                                  </h5>
+                                </div>
+                            
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                  <div class="card-body">
+                                      <ul class="dd-flex main-list">
+                                          <li class="dd-flex list-row flex-hcenter ">
+                                              <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
+                                              <span class="width40 bold">Navigation & Information Architecture</span>
+                                              <span class="wid130"></span>
+                                              <span class="wid130"></span>
+                                              <span class="width300">
+                                                   
+                                              </span>
+                                              
+                                          </li>
+                                      </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingThree">
+                                  <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck">
+                                        <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                                      <span class="width40 bold list-cont">Strong visual affordances for selection</span>
+                                      </div>
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                      <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
+                                         
+                                    </button>
+                                  </h5>
+                                </div>
+                            
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                  <div class="card-body">
+                                    <div class="dd-flex flex-spacebtwn">
                                         <select id="iconSelector">
+                                            <option value="box"><i>Select Rating</i></option> 
                                             <option value="box">😉 <i>1</i></option> 
                                             <option value="piano">🙂 <i>2</i></option>    
                                             <option value="books">😐 <i>3</i></option>
                                             <option value="dog">😑 <i>4</i></option>     
                                             <option value="car">😶 <i>5</i></option>
                                         </select>
-                                    </span>
-                                    <span class="wid130"></span>
-                                    <span class="width300 recommend"> <input type="text" placeholder="Enter your Comment's here"> </span>
-                                    <span class="na-toggle"></span>
-                                </li>
-                                <li class="dd-flex list-row flex-hcenter">
-                                    <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
-                                    <span class="width40">Number of micro-interactions to complete task is suitable</span>
-                                    <span class="wid130">
-                                        <select id="iconSelector">
-                                            <option value="box">😉 <i>1</i></option> 
-                                            <option value="piano">🙂 <i>2</i></option>    
-                                            <option value="books">😐 <i>3</i></option>
-                                            <option value="dog">😑 <i>4</i></option>     
-                                            <option value="car">😶 <i>5</i></option>
-                                        </select>
-                                    </span>
-                                    <span class="wid130"></span>
-                                    <span class="width300 recommend"> <input type="text" placeholder="Enter your Comment's here"> </span>
-                                    <span class="na-toggle"></span>
-                                </li>
-                                <li class="dd-flex list-row flex-hcenter">
-                                    <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
-                                    <span class="width40">Strong visual affordances for selection</span>
-                                    <span class="wid130">
-                                        <select id="iconSelector">
-                                            <option value="box">😉 <i>1</i></option> 
-                                            <option value="piano">🙂 <i>2</i></option>    
-                                            <option value="books">😐 <i>3</i></option>
-                                            <option value="dog">😑 <i>4</i></option>     
-                                            <option value="car">😶 <i>5</i></option>
-                                        </select>
-                                    </span>
-                                    <span class="wid130"></span>
-                                    <span class="width300 recommend"> <input type="text" placeholder="Enter your Comment's here"> </span>
-                                    <span class="na-toggle"></span>
-                                </li>
-                                <li class="dd-flex list-row flex-hcenter">
-                                    <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
-                                    <span class="width40">Good error prevention strategy – format cues, controls, help Use of secondary windows, screens, and hover-overs</span>
-                                    <span class="wid130">
-                                        <select id="iconSelector">
-                                            <option value="box">😉 <i>1</i></option> 
-                                            <option value="piano">🙂 <i>2</i></option>    
-                                            <option value="books">😐 <i>3</i></option>
-                                            <option value="dog">😑 <i>4</i></option>     
-                                            <option value="car">😶 <i>5</i></option>
-                                        </select>
-                                    </span>
-                                    <span class="wid130"></span>
-                                    <span class="width300 recommend"> <input type="text" placeholder="Enter your Comment's here"> </span>
-                                    <span class="na-toggle"></span>
-                                </li>
-                                <li class="dd-flex list-row flex-hcenter">
-                                    <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
-                                    <span class="width40">Secondary windows or hover-overs work as expected</span>
-                                    <span class="wid130">
-                                        <select id="iconSelector">
-                                            <option value="box">😉 <i>1</i></option> 
-                                            <option value="piano">🙂 <i>2</i></option>    
-                                            <option value="books">😐 <i>3</i></option>
-                                            <option value="dog">😑 <i>4</i></option>     
-                                            <option value="car">😶 <i>5</i></option>
-                                        </select>
-                                    </span>
-                                    <span class="wid130"></span>
-                                    <span class="width300 recommend"> <input type="text" placeholder="Enter your Comment's here"> </span>
-                                    <span class="na-toggle"></span>
-                                </li>
-                                <li class="dd-flex list-row flex-hcenter">
-                                    <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
-                                    <span class="width40">Appropriate content relationship between windows Response to user input</span>
-                                    <span class="wid130">
-                                        <select id="iconSelector">
-                                            <option value="box">😉 <i>1</i></option> 
-                                            <option value="piano">🙂 <i>2</i></option>    
-                                            <option value="books">😐 <i>3</i></option>
-                                            <option value="dog">😑 <i>4</i></option>     
-                                            <option value="car">😶 <i>5</i></option>
-                                        </select>
-                                    </span>
-                                    <span class="wid130"></span>
-                                    <span class="width300 recommend"> <input type="text" placeholder="Enter your Comment's here"> </span>
-                                    <span class="na-toggle"></span>
-                                </li>
-                                <li class="dd-flex list-row flex-hcenter">
-                                    <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
-                                    <span class="width40">Speedy system response</span>
-                                    <span class="wid130">
-                                        <select id="iconSelector">
-                                            <option value="box">😉 <i>1</i></option> 
-                                            <option value="piano">🙂 <i>2</i></option>    
-                                            <option value="books">😐 <i>3</i></option>
-                                            <option value="dog">😑 <i>4</i></option>     
-                                            <option value="car">😶 <i>5</i></option>
-                                        </select>
-                                    </span>
-                                    <span class="wid130"></span>
-                                    <span class="width300 recommend"> <input type="text" placeholder="Enter your Comment's here"> </span>
-                                    <span class="na-toggle"></span>
-                                </li>
-                                <li class="dd-flex list-row flex-hcenter">
-                                    <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
-                                    <span class="width40">Appropriate messaging and feedback</span>
-                                    <span class="wid130">
-                                        <select id="iconSelector">
-                                            <option value="box">😉 <i>1</i></option> 
-                                            <option value="piano">🙂 <i>2</i></option>    
-                                            <option value="books">😐 <i>3</i></option>
-                                            <option value="dog">😑 <i>4</i></option>     
-                                            <option value="car">😶 <i>5</i></option>
-                                        </select>
-                                    </span>
-                                    <span class="wid130"></span>
-                                    <span class="width300 recommend"> <input type="text" placeholder="Enter your Comment's here"> </span>
-                                    <span class="na-toggle"></span>
-                                </li>
-            
-                            </ul>
+        
+                                        <div class="recoment-sect dd-flex">
+                                            <p class="wiz-border"><i class="fa-solid fa-message"></i></p>
+                                            <p class="wiz-border"><i class="fa-solid fa-down"></i></p>
+                                            <p class="wiz-border"><i class="fa-solid fa-calendar-lines"></i></p>
+                                            <i class="fa-solid fa-calendar-lines"></i>
+                                        </div>
+                                    </div>  
+        
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingFour">
+                                  <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck">
+                                        <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                                      <span class="width40 bold list-cont">Good error prevention strategy – format cues, controls, help Use of secondary windows, screens, and hover-overs</span>
+                                    </div>
+                                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                      <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
+                                         
+                                    </button>
+                                  </h5>
+                                </div>
+                            
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                                  <div class="card-body">
+                                      <ul class="dd-flex main-list">
+                                          <li class="dd-flex list-row flex-hcenter ">
+                                              <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
+                                              <span class="width40 bold">Navigation & Information Architecture</span>
+                                              <span class="wid130"></span>
+                                              <span class="wid130"></span>
+                                              <span class="width300">
+                                                   
+                                              </span>
+                                              
+                                          </li>
+                                      </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingFive">
+                                  <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck">
+                                        <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                                      <span class="width40 bold list-cont">Secondary windows or hover-overs work as expected</span>
+                                      </div>
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                      <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
+                                         
+                                    </button>
+                                  </h5>
+                                </div>
+                            
+                                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                                  <div class="card-body">
+                                      <ul class="dd-flex main-list">
+                                          <li class="dd-flex list-row flex-hcenter ">
+                                              <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
+                                              <span class="width40 bold">Navigation & Information Architecture</span>
+                                              <span class="wid130"></span>
+                                              <span class="wid130"></span>
+                                              <span class="width300">
+                                                   
+                                              </span>
+                                              
+                                          </li>
+                                      </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingSix">
+                                  <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck">
+                                        <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                                      <span class="width40 bold list-cont">Appropriate content relationship between windows Response to user input</span>
+                                    </div>
+                                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                      <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
+                                         
+                                    </button>
+                                  </h5>
+                                </div>
+                            
+                                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                                  <div class="card-body">
+                                      <ul class="dd-flex main-list">
+                                          <li class="dd-flex list-row flex-hcenter ">
+                                              <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
+                                              <span class="width40 bold">Navigation & Information Architecture</span>
+                                              <span class="wid130"></span>
+                                              <span class="wid130"></span>
+                                              <span class="width300">
+                                                   
+                                              </span>
+                                              
+                                          </li>
+                                      </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingSeven">
+                                  <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck">
+                                        <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                                      <span class="width40 bold list-cont">Speedy system response</span>
+                                    </div>
+                                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                                      <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
+                                         
+                                    </button>
+                                  </h5>
+                                </div>
+                            
+                                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                                  <div class="card-body">
+                                      <ul class="dd-flex main-list">
+                                          <li class="dd-flex list-row flex-hcenter ">
+                                              <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
+                                              <span class="width40 bold">Navigation & Information Architecture</span>
+                                              <span class="wid130"></span>
+                                              <span class="wid130"></span>
+                                              <span class="width300">
+                                                   
+                                              </span>
+                                              
+                                          </li>
+                                      </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingEight">
+                                  <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck">
+                                        <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                                      <span class="width40 bold list-cont">Appropriate messaging and feedback</span>
+                                    </div>
+                                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                                      <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
+                                         
+                                    </button>
+                                  </h5>
+                                </div>
+                            
+                                <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+                                  <div class="card-body">
+                                      <ul class="dd-flex main-list">
+                                          <li class="dd-flex list-row flex-hcenter ">
+                                              <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
+                                              <span class="width40 bold">Navigation & Information Architecture</span>
+                                              <span class="wid130"></span>
+                                              <span class="wid130"></span>
+                                              <span class="width300">
+                                                   
+                                              </span>
+                                              
+                                          </li>
+                                      </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics go to the next step</p>
+                           
                             </div>
+
                     </div>
                         <div class="buttonGroup bot-fix">
                             <button class="cancelit gobackbtnn3" onclick="ChangeField(c3,f3) , removeBtn(c4)">Previous</button>
@@ -1028,70 +1060,82 @@
         <div class="section">
             <fieldset class="form-NS" id="f5">
                 <div class="innercont">
-                    <div class="dd-flex flex-spacebtwn na-header flex-hcenter">
-                        <h2 class="f14">Value & Usefulness</h2>
-                        <button class="na-addnew clickit"><i class="fa-solid fa-plus"></i> Add New</button>
-                    </div>
+                    
                 <div class="wiz-inner-content">
-                    <div class="usab-content">
-                        <div class="useab-head">
-                            <div class="checkbx"></div>
-                            <div class="width40">Usability Dimensions</div>
-                            <div class="wid130">Reviewer - 1</div>
-                            <div class="wid130">Reviewer - 2</div>
-                            <div>Recommendations</div>
+                    
+                    <div id="accordion">
+                        <h4 class="mb-0 useab-head">
+                            Value & Usefulness
+                        </h4>
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck">
+                                        <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                                        <span class="width40 bold list-cont">The content meets the user's needs.</span>
+                                    </div>
+                                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
+                                       
+                                  </button>
+                                </h5>
+                              </div>
+                      
+                          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="dd-flex flex-spacebtwn">
+                                    <select id="iconSelector">
+                                        <option value="box"><i>Select Rating</i></option> 
+                                        <option value="box">😉 <i>1</i></option> 
+                                        <option value="piano">🙂 <i>2</i></option>    
+                                        <option value="books">😐 <i>3</i></option>
+                                        <option value="dog">😑 <i>4</i></option>     
+                                        <option value="car">😶 <i>5</i></option>
+                                    </select>
+    
+                                    <div class="recoment-sect dd-flex">
+                                        <p class="wiz-border"><img src="../Image/Recomend.PNG"></p>
+                                        <p class="wiz-border"><img src="../Image/Download.PNG"></p>
+                                        <p class="wiz-border"><img src="../Image/notes.PNG"</i></p>
+                                        <i class="fa-solid fa-calendar-lines"></i>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
                         </div>
-                        <ul class="dd-flex main-list">
-                            <li class="dd-flex list-row flex-hcenter list-color">
-                                <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
-                                <span class="width40 bold">Value & Usefulness</span>
-                                <span class="wid130"></span>
-                                <span class="wid130"></span>
-                                <span class="width300">
-                                </span>
-                                <span class="na-toggle"><i class="fa-solid fa-angle-down"></i></span>
-                            </li>
-                            </ul>
-                            <ul class="main-list">
-                                <li class="dd-flex list-row flex-hcenter">
-                                    <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
-                                    <span class="width40">The content meets the user's needs.</span>
-                                    <span class="wid130">
-                                        <select id="iconSelector">
-                                            <option value="box">😉 <i>1</i></option> 
-                                            <option value="piano">🙂 <i>2</i></option>    
-                                            <option value="books">😐 <i>3</i></option>
-                                            <option value="dog">😑 <i>4</i></option>     
-                                            <option value="car">😶 <i>5</i></option>
-                                        </select>
-                                    </span>
-                                    <span class="wid130">
-                                        </span>
-                                    <span class="width300 recommend"><input type="text" placeholder="Enter your Comment's here"></span>
-                                    <span class="na-toggle"></span>  
-                                </li>
-                                
-                                <li class="dd-flex list-row flex-hcenter">
-                                    <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
-                                    <span class="width40">The features are useful and meet the user's needs.</span>
-                                    <span class="wid130">
-                                        <select id="iconSelector">
-                                            <option value="box">😉 <i>1</i></option> 
-                                            <option value="piano">🙂 <i>2</i></option>    
-                                            <option value="books">😐 <i>3</i></option>
-                                            <option value="dog">😑 <i>4</i></option>     
-                                            <option value="car">😶 <i>5</i></option>
-                                        </select>  
-                                    </span>
-                                    <span class="wid130">
-                                        </span>
-                                    <span class="width300 recommend"><input type="text" placeholder="Enter your Comment's here"></span>
-                                    <span class="na-toggle"></span>  
-                                </li>
-                            </ul>
-                        </div>
-        
-        
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                              <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                <div class="wzcardcheck">
+                                    <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                                  <span class="width40 bold list-cont">The features are useful and meet the user's needs.</span>
+                                </div>
+                                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                  <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
+                                     
+                                </button>
+                              </h5>
+                            </div>
+                        
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                              <div class="card-body">
+                                  <ul class="dd-flex main-list">
+                                      <li class="dd-flex list-row flex-hcenter ">
+                                          <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
+                                          <span class="width40 bold">Navigation & Information Architecture</span>
+                                          <span class="wid130"></span>
+                                          <span class="wid130"></span>
+                                          <span class="width300">
+                                               
+                                          </span>
+                                          
+                                      </li>
+                                  </ul>
+                              </div>
+                            </div>
+                          </div>
+
+                    </div>
                 </div>
                     <div class="buttonGroup bot-fix">
                         <button class="cancelit gobackbtn4" onclick="ChangeField(c4,f4) , removeBtn(c5)">Previous</button>
