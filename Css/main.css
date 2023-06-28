@@ -688,6 +688,7 @@ span.bell-count {
     overflow: auto;
     display: flex;
     flex-direction: column;
+    padding-bottom: 0;
 }
 .heureistic-title .f14 {
 	background: #fff;
