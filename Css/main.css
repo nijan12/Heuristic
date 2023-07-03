@@ -1836,6 +1836,13 @@ select#iconSelector:focus-visible {
 #accordion .headhighlight h5 .wzcardcheck span:nth-child(2) {
     font-weight: 600;
 }
+/*030723*/
+.bg-pink {
+    background: #B02270;
+}
+.opacityhalf {
+    opacity: 0.5;
+}
 
 /*Media query*/
 @media screen and (min-width:1824px) {
