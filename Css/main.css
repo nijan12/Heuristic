@@ -1860,6 +1860,11 @@ select#iconSelector:focus-visible {
 .green-color {
     background: #038D1A;
 }
+.headone h5 button:hover {
+    text-decoration: none;
+}
+
+
 /*Media query*/
 @media screen and (min-width:1824px) {
     .graphratingpop {
