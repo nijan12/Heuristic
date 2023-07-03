@@ -745,7 +745,7 @@ body {
 }
 
 .heuristic-inner .circle.Complete .circle-content, .heuristic-inner .circle.completetwo .circle-content, .heuristic-inner .circle.completethree .circle-content, .heuristic-inner .circle.completefour .circle-content, .heuristic-inner .circle.completefive .circle-content, .heuristic-inner .circle.completesix .circle-content{
-    color: #038D1A;
+    color: #B02270;
 }
 .circle.active .circle-content{
     color: #F6AE08;
@@ -755,7 +755,7 @@ body {
     font-weight: 500;
 }
 .heuristic-inner .circle.Complete .round, .heuristic-inner .circle.completetwo .round, .heuristic-inner .circle.completethree .round, .heuristic-inner .circle.completefour .round, .heuristic-inner .circle.completefive .round, .heuristic-inner .circle.completesix .round {
-    background:#038D1A;
+    background:#B02270;
 }
 .circle .round:after {
     content: "";
@@ -767,7 +767,7 @@ body {
     border-radius: 16px;
 }
 .heuristic-inner .circle.Complete .round::after, .heuristic-inner .circle.completetwo .round::after, .heuristic-inner .circle.completethree .round::after, .heuristic-inner .circle.completefour .round::after, .heuristic-inner .circle.completefive .round::after, .heuristic-inner .circle.completesix .round::after {
-    border-color: #038D1A;
+    border-color: #B02270;
 }
 .circle.active .round::after {
     border-color: #F6AE08;
@@ -801,7 +801,7 @@ body {
 
 .circle-content {
     position: absolute;
-    left: -24px;
+    left: -19px;
     text-align: center;
     font-size: 12px;
     color: #7C7C7C;
@@ -809,8 +809,8 @@ body {
 .circle:last-child .circle-content {
     left: -42px;
 }
-.circle:nth-child(3) .circle-content {
-    left: -10px;
+.circle:first-child .circle-content {
+    left: -31px;
 }
 .circle-content span {
     position: relative;
@@ -923,11 +923,16 @@ button:disabled {
 .bot-fix {
     right: 3%;
     position: fixed;
-    bottom: 80px;
+    bottom: 60px;
     background: #F6F4F4;
     padding: 1rem;
     width: 80%;
     padding-right: 2.5rem;
+    display: flex;
+    justify-content: flex-end;
+}
+.buttonGroup.bot-fix > button {
+    margin-right: 0.5rem;
 }
 .bot-fix .next-modif, .bot-fix .cancelit {
     border-radius: 17px;
@@ -1712,7 +1717,7 @@ input[type="checkbox"]:checked {
     font-weight: 300;
     text-transform: none;
     font-family:'Poppins';
-    font-size: 14px;
+    color: #000;
 }
 .wiz-border {
     margin: 0 3px 0 0;
@@ -1724,10 +1729,10 @@ input[type="checkbox"]:checked {
     height: 30px;
     border: 1px solid #D1D1D1;
     font-size: 12px;
-    font-size: 12px;
     font-weight: 500;
     width: 20%;
     border-radius: 5px;
+    padding: 5px;
 }
 #accordion .card .card-header {
     background-color: transparent;
@@ -1836,14 +1841,25 @@ select#iconSelector:focus-visible {
 #accordion .headhighlight h5 .wzcardcheck span:nth-child(2) {
     font-weight: 600;
 }
-/*030723*/
+/*030723 New design acordian*/
 .bg-pink {
     background: #B02270;
 }
 .opacityhalf {
     opacity: 0.5;
 }
-
+.successmsg {
+    background: #038D1A;
+}
+#accordion .headcomplete h5 .wz-round i {
+    background: green;
+}
+.blockcontain {
+    display: block !important;
+}
+.green-color {
+    background: #038D1A;
+}
 /*Media query*/
 @media screen and (min-width:1824px) {
     .graphratingpop {
@@ -1933,6 +1949,12 @@ select#iconSelector:focus-visible {
     }
     .card-cont h5:nth-child(2) {
         margin-bottom: 0.5rem;
+    }
+    .bot-fix {
+        right: 2.2%;
+        position: fixed;
+        bottom: 80px;
+        width: 84.5%;
     }
 }
 
