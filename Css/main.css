@@ -1863,7 +1863,7 @@ select#iconSelector:focus-visible {
 .headone h5 button:hover {
     text-decoration: none;
 }
-.hidediv {
+.hideitdiv {
     display: none;
 }
 
