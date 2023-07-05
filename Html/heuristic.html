@@ -433,8 +433,8 @@
             </div>
             <div class="buttonGroup bot-fix">
                 <button class="cancelit gobackbtn" onclick="ChangeField(c1,f1), removeBtn(c2)">Previous</button>
-                <button class="next-modif tabbt1 bg-pink opacityhalf continueclick" onclick="ChangeField(c2,f2)">CONTINUE</button>
-                <button class="next-modif green-color" style="display: none;">Next</button>
+                <button class="next-modif continueclick bg-pink opacityhalf">CONTINUE</button>
+                <button class="next-modif tabbt1 green-color" onclick="ChangeField(c2,f2)" style="display: none;">Next</button>
             </div>
         
         </fieldset>
@@ -1427,6 +1427,7 @@ $(".toggle-hone").click(function(){
     $(".headeight").addClass("headcomplete");
     $(".avg-score").addClass("blockcontain");
     $(".green-color").addClass("blockcontain");
+    $(".continueclick").addClass("hidediv");
   });
 
 });

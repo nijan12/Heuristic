@@ -1863,7 +1863,9 @@ select#iconSelector:focus-visible {
 .headone h5 button:hover {
     text-decoration: none;
 }
-
+.hidediv {
+    display: none;
+}
 
 /*Media query*/
 @media screen and (min-width:1824px) {
