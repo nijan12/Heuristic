@@ -930,6 +930,7 @@ button:disabled {
     padding-right: 2.5rem;
     display: flex;
     justify-content: flex-end;
+    display: none;
 }
 .buttonGroup.bot-fix > button {
     margin-right: 0.5rem;
@@ -1063,7 +1064,8 @@ fieldset .f14 {
 }
 
 .na-toggle {
-padding-left: 30px;
+    padding-left: 30px;
+    display: none;
 }
 .main-list .recommend input {
     margin: 0;
@@ -1751,6 +1753,7 @@ input[type="checkbox"]:checked {
 #accordion .card .card-header h5 {
     align-items: center;
     padding: 0.5rem 0.8rem;
+    padding-left: 2.5rem;
 }
 #accordion .card .card-header button {
     padding: 0;
@@ -1864,7 +1867,7 @@ select#iconSelector:focus-visible {
     text-decoration: none;
 }
 .hideitdiv {
-    display: none;
+    display: none!important;
 }
 
 /*Media query*/

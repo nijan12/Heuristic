@@ -1,0 +1,1492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../Css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+    <script src="https://kit.fontawesome.com/9b45b95bcc.js" crossorigin="anonymous"></script>
+    <script src="../Js/main.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+  <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"  crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+  
+    <!--header start here-->
+    <div class="container-wrap">
+        <div class="logo-main dd-flex">
+            <div class="logo">
+              <img src="../Image/LatestlogimgRe.png" alt="logo">
+            </div>
+            <div class="notify-sec dd-flex flex-spacebtwn">
+              <p>Heuristics Analysis Tool - <span>Beta</span></p>
+              <div class="notification">
+                <div class="account dd-flex flex-hcenter">
+                  <span class="help-count"><i class="fa-solid fa-headphones-simple"></i></span>
+                  <p class="notify-count">10</p>
+                    <span class="bell-count"><i class="fa-sharp fa-regular fa-bell"></i></span>
+                    <span class="user">John Wick</span>
+                    <span><img src="../Image/profile.PNG" alt="" ></span>
+                    <i class="fa-solid fa-angle-down" class="prof-downarrow"></i>
+                    
+                </div>
+              </div>
+          </div>
+        </div> 
+    <!--header end here--> 
+
+    <div class="content-area dd-flex">
+        <div class="navigation">
+            <ul class="nav-link">
+                <li><a href="index.html"> <img src="../Image/dashboard-icon.PNG" alt="dashboard icon"> Dashboard</a></li>
+                <li><a href="#"> <img src="../Image/logout-icon.PNG" alt=""> Logout</a></li>
+            </ul>
+          
+          <div id="showimgs"></div>
+        </div>
+    <div class="inner-content dynamic-container" style="flex:1;">
+    <div class="heuristic-inner">
+                <div class="reviewer-info bg-white dd-flex flex-spacebtwn">
+                    <div class="reviewername dd-flex">
+                      <p class="f14">Title: <span>RGP</span></p>
+                      <p class="f14">Reviewer Name: <span>John Wick</span></p>
+                    </div>
+                    <div class="urlsection dd-flex">
+                        <p class="f14">Date: <span>05/02/2023</span></p>
+                        <p class="f14">URL: <span>www.rgp.com</span></p>
+                    </div>
+                </div>
+                
+
+
+          <div class="section" style="background: transparent;">
+            <div class="dd-flex flex-just-contecenter">
+            <div id="c1" class="circle active step1" >
+                <p class="round"><i class="fa-solid fa-check"></i></p>
+                <div class="circle-content ">
+                    <span>Navigation & IA</span>
+                </div>
+            </div>
+            <div id="c2" class="circle step2">
+                <p class="round"><i class="fa-solid fa-check"></i></p>
+                <div class="circle-content">
+                    <span>Content</span>
+                </div>
+            </div>
+            <div id="c3" class="circle step3">
+                <p class="round"><i class="fa-solid fa-check"></i></p>
+                <div class="circle-content">
+                    <span>Presentation</span>
+                </div>
+            </div>
+            <div id="c4" class="circle stpe4">
+                <p class="round"><i class="fa-solid fa-check"></i></p>
+                <div class="circle-content">
+                    <span>Interaction</span>
+                </div>
+            </div>
+            <div id="c5" class="circle step5">
+                <p class="round"><i class="fa-solid fa-check"></i></p>
+                <div class="circle-content">
+                    <span>Value & Usefulness</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+      <fieldset class="form-NS activeForm" id="f1">
+        <div class="innercont">
+            
+            
+            <div class="wiz-inner-content">
+                
+                <div id="accordion">
+                    <h4 class="mb-0 useab-head">
+                        Navigation & Information Architecture (You have to finish 8 metrics)
+                    </h4>
+
+                    <div class="card avg-score" style="display: none;">
+                      <div class="card-header headone" >
+                        <h5 class="mb-0 dd-flex flex-spacebtwn">
+                            <div class="wzcardcheck">
+                                
+                                <span class="width40 bold list-cont" style="font-weight: 500;">Complete Percentage of Navigation & IA</span>
+                            </div>
+                          <button class="btn btn-link" aria-expanded="true" aria-controls="collapseOne">
+                            <span class="na-toggle list-color avg-head" style="font-size: 14px; font-weight: 500;">Average Score  <img src="../Image/percent.PNG"</span>
+                               
+                          </button>
+                        </h5>
+                      </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header headone" id="headingOne">
+                            <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                <div class="wzcardcheck">
+                                    <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                                    <span class="width40 bold list-cont">Navigation options are visible and clear</span>
+                                </div>
+                              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <span class="na-toggle list-color toggle-hone"><i class="fa-solid fa-angle-down"></i></span>
+                                   
+                              </button>
+                            </h5>
+                          </div>
+                  
+                      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="dd-flex flex-spacebtwn">
+                              <div>  
+                              <select id="iconSelector">
+                                    <option value="box"><i>Select Rating</i></option> 
+                                    <option value="box">😉 <i>1</i></option> 
+                                    <option value="piano">🙂 <i>2</i></option>    
+                                    <option value="books">😐 <i>3</i></option>
+                                    <option value="dog">😑 <i>4</i></option>     
+                                    <option value="car">😶 <i>5</i></option>
+                                </select>
+                                <i class="fa-solid fa-info"></i>
+                              </div>
+                              
+                                <div class="recoment-sect dd-flex">
+                                    <p class="wiz-border"><img src="../Image/Recomend.PNG"></p>
+                                    <p class="wiz-border"><img src="../Image/Download.PNG"></p>
+                                    <p class="wiz-border"><img src="../Image/notes.PNG"</i></p>
+                                    <i class="fa-solid fa-calendar-lines"></i>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header headtwo" id="headingTwo">
+                          <h5 class="mb-0 dd-flex flex-spacebtwn">
+                            <div class="wzcardcheck">
+                                <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                              <span class="width40 bold list-cont ">Overall navigation supports primary task flows and works as an integrated whole</span>
+                            </div>
+                              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                              <span class="na-toggle list-color toggle-htwo"><i class="fa-solid fa-angle-down"></i></span>
+                                 
+                            </button>
+                          </h5>
+                        </div>
+                    
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                          <div class="card-body">
+                            <div class="dd-flex flex-spacebtwn">
+                              <select id="iconSelector">
+                                  <option value="box"><i>Select Rating</i></option> 
+                                  <option value="box">😉 <i>1</i></option> 
+                                  <option value="piano">🙂 <i>2</i></option>    
+                                  <option value="books">😐 <i>3</i></option>
+                                  <option value="dog">😑 <i>4</i></option>     
+                                  <option value="car">😶 <i>5</i></option>
+                              </select>
+
+                              <div class="recoment-sect dd-flex">
+                                  <p class="wiz-border"><img src="../Image/Recomend.PNG"></p>
+                                  <p class="wiz-border"><img src="../Image/Download.PNG"></p>
+                                  <p class="wiz-border"><img src="../Image/notes.PNG"</i></p>
+                                  <i class="fa-solid fa-calendar-lines"></i>
+                              </div>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header headthree" id="headingThree">
+                          <h5 class="mb-0 dd-flex flex-spacebtwn">
+                            <div class="wzcardcheck">
+                                <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                              <span class="width40 bold list-cont">Sense of place is clear</span>
+                              </div>
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                              <span class="na-toggle list-color toggle-hthree"><i class="fa-solid fa-angle-down"></i></span>
+                                 
+                            </button>
+                          </h5>
+                        </div>
+                    
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                          <div class="card-body">
+                            <div class="dd-flex flex-spacebtwn">
+                              <select id="iconSelector">
+                                  <option value="box"><i>Select Rating</i></option> 
+                                  <option value="box">😉 <i>1</i></option> 
+                                  <option value="piano">🙂 <i>2</i></option>    
+                                  <option value="books">😐 <i>3</i></option>
+                                  <option value="dog">😑 <i>4</i></option>     
+                                  <option value="car">😶 <i>5</i></option>
+                              </select>
+
+                              <div class="recoment-sect dd-flex">
+                                  <p class="wiz-border"><img src="../Image/Recomend.PNG"></p>
+                                  <p class="wiz-border"><img src="../Image/Download.PNG"></p>
+                                  <p class="wiz-border"><img src="../Image/notes.PNG"</i></p>
+                                  <i class="fa-solid fa-calendar-lines"></i>
+                              </div>
+                          </div> 
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header headfour" id="headingFour">
+                          <h5 class="mb-0 dd-flex flex-spacebtwn">
+                            <div class="wzcardcheck">
+                                <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                              <span class="width40 bold list-cont">Number of pages to complete task is appropriate Effective Information approach</span>
+                            </div>
+                              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                              <span class="na-toggle list-color toggle-hfour"><i class="fa-solid fa-angle-down"></i></span>
+                                 
+                            </button>
+                          </h5>
+                        </div>
+                    
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                          <div class="card-body">
+                            <div class="dd-flex flex-spacebtwn">
+                              <select id="iconSelector">
+                                  <option value="box"><i>Select Rating</i></option> 
+                                  <option value="box">😉 <i>1</i></option> 
+                                  <option value="piano">🙂 <i>2</i></option>    
+                                  <option value="books">😐 <i>3</i></option>
+                                  <option value="dog">😑 <i>4</i></option>     
+                                  <option value="car">😶 <i>5</i></option>
+                              </select>
+
+                              <div class="recoment-sect dd-flex">
+                                  <p class="wiz-border"><img src="../Image/Recomend.PNG"></p>
+                                  <p class="wiz-border"><img src="../Image/Download.PNG"></p>
+                                  <p class="wiz-border"><img src="../Image/notes.PNG"</i></p>
+                                  <i class="fa-solid fa-calendar-lines"></i>
+                              </div>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header headfive" id="headingFive">
+                          <h5 class="mb-0 dd-flex flex-spacebtwn">
+                            <div class="wzcardcheck">
+                                <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                              <span class="width40 bold list-cont">Breadth and depth fit user needs</span>
+                              </div>
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                              <span class="na-toggle list-color toggle-hfive"><i class="fa-solid fa-angle-down"></i></span>
+                                 
+                            </button>
+                          </h5>
+                        </div>
+                    
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                          <div class="card-body">
+                            <div class="dd-flex flex-spacebtwn">
+                              <select id="iconSelector">
+                                  <option value="box"><i>Select Rating</i></option> 
+                                  <option value="box">😉 <i>1</i></option> 
+                                  <option value="piano">🙂 <i>2</i></option>    
+                                  <option value="books">😐 <i>3</i></option>
+                                  <option value="dog">😑 <i>4</i></option>     
+                                  <option value="car">😶 <i>5</i></option>
+                              </select>
+
+                              <div class="recoment-sect dd-flex">
+                                  <p class="wiz-border"><img src="../Image/Recomend.PNG"></p>
+                                  <p class="wiz-border"><img src="../Image/Download.PNG"></p>
+                                  <p class="wiz-border"><img src="../Image/notes.PNG"</i></p>
+                                  <i class="fa-solid fa-calendar-lines"></i>
+                              </div>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header headsix" id="headingSix">
+                          <h5 class="mb-0 dd-flex flex-spacebtwn">
+                            <div class="wzcardcheck">
+                                <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                              <span class="width40 bold list-cont">Labels are distinctive and descriptive</span>
+                            </div>
+                              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                              <span class="na-toggle list-color toggle-hsix"><i class="fa-solid fa-angle-down"></i></span>
+                                 
+                            </button>
+                          </h5>
+                        </div>
+                    
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                          <div class="card-body">
+                            <div class="dd-flex flex-spacebtwn">
+                              <select id="iconSelector">
+                                  <option value="box"><i>Select Rating</i></option> 
+                                  <option value="box">😉 <i>1</i></option> 
+                                  <option value="piano">🙂 <i>2</i></option>    
+                                  <option value="books">😐 <i>3</i></option>
+                                  <option value="dog">😑 <i>4</i></option>     
+                                  <option value="car">😶 <i>5</i></option>
+                              </select>
+
+                              <div class="recoment-sect dd-flex">
+                                  <p class="wiz-border"><img src="../Image/Recomend.PNG"></p>
+                                  <p class="wiz-border"><img src="../Image/Download.PNG"></p>
+                                  <p class="wiz-border"><img src="../Image/notes.PNG"</i></p>
+                                  <i class="fa-solid fa-calendar-lines"></i>
+                              </div>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header headseven" id="headingSeven">
+                          <h5 class="mb-0 dd-flex flex-spacebtwn">
+                            <div class="wzcardcheck">
+                                <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                              <span class="width40 bold list-cont">Menu items trigger actions that meet user needs</span>
+                            </div>
+                              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                              <span class="na-toggle list-color toggle-hseven"><i class="fa-solid fa-angle-down"></i></span>
+                                 
+                            </button>
+                          </h5>
+                        </div>
+                    
+                        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                          <div class="card-body">
+                            <div class="dd-flex flex-spacebtwn">
+                              <select id="iconSelector">
+                                  <option value="box"><i>Select Rating</i></option> 
+                                  <option value="box">😉 <i>1</i></option> 
+                                  <option value="piano">🙂 <i>2</i></option>    
+                                  <option value="books">😐 <i>3</i></option>
+                                  <option value="dog">😑 <i>4</i></option>     
+                                  <option value="car">😶 <i>5</i></option>
+                              </select>
+
+                              <div class="recoment-sect dd-flex">
+                                  <p class="wiz-border"><img src="../Image/Recomend.PNG"></p>
+                                  <p class="wiz-border"><img src="../Image/Download.PNG"></p>
+                                  <p class="wiz-border"><img src="../Image/notes.PNG"</i></p>
+                                  <i class="fa-solid fa-calendar-lines"></i>
+                              </div>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header headeight" id="headingEight">
+                          <h5 class="mb-0 dd-flex flex-spacebtwn">
+                            <div class="wzcardcheck">
+                                <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                              <span class="width40 bold list-cont">Menu items promote content which meets user needs</span>
+                            </div>
+                              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                              <span class="na-toggle list-color toggle-height"><i class="fa-solid fa-angle-down"></i></span>
+                                 
+                            </button>
+                          </h5>
+                        </div>
+                    
+                        <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+                          <div class="card-body">
+                            <div class="dd-flex flex-spacebtwn">
+                              <select id="iconSelector">
+                                  <option value="box"><i>Select Rating</i></option> 
+                                  <option value="box">😉 <i>1</i></option> 
+                                  <option value="piano">🙂 <i>2</i></option>    
+                                  <option value="books">😐 <i>3</i></option>
+                                  <option value="dog">😑 <i>4</i></option>     
+                                  <option value="car">😶 <i>5</i></option>
+                              </select>
+
+                              <div class="recoment-sect dd-flex">
+                                  <p class="wiz-border"><img src="../Image/Recomend.PNG"></p>
+                                  <p class="wiz-border"><img src="../Image/Download.PNG"></p>
+                                  <p class="wiz-border"><img src="../Image/notes.PNG"</i></p>
+                                  <i class="fa-solid fa-calendar-lines"></i>
+                              </div>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics go to the next step</p>
+                   
+                    </div>
+                  </div>
+            </div>
+            <div class="buttonGroup bot-fix">
+                <button class="cancelit gobackbtn" onclick="ChangeField(c1,f1), removeBtn(c2)">Previous</button>
+                <button class="next-modif continueclick bg-pink opacityhalf">CONTINUE</button>
+                <button class="next-modif tabbt1 green-color" onclick="ChangeField(c2,f2)" style="display: none;">Next</button>
+            </div>
+        
+        </fieldset>
+        
+            <fieldset class="form-NS" id="f2">
+                
+                <div class="innercont">
+                    
+                    <div class="wiz-inner-content">
+                       
+                        <div id="accordion">
+                            <h4 class="mb-0 useab-head">
+                                Content
+                            </h4>
+                            <div class="card">
+                                <div class="card-header" id="headingNine">
+                                    <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                        <div class="wzcardcheck">
+                                            <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                                            <span class="width40 bold list-cont">Good content, good writing, message on target</span>
+                                        </div>
+                                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+                                        <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
+                                           
+                                      </button>
+                                    </h5>
+                                  </div>
+                          
+                              <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
+                                <div class="card-body">
+                                    <div class="dd-flex flex-spacebtwn">
+                                        <select id="iconSelector">
+                                            <option value="box"><i>Select Rating</i></option> 
+                                            <option value="box">😉 <i>1</i></option> 
+                                            <option value="piano">🙂 <i>2</i></option>    
+                                            <option value="books">😐 <i>3</i></option>
+                                            <option value="dog">😑 <i>4</i></option>     
+                                            <option value="car">😶 <i>5</i></option>
+                                        </select>
+        
+                                        <div class="recoment-sect dd-flex">
+                                            <p class="wiz-border"><img src="../Image/Recomend.PNG"></p>
+                                            <p class="wiz-border"><img src="../Image/Download.PNG"></p>
+                                            <p class="wiz-border"><img src="../Image/notes.PNG"</i></p>
+                                            <i class="fa-solid fa-calendar-lines"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTen">
+                                  <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck">
+                                        <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                                      <span class="width40 bold list-cont">Content written for scanning</span>
+                                    </div>
+                                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
+                                      <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
+                                         
+                                    </button>
+                                  </h5>
+                                </div>
+                            
+                                <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordion">
+                                  <div class="card-body">
+                                    <div class="dd-flex flex-spacebtwn">
+                                      <select id="iconSelector">
+                                          <option value="box"><i>Select Rating</i></option> 
+                                          <option value="box">😉 <i>1</i></option> 
+                                          <option value="piano">🙂 <i>2</i></option>    
+                                          <option value="books">😐 <i>3</i></option>
+                                          <option value="dog">😑 <i>4</i></option>     
+                                          <option value="car">😶 <i>5</i></option>
+                                      </select>
+        
+                                      <div class="recoment-sect dd-flex">
+                                          <p class="wiz-border"><img src="../Image/Recomend.PNG"></p>
+                                          <p class="wiz-border"><img src="../Image/Download.PNG"></p>
+                                          <p class="wiz-border"><img src="../Image/notes.PNG"</i></p>
+                                          <i class="fa-solid fa-calendar-lines"></i>
+                                      </div>
+                                  </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingEleven">
+                                  <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck">
+                                        <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                                      <span class="width40 bold list-cont">Content follows summary / detail format</span>
+                                      </div>
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="true" aria-controls="collapseEleven">
+                                      <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
+                                         
+                                    </button>
+                                  </h5>
+                                </div>
+                            
+                                <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordion">
+                                  <div class="card-body">
+                                    <div class="dd-flex flex-spacebtwn">
+                                        <select id="iconSelector">
+                                            <option value="box"><i>Select Rating</i></option> 
+                                            <option value="box">😉 <i>1</i></option> 
+                                            <option value="piano">🙂 <i>2</i></option>    
+                                            <option value="books">😐 <i>3</i></option>
+                                            <option value="dog">😑 <i>4</i></option>     
+                                            <option value="car">😶 <i>5</i></option>
+                                        </select>
+        
+                                        <div class="recoment-sect dd-flex">
+                                            <p class="wiz-border"><i class="fa-solid fa-message"></i></p>
+                                            <p class="wiz-border"><i class="fa-solid fa-down"></i></p>
+                                            <p class="wiz-border"><i class="fa-solid fa-calendar-lines"></i></p>
+                                            <i class="fa-solid fa-calendar-lines"></i>
+                                        </div>
+                                    </div>  
+        
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingTwelve">
+                                  <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck">
+                                        <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                                      <span class="width40 bold list-cont">Content follows summary / detail format</span>
+                                    </div>
+                                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="true" aria-controls="collapseTwelve">
+                                      <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
+                                         
+                                    </button>
+                                  </h5>
+                                </div>
+                            
+                                <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordion">
+                                  <div class="card-body">
+                                    <div class="dd-flex flex-spacebtwn">
+                                      <select id="iconSelector">
+                                          <option value="box"><i>Select Rating</i></option> 
+                                          <option value="box">😉 <i>1</i></option> 
+                                          <option value="piano">🙂 <i>2</i></option>    
+                                          <option value="books">😐 <i>3</i></option>
+                                          <option value="dog">😑 <i>4</i></option>     
+                                          <option value="car">😶 <i>5</i></option>
+                                      </select>
+        
+                                      <div class="recoment-sect dd-flex">
+                                          <p class="wiz-border"><img src="../Image/Recomend.PNG"></p>
+                                          <p class="wiz-border"><img src="../Image/Download.PNG"></p>
+                                          <p class="wiz-border"><img src="../Image/notes.PNG"</i></p>
+                                          <i class="fa-solid fa-calendar-lines"></i>
+                                      </div>
+                                  </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingThirteen">
+                                  <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck">
+                                        <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                                      <span class="width40 bold list-cont">Tone of writing is appropriate</span>
+                                      </div>
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThirteen" aria-expanded="true" aria-controls="collapseThirteen">
+                                      <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
+                                         
+                                    </button>
+                                  </h5>
+                                </div>
+                            
+                                <div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen" data-parent="#accordion">
+                                  <div class="card-body">
+                                    <div class="dd-flex flex-spacebtwn">
+                                      <select id="iconSelector">
+                                          <option value="box"><i>Select Rating</i></option> 
+                                          <option value="box">😉 <i>1</i></option> 
+                                          <option value="piano">🙂 <i>2</i></option>    
+                                          <option value="books">😐 <i>3</i></option>
+                                          <option value="dog">😑 <i>4</i></option>     
+                                          <option value="car">😶 <i>5</i></option>
+                                      </select>
+        
+                                      <div class="recoment-sect dd-flex">
+                                          <p class="wiz-border"><img src="../Image/Recomend.PNG"></p>
+                                          <p class="wiz-border"><img src="../Image/Download.PNG"></p>
+                                          <p class="wiz-border"><img src="../Image/notes.PNG"</i></p>
+                                          <i class="fa-solid fa-calendar-lines"></i>
+                                      </div>
+                                  </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingFourteen">
+                                  <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck">
+                                        <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                                      <span class="width40 bold list-cont">Content facilitates decision making</span>
+                                    </div>
+                                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFourteen" aria-expanded="true" aria-controls="collapseFourteen">
+                                      <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
+                                         
+                                    </button>
+                                  </h5>
+                                </div>
+                            
+                                <div id="collapseFourteen" class="collapse" aria-labelledby="headingFourteen" data-parent="#accordion">
+                                  <div class="card-body">
+                                    <div class="dd-flex flex-spacebtwn">
+                                      <select id="iconSelector">
+                                          <option value="box"><i>Select Rating</i></option> 
+                                          <option value="box">😉 <i>1</i></option> 
+                                          <option value="piano">🙂 <i>2</i></option>    
+                                          <option value="books">😐 <i>3</i></option>
+                                          <option value="dog">😑 <i>4</i></option>     
+                                          <option value="car">😶 <i>5</i></option>
+                                      </select>
+        
+                                      <div class="recoment-sect dd-flex">
+                                          <p class="wiz-border"><img src="../Image/Recomend.PNG"></p>
+                                          <p class="wiz-border"><img src="../Image/Download.PNG"></p>
+                                          <p class="wiz-border"><img src="../Image/notes.PNG"</i></p>
+                                          <i class="fa-solid fa-calendar-lines"></i>
+                                      </div>
+                                  </div>
+                                  </div>
+                                </div>
+                              </div>
+                            
+                              <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics go to the next step</p>
+                           
+                            </div>
+                        <div class="buttonGroup bot-fix">
+                            <button class="cancelit gobackbtn" onclick="ChangeField(c1,f1) , removeBtn(c2)">Previous</button>
+                            <button class="next-modif tabbt2 bg-pink opacityhalf" onclick="ChangeField(c3,f3)">CONTINUE</button>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+    
+        
+        
+            <fieldset class="form-NS" id="f3">
+                <div class="innercont">
+                    
+                    <div class="wiz-inner-content">
+                        
+                        <div id="accordion">
+                            <h4 class="mb-0 useab-head">
+                                Presentation
+                            </h4>
+                            <div class="card">
+                                <div class="card-header" id="headingFifteen">
+                                    <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                        <div class="wzcardcheck">
+                                            <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                                            <span class="width40 bold list-cont">Layout - good balance, low visual complexity, clear visual hierarchy</span>
+                                        </div>
+                                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFifteen" aria-expanded="true" aria-controls="collapseFifteen">
+                                        <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
+                                           
+                                      </button>
+                                    </h5>
+                                  </div>
+                          
+                              <div id="collapseFifteen" class="collapse" aria-labelledby="headingFifteen" data-parent="#accordion">
+                                <div class="card-body">
+                                  <div class="dd-flex flex-spacebtwn">
+                                    <select id="iconSelector">
+                                        <option value="box"><i>Select Rating</i></option> 
+                                        <option value="box">😉 <i>1</i></option> 
+                                        <option value="piano">🙂 <i>2</i></option>    
+                                        <option value="books">😐 <i>3</i></option>
+                                        <option value="dog">😑 <i>4</i></option>     
+                                        <option value="car">😶 <i>5</i></option>
+                                    </select>
+      
+                                    <div class="recoment-sect dd-flex">
+                                        <p class="wiz-border"><img src="../Image/Recomend.PNG"></p>
+                                        <p class="wiz-border"><img src="../Image/Download.PNG"></p>
+                                        <p class="wiz-border"><img src="../Image/notes.PNG"</i></p>
+                                        <i class="fa-solid fa-calendar-lines"></i>
+                                    </div>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingSixteen">
+                                  <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck">
+                                        <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                                      <span class="width40 bold list-cont"> Color - appropriate for brand, guides attention, aids in grouping</span>
+                                    </div>
+                                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSixteen" aria-expanded="true" aria-controls="collapseSixteen">
+                                      <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
+                                         
+                                    </button>
+                                  </h5>
+                                </div>
+                            
+                                <div id="collapseSixteen" class="collapse" aria-labelledby="headingSixteen" data-parent="#accordion">
+                                  <div class="card-body">
+                                    <div class="dd-flex flex-spacebtwn">
+                                      <select id="iconSelector">
+                                          <option value="box"><i>Select Rating</i></option> 
+                                          <option value="box">😉 <i>1</i></option> 
+                                          <option value="piano">🙂 <i>2</i></option>    
+                                          <option value="books">😐 <i>3</i></option>
+                                          <option value="dog">😑 <i>4</i></option>     
+                                          <option value="car">😶 <i>5</i></option>
+                                      </select>
+        
+                                      <div class="recoment-sect dd-flex">
+                                          <p class="wiz-border"><img src="../Image/Recomend.PNG"></p>
+                                          <p class="wiz-border"><img src="../Image/Download.PNG"></p>
+                                          <p class="wiz-border"><img src="../Image/notes.PNG"</i></p>
+                                          <i class="fa-solid fa-calendar-lines"></i>
+                                      </div>
+                                  </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingSeventeen">
+                                  <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck">
+                                        <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                                      <span class="width40 bold list-cont">Graphics - supports brand, follows a clear purpose, enhances layout</span>
+                                      </div>
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSeventeen" aria-expanded="true" aria-controls="collapseSeventeen">
+                                      <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
+                                         
+                                    </button>
+                                  </h5>
+                                </div>
+                            
+                                <div id="collapseSeventeen" class="collapse" aria-labelledby="headingSeventeen" data-parent="#accordion">
+                                  <div class="card-body">
+                                    <div class="dd-flex flex-spacebtwn">
+                                        <select id="iconSelector">
+                                            <option value="box"><i>Select Rating</i></option> 
+                                            <option value="box">😉 <i>1</i></option> 
+                                            <option value="piano">🙂 <i>2</i></option>    
+                                            <option value="books">😐 <i>3</i></option>
+                                            <option value="dog">😑 <i>4</i></option>     
+                                            <option value="car">😶 <i>5</i></option>
+                                        </select>
+        
+                                        <div class="recoment-sect dd-flex">
+                                            <p class="wiz-border"><i class="fa-solid fa-message"></i></p>
+                                            <p class="wiz-border"><i class="fa-solid fa-down"></i></p>
+                                            <p class="wiz-border"><i class="fa-solid fa-calendar-lines"></i></p>
+                                            <i class="fa-solid fa-calendar-lines"></i>
+                                        </div>
+                                    </div>  
+        
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingEightteen">
+                                  <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck">
+                                        <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                                      <span class="width40 bold list-cont">Typography - clear type hierarchy, appropriate size, good legibility</span>
+                                    </div>
+                                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseEightteen" aria-expanded="true" aria-controls="collapseEightteen">
+                                      <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
+                                         
+                                    </button>
+                                  </h5>
+                                </div>
+                            
+                                <div id="collapseEightteen" class="collapse" aria-labelledby="headingEightteen" data-parent="#accordion">
+                                  <div class="card-body">
+                                    <div class="dd-flex flex-spacebtwn">
+                                      <select id="iconSelector">
+                                          <option value="box"><i>Select Rating</i></option> 
+                                          <option value="box">😉 <i>1</i></option> 
+                                          <option value="piano">🙂 <i>2</i></option>    
+                                          <option value="books">😐 <i>3</i></option>
+                                          <option value="dog">😑 <i>4</i></option>     
+                                          <option value="car">😶 <i>5</i></option>
+                                      </select>
+        
+                                      <div class="recoment-sect dd-flex">
+                                          <p class="wiz-border"><img src="../Image/Recomend.PNG"></p>
+                                          <p class="wiz-border"><img src="../Image/Download.PNG"></p>
+                                          <p class="wiz-border"><img src="../Image/notes.PNG"</i></p>
+                                          <i class="fa-solid fa-calendar-lines"></i>
+                                      </div>
+                                  </div>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                              <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics go to the next step</p>
+                           
+                            </div>
+
+                    <div class="buttonGroup bot-fix">
+                        <button class="cancelit gobackbtn2" onclick="ChangeField(c2,f2) , removeBtn(c3)">Previous</button>
+                        <button class="next-modif tabbt3 bg-pink opacityhalf" onclick="ChangeField(c4,f4)">CONTINUE</button>
+                    </div>
+                </div>
+                
+            </div>
+            </fieldset>
+        
+        
+            <fieldset class="form-NS" id="f4">
+                <div class="innercont">
+                    
+                    <div class="wiz-inner-content">
+                        
+                        <div id="accordion">
+                            <h4 class="mb-0 useab-head">
+                                Interaction
+                            </h4>
+                            <div class="card">
+                                <div class="card-header" id="headingNineteen">
+                                    <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                        <div class="wzcardcheck">
+                                            <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                                            <span class="width40 bold list-cont">Good use of controls and interaction model</span>
+                                        </div>
+                                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseNineteen" aria-expanded="true" aria-controls="collapseNineteen">
+                                        <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
+                                           
+                                      </button>
+                                    </h5>
+                                  </div>
+                          
+                              <div id="collapseNineteen" class="collapse" aria-labelledby="headingNineteen" data-parent="#accordion">
+                                <div class="card-body">
+                                    <div class="dd-flex flex-spacebtwn">
+                                        <select id="iconSelector">
+                                            <option value="box"><i>Select Rating</i></option> 
+                                            <option value="box">😉 <i>1</i></option> 
+                                            <option value="piano">🙂 <i>2</i></option>    
+                                            <option value="books">😐 <i>3</i></option>
+                                            <option value="dog">😑 <i>4</i></option>     
+                                            <option value="car">😶 <i>5</i></option>
+                                        </select>
+        
+                                        <div class="recoment-sect dd-flex">
+                                            <p class="wiz-border"><img src="../Image/Recomend.PNG"></p>
+                                            <p class="wiz-border"><img src="../Image/Download.PNG"></p>
+                                            <p class="wiz-border"><img src="../Image/notes.PNG"</i></p>
+                                            <i class="fa-solid fa-calendar-lines"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwenty">
+                                  <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck">
+                                        <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                                      <span class="width40 bold list-cont">Number of micro-interactions to complete task is suitable</span>
+                                    </div>
+                                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwenty" aria-expanded="true" aria-controls="collapseTwenty">
+                                      <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
+                                         
+                                    </button>
+                                  </h5>
+                                </div>
+                            
+                                <div id="collapseTwenty" class="collapse" aria-labelledby="headingTwenty" data-parent="#accordion">
+                                  <div class="card-body">
+                                      <ul class="dd-flex main-list">
+                                          <li class="dd-flex list-row flex-hcenter ">
+                                              <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
+                                              <span class="width40 bold">Navigation & Information Architecture</span>
+                                              <span class="wid130"></span>
+                                              <span class="wid130"></span>
+                                              <span class="width300">
+                                                   
+                                              </span>
+                                              
+                                          </li>
+                                      </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingTwentyone">
+                                  <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck">
+                                        <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                                      <span class="width40 bold list-cont">Strong visual affordances for selection</span>
+                                      </div>
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwentyone" aria-expanded="true" aria-controls="collapseTwentyone">
+                                      <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
+                                         
+                                    </button>
+                                  </h5>
+                                </div>
+                            
+                                <div id="collapseTwentyone" class="collapse" aria-labelledby="headingTwentyone" data-parent="#accordion">
+                                  <div class="card-body">
+                                    <div class="dd-flex flex-spacebtwn">
+                                        <select id="iconSelector">
+                                            <option value="box"><i>Select Rating</i></option> 
+                                            <option value="box">😉 <i>1</i></option> 
+                                            <option value="piano">🙂 <i>2</i></option>    
+                                            <option value="books">😐 <i>3</i></option>
+                                            <option value="dog">😑 <i>4</i></option>     
+                                            <option value="car">😶 <i>5</i></option>
+                                        </select>
+        
+                                        <div class="recoment-sect dd-flex">
+                                            <p class="wiz-border"><i class="fa-solid fa-message"></i></p>
+                                            <p class="wiz-border"><i class="fa-solid fa-down"></i></p>
+                                            <p class="wiz-border"><i class="fa-solid fa-calendar-lines"></i></p>
+                                            <i class="fa-solid fa-calendar-lines"></i>
+                                        </div>
+                                    </div>  
+        
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingTwentytwo">
+                                  <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck">
+                                        <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                                      <span class="width40 bold list-cont">Good error prevention strategy – format cues, controls, help Use of secondary windows, screens, and hover-overs</span>
+                                    </div>
+                                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwentytwo" aria-expanded="true" aria-controls="collapseTwentytwo">
+                                      <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
+                                         
+                                    </button>
+                                  </h5>
+                                </div>
+                            
+                                <div id="collapseTwentytwo" class="collapse" aria-labelledby="headingTwentytwo" data-parent="#accordion">
+                                  <div class="card-body">
+                                      <ul class="dd-flex main-list">
+                                          <li class="dd-flex list-row flex-hcenter ">
+                                              <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
+                                              <span class="width40 bold">Navigation & Information Architecture</span>
+                                              <span class="wid130"></span>
+                                              <span class="wid130"></span>
+                                              <span class="width300">
+                                                   
+                                              </span>
+                                              
+                                          </li>
+                                      </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingTwentythree">
+                                  <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck">
+                                        <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                                      <span class="width40 bold list-cont">Secondary windows or hover-overs work as expected</span>
+                                      </div>
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwentythree" aria-expanded="true" aria-controls="collapseTwentythree">
+                                      <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
+                                         
+                                    </button>
+                                  </h5>
+                                </div>
+                            
+                                <div id="collapseTwentythree" class="collapse" aria-labelledby="headingTwentythree" data-parent="#accordion">
+                                  <div class="card-body">
+                                      <ul class="dd-flex main-list">
+                                          <li class="dd-flex list-row flex-hcenter ">
+                                              <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
+                                              <span class="width40 bold">Navigation & Information Architecture</span>
+                                              <span class="wid130"></span>
+                                              <span class="wid130"></span>
+                                              <span class="width300">
+                                                   
+                                              </span>
+                                              
+                                          </li>
+                                      </ul>
+                                  </div>
+                                </div>
+                              </div>
+
+
+                              <div class="card">
+                                <div class="card-header" id="headingTwentyfour">
+                                  <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck">
+                                        <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                                      <span class="width40 bold list-cont">Appropriate content relationship between windows Response to user input</span>
+                                    </div>
+                                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwentyfour" aria-expanded="true" aria-controls="collapseTwentyfour">
+                                      <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
+                                         
+                                    </button>
+                                  </h5>
+                                </div>
+                            
+                                <div id="collapseTwentyfour" class="collapse" aria-labelledby="headingTwentyfour" data-parent="#accordion">
+                                  <div class="card-body">
+                                      <ul class="dd-flex main-list">
+                                          <li class="dd-flex list-row flex-hcenter ">
+                                              <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
+                                              <span class="width40 bold">Navigation & Information Architecture</span>
+                                              <span class="wid130"></span>
+                                              <span class="wid130"></span>
+                                              <span class="width300">
+                                                   
+                                              </span>
+                                              
+                                          </li>
+                                      </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingTwentyfive">
+                                  <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck">
+                                        <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                                      <span class="width40 bold list-cont">Speedy system response</span>
+                                    </div>
+                                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwentyfive" aria-expanded="true" aria-controls="collapseTwentyfive">
+                                      <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
+                                         
+                                    </button>
+                                  </h5>
+                                </div>
+                            
+                                <div id="collapseTwentyfive" class="collapse" aria-labelledby="headingTwentyfive" data-parent="#accordion">
+                                  <div class="card-body">
+                                      <ul class="dd-flex main-list">
+                                          <li class="dd-flex list-row flex-hcenter ">
+                                              <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
+                                              <span class="width40 bold">Navigation & Information Architecture</span>
+                                              <span class="wid130"></span>
+                                              <span class="wid130"></span>
+                                              <span class="width300">
+                                                   
+                                              </span>
+                                              
+                                          </li>
+                                      </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingTwentysix">
+                                  <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck">
+                                        <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                                      <span class="width40 bold list-cont">Appropriate messaging and feedback</span>
+                                    </div>
+                                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwentysix" aria-expanded="true" aria-controls="collapseTwentysix">
+                                      <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
+                                         
+                                    </button>
+                                  </h5>
+                                </div>
+                            
+                                <div id="collapseTwentysix" class="collapse" aria-labelledby="headingTwentysix" data-parent="#accordion">
+                                  <div class="card-body">
+                                      <ul class="dd-flex main-list">
+                                          <li class="dd-flex list-row flex-hcenter ">
+                                              <span class="checkme"><input type="checkbox" id="" name="" value=""></span>
+                                              <span class="width40 bold">Navigation & Information Architecture</span>
+                                              <span class="wid130"></span>
+                                              <span class="wid130"></span>
+                                              <span class="width300">
+                                                   
+                                              </span>
+                                              
+                                          </li>
+                                      </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics go to the next step</p>
+                           
+                            </div>
+
+                    </div>
+                        <div class="buttonGroup bot-fix">
+                            <button class="cancelit gobackbtnn3" onclick="ChangeField(c3,f3) , removeBtn(c4)">Previous</button>
+                            <button class="next-modif tabbt4 bg-pink opacityhalf" onclick="ChangeField(c5,f5)">CONTINUE</button>
+                        </div>
+                    
+                </div>
+            </fieldset>
+        
+            <fieldset class="form-NS" id="f5">
+                <div class="innercont">
+                    
+                <div class="wiz-inner-content">
+                    
+                    <div id="accordion">
+                        <h4 class="mb-0 useab-head">
+                            Value & Usefulness
+                        </h4>
+                        <div class="card">
+                            <div class="card-header" id="headingTwentyseven">
+                                <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck">
+                                        <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                                        <span class="width40 bold list-cont">The content meets the user's needs.</span>
+                                    </div>
+                                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwentyseven" aria-expanded="true" aria-controls="collapseTwentyseven">
+                                    <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
+                                       
+                                  </button>
+                                </h5>
+                              </div>
+                      
+                          <div id="collapseTwentyseven" class="collapse" aria-labelledby="headingTwentyseven" data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="dd-flex flex-spacebtwn">
+                                    <select id="iconSelector">
+                                        <option value="box"><i>Select Rating</i></option> 
+                                        <option value="box">😉 <i>1</i></option> 
+                                        <option value="piano">🙂 <i>2</i></option>    
+                                        <option value="books">😐 <i>3</i></option>
+                                        <option value="dog">😑 <i>4</i></option>     
+                                        <option value="car">😶 <i>5</i></option>
+                                    </select>
+    
+                                    <div class="recoment-sect dd-flex">
+                                        <p class="wiz-border"><img src="../Image/Recomend.PNG"></p>
+                                        <p class="wiz-border"><img src="../Image/Download.PNG"></p>
+                                        <p class="wiz-border"><img src="../Image/notes.PNG"</i></p>
+                                        <i class="fa-solid fa-calendar-lines"></i>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwentyeight">
+                              <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                <div class="wzcardcheck">
+                                    <span class="wz-round"><i class="fa-solid fa-check"></i></span>
+                                  <span class="width40 bold list-cont">The features are useful and meet the user's needs.</span>
+                                </div>
+                                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwentyeight" aria-expanded="true" aria-controls="collapseTwentyeight">
+                                  <span class="na-toggle list-color"><i class="fa-solid fa-angle-down"></i></span>
+                                     
+                                </button>
+                              </h5>
+                            </div>
+                        
+                            <div id="collapseTwentyeight" class="collapse" aria-labelledby="headingTwentyeight" data-parent="#accordion">
+                              <div class="card-body">
+                                <div class="dd-flex flex-spacebtwn">
+                                  <select id="iconSelector">
+                                      <option value="box"><i>Select Rating</i></option> 
+                                      <option value="box">😉 <i>1</i></option> 
+                                      <option value="piano">🙂 <i>2</i></option>    
+                                      <option value="books">😐 <i>3</i></option>
+                                      <option value="dog">😑 <i>4</i></option>     
+                                      <option value="car">😶 <i>5</i></option>
+                                  </select>
+    
+                                  <div class="recoment-sect dd-flex">
+                                      <p class="wiz-border"><img src="../Image/Recomend.PNG"></p>
+                                      <p class="wiz-border"><img src="../Image/Download.PNG"></p>
+                                      <p class="wiz-border"><img src="../Image/notes.PNG"</i></p>
+                                      <i class="fa-solid fa-calendar-lines"></i>
+                                  </div>
+                              </div>
+                              </div>
+                            </div>
+                          </div>
+
+                    </div>
+                </div>
+                    <div class="buttonGroup bot-fix">
+                        <button class="cancelit gobackbtn4" onclick="ChangeField(c4,f4) , removeBtn(c5)">Previous</button>
+                        <button class="submit successmsg">Submit</button>
+                    </div>
+              </div>
+        </fieldset>
+        
+    <div class="footer" style="justify-content: center;">Copyrights @ All rights reserved group Heuristic Evaluation, 2023 <span>|</span> <a href="#">Privay Policy</a></div>
+    
+<!--Popup-->
+    <div class="popup-main"> 
+        <div class="popup-header dd-flex flex-spacebtwn">
+            <span>Add New</span>
+            <a href="" class="close-popup"><span><i class="fa-solid fa-xmark"></i></span></a>
+        </div>
+        
+        
+        <div class="popup-content">
+            <div class="dd-flex flex-spacebtwn">
+                <div class="dd-flex flex-dircol">
+                    <label>Usability Dimensions</label>
+                    <select id="iconSelector">
+                        <option value="box">Navigation & Information Architecture</option> 
+                        <option value="piano">Content</option>    
+                        <option value="books">Presentation</option>
+                        <option value="dog">Interaction</option>     
+                        <option value="car">Value & Usefulness</option>
+                    </select>
+                </div>
+                <div class="dd-flex flex-dircol">
+                    <label>Reviewer Name</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="inputadd mrt-3">
+                <input type="text">
+                <span id="add-class" class="add-classpop"><i class="fa-solid fa-plus"></i> Add</span>
+            </div>
+            <div class="button-grp">
+                <button class="popupcanelbtn">Cancel</button> 
+                <button class="popupsavebtn">Save</button>
+            </div>
+        </div>
+    </div>
+    <div class="backdrop">
+
+    </div>
+<!--PopupEnd-->
+
+<!--Success message-->
+<div class="success"> 
+    <div class="success-header ">
+        <a href="" class="close-suc"><span><i class="fa-solid fa-xmark"></i></span></a>
+    </div>
+    <div class="success-content">
+        <div class="">
+                <h2>Thanks</h2>
+                <p>This UI screens are successfully reviewed Do you want to publish? <strong>Click Yes or No</strong></p>
+        </div>
+		<div class="button-grp">
+		<button class="popupcanelbtn">Cancel</button> <button class="popupsavebtn">Save</button>
+		</div>
+    </div>
+</div>
+
+<div class="backdrop"></div>
+<!--Success message End-->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="js/layout.js"></script>
+<script>
+  
+$(document).ready(function () {
+  $('#inputBtn').prop('disabled', true);
+  $('fieldset').keyup(function(){
+    var kname = $('#name').val();
+    var sname = $('#surname').val();
+    
+    if((kname != "") || (sname != "")){
+      if((kname.length < 4 ) || (sname.length < 4)){
+        $('#inputBtn').prop('disabled', true);
+        $('#nsMessage').text('Enter more the 4 letter.');
+      }
+      else{
+        $('#inputBtn').prop('disabled', false);
+        $('#nsMessage').text('');
+      }
+    }
+    else{
+      $('#inputBtn').prop('disabled', true);
+    }
+  })
+  
+//Custome Popup Click 
+
+  $(".clickit").click(function(){
+    $(".popup-main").addClass("addpop");
+    $(".backdrop").fadeTo(200, 1);
+  });
+
+  $(".close-popup").click(function(){
+    $(".popup-main").removeClass("addpop");
+    $(".backdrop").fadeOut(200);
+  });
+
+
+
+  
+//Popup End
+  //tab highlight bg
+
+  $(".tabbt1").click(function(){
+    $(".step1").addClass("Complete");
+  });
+  $(".gobackbtn").click(function(){
+    $(".step1").removeClass("Complete");
+  });
+  $(".tabbt2").click(function(){
+    $(".step2").addClass("completetwo");
+  });
+  $(".gobackbtn2").click(function(){
+    $(".step2").removeClass("completetwo");
+  });
+  $(".tabbt3").click(function(){
+    $(".step3").addClass("completethree");
+  });
+  $(".gobackbtnn3").click(function(){
+    $(".step3").removeClass("completethree");
+  });
+  $(".tabbt4").click(function(){
+    $(".stpe4").addClass("completefour");
+  });
+  $(".gobackbtn4").click(function(){
+    $(".stpe4").removeClass("completefour");
+  });
+  $(".tabbt5").click(function(){
+    $(".step5").addClass("completefive");
+  });
+  $(".gobackbtn5").click(function(){
+    $(".step5").removeClass("completefive");
+    $(".step6").removeClass("completesix");
+  });
+$(".tabbt6").click(function(){
+    $(".step6").addClass("completesix");
+});
+
+
+
+//success
+
+
+  $(".successmsg").click(function(){
+    $(".success").addClass("showsuccess");
+    $(".backdrop").fadeTo(200, 1);
+  });
+
+  $(".close-suc").click(function(){
+    $(".success").removeClass("showsuccess");
+    $(".backdrop").fadeOut(200);
+  });
+
+//wizard stepper card class adding 
+$(".toggle-hone").click(function(){
+    $(".headone").addClass("headhighlight");
+  });
+  $(".toggle-htwo").click(function(){
+    $(".headone").removeClass("headhighlight");
+    $(".headone").addClass("headcomplete");
+    $(".headtwo").addClass("headhighlight");
+  });
+
+  $(".toggle-hthree").click(function(){
+    $(".headtwo").removeClass("headhighlight");
+    $(".headtwo").addClass("headcomplete");
+    $(".headthree").addClass("headhighlight");
+  });
+  $(".toggle-hfour").click(function(){
+    $(".headthree").removeClass("headhighlight");
+    $(".headthree").addClass("headcomplete");
+    $(".headfour").addClass("headhighlight");
+  });
+  $(".toggle-hfive").click(function(){
+    $(".headfour").removeClass("headhighlight");
+    $(".headfour").addClass("headcomplete");
+    $(".headfive").addClass("headhighlight");
+  });
+  $(".toggle-hsix").click(function(){
+    $(".headfive").removeClass("headhighlight");
+    $(".headfive").addClass("headcomplete");
+    $(".headsix").addClass("headhighlight");
+  });
+  $(".toggle-hseven").click(function(){
+    $(".headsix").removeClass("headhighlight");
+    $(".headsix").addClass("headcomplete");
+    $(".headseven").addClass("headhighlight");
+  });
+  $(".toggle-height").click(function(){
+    $(".headseven").removeClass("headhighlight");
+    $(".headseven").addClass("headcomplete");
+    $(".headeight").addClass("headhighlight");
+  });
+  $(".continueclick").click(function(){
+    $(".headeight").removeClass("headhighlight");
+    $(".headeight").addClass("headcomplete");
+    $(".avg-score").addClass("blockcontain");
+    $(".green-color").addClass("blockcontain");
+    $(".continueclick").addClass("hideitdiv");
+  });
+
+});
+
+
+
+function ChangeField(bId, fId) {
+    // $(bId).removeClass('active');
+    $(bId).addClass('active');
+    $('.form-NS').removeClass('activeForm');
+    $(fId).addClass('activeForm');
+};
+
+function removeBtn(btn) {
+    $(btn).removeClass('active');
+}
+
+
+
+//dragdrop
+function uploadFiles() {
+    var files = document.getElementById('file_upload').files;
+    if(files.length==0){
+        alert("Please first choose or drop any file(s)...");
+        return;
+    }
+    var filenames="";
+	
+    for(var i=0;i<files.length;i++){
+        filenames+= "<p>"+ files[i].name +"</p>";
+		
+    }
+	
+	document.getElementById('file_lable').innerHTML = filenames;
+	document.getElementById('file_lable').style.display = "block";
+    //alert("Selected file(s) :\n____________________\n"+filenames);
+}
+function imggrid() {
+var dispimg = document.getElementById('file_lable').innerHTML;
+document.getElementById('showimgs').innerHTML = dispimg;
+}
+
+
+//Drop down selection
+
+const addTaskBtn = document.querySelector("#newTaskBtn");
+addTaskBtn.addEventListener('click', () => {
+    let taskName = document.querySelector('#taskInput').value;
+    let taskIcon = document.querySelector('#iconSelector').value;
+    console.log(taskName);
+    console.log(taskIcon); // Getting <empty string> in console.log
+    document.querySelector('#taskInput').value = '';
+})
+
+
+</script>
+
+</body>
+</html>
