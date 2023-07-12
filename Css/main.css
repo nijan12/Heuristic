@@ -920,15 +920,16 @@ button:disabled {
 }
 
 .bot-fix {
-    right: 2%;
+    right: 3%;
     position: fixed;
     bottom: 0;
     background: #F6F4F4;
     padding: 1rem;
-    width: 82.5%;
+    width: 81%;
     padding-right: 2.5rem;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 .buttonGroup.bot-fix > button {
     margin-right: 0.5rem;
