@@ -1781,7 +1781,7 @@ select#iconSelector:focus-visible {
 }
 #accordion .font-style {
     font-style: italic;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     margin-top: 1.2rem;
     color: #D1D1D1;
