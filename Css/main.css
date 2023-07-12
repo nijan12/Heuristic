@@ -683,12 +683,12 @@ span.bell-count {
 .heuristic-inner {
 	background:#F2F3F8;
 	padding: 1rem;
-    height: 100%;
     border-left: 1px solid #E3E3E3;
     overflow: auto;
     display: flex;
     flex-direction: column;
     padding-bottom: 0;
+    height: 100%;
 }
 .heureistic-title .f14 {
 	background: #fff;
@@ -836,12 +836,11 @@ body {
     margin: 0;
     border: none;
     display: none;
-    background: #fff;
 }
 .activeForm {
     display: block !important;
-    padding: 0.8rem;
     flex: 1;
+    overflow-y: scroll;
 }
 .form-NS input {
     width: 100%;
@@ -921,16 +920,15 @@ button:disabled {
 }
 
 .bot-fix {
-    right: 3%;
+    right: 2%;
     position: fixed;
-    bottom: 60px;
+    bottom: 0;
     background: #F6F4F4;
     padding: 1rem;
-    width: 80%;
+    width: 82.5%;
     padding-right: 2.5rem;
     display: flex;
     justify-content: flex-end;
-    display: none;
 }
 .buttonGroup.bot-fix > button {
     margin-right: 0.5rem;
@@ -1065,7 +1063,6 @@ fieldset .f14 {
 
 .na-toggle {
     padding-left: 30px;
-    display: none;
 }
 .main-list .recommend input {
     margin: 0;
@@ -1275,11 +1272,7 @@ fieldset .f14 {
     z-index: 99999;
 }
 .addpop {
-	display:block !important;
-}
-
-.innercont {
-    background: #fff;
+	display:block!important;
 }
 
 .upcomelist li:last-child {
@@ -1300,7 +1293,7 @@ fieldset .f14 {
     transform: translate(-50%, -50%);
     z-index: 99999;
 }
-.success-header  {
+.success-header {
     display: flex;
     justify-content: flex-end;
 }
@@ -1716,10 +1709,10 @@ input[type="checkbox"]:checked {
 /*260623 Accordian changes*/
 #accordion .list-cont {
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 500;
     text-transform: none;
     font-family:'Poppins';
-    color: #000;
+    color: #B02270;
 }
 .wiz-border {
     margin: 0 3px 0 0;
@@ -1736,12 +1729,14 @@ input[type="checkbox"]:checked {
     border-radius: 5px;
     padding: 5px;
 }
+#accordion .card {
+    margin-bottom: 2rem;
+}
 #accordion .card .card-header {
     background-color: transparent;
+    margin-bottom: 0.8rem;
 }
-#accordion .card .card-header:hover {
-    background: #e9e9e9;
-}
+
 #accordion .card .card-header:first-child {
     padding: 0;
 
@@ -1752,15 +1747,12 @@ input[type="checkbox"]:checked {
 }
 #accordion .card .card-header h5 {
     align-items: center;
-    padding: 0.5rem 0.8rem;
-    padding-left: 2.5rem;
+    padding: 0.7rem 0.8rem;
 }
 #accordion .card .card-header button {
     padding: 0;
 }
-#accordion .card {
-    margin-bottom: 0.5rem;
-}
+
 
 #accordion .useab-head {
     margin-bottom: 0.5rem !important;
@@ -1791,7 +1783,8 @@ select#iconSelector:focus-visible {
     font-style: italic;
     font-size: 14px;
     font-weight: 400;
-    margin-top: 1.2rem
+    margin-top: 1.2rem;
+    color: #D1D1D1;
 }
 .star {
     color: #E21952;
@@ -1961,10 +1954,10 @@ select#iconSelector:focus-visible {
         margin-bottom: 0.5rem;
     }
     .bot-fix {
-        right: 2.2%;
+        right: 1.2%;
         position: fixed;
-        bottom: 80px;
-        width: 84.5%;
+        bottom: 0px;
+        width: 86.5%;
     }
 }
 
