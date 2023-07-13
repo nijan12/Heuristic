@@ -120,16 +120,13 @@ input[type=radio] {
 .bot-fix .f14 {
   padding-left: 0;
 }
-.count {
-	flex-direction: column;
-    text-align: left;
-}
-.count p {
+
+.bot-fix p {
   font-size: 12px;
   color: #393838;
   margin-bottom: 0.3rem;
 }
-.count.dd-flex > div > span {
+.bot-fix > div > span {
     font-weight: 500;
 }
 
@@ -854,12 +851,12 @@ input[type=radio] {
                   </div>
             </div>
             <div class="buttonGroup bot-fix dd-flex flex-spacebtwn">
-              <div class="count dd-flex">
-                <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics go to the next step</p>
+              
+                <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics to go to the next step</p>
                 <div>
-                <span class="f14">01-</span><span class="f14">26</span>
+                  <span class="f14">01</span>/<span class="f14">26</span>
               </div>
-              </div>
+              
               <div>
                 <button class="cancelit gobackbtn" onclick="ChangeField(c1,f1), removeBtn(c2)">Previous</button>
                 <button class="next-modif tabbt1 bg-pink opacityhalf" onclick="ChangeField(c2,f2)">CONTINUE</button>
@@ -1258,12 +1255,12 @@ input[type=radio] {
                            
                             </div>
                         <div class="buttonGroup bot-fix dd-flex flex-spacebtwn">
-                          <div class="count dd-flex">
-                            <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics go to the next step</p>
+                          
+                            <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics to go to the next step</p>
                             <div>
                               <span class="f14">01-</span><span class="f14">26</span>
                             </div>
-                          </div>
+                          
                           <div>
                             <button class="cancelit gobackbtn" onclick="ChangeField(c1,f1) , removeBtn(c2)">Previous</button>
                             <button class="next-modif tabbt2 bg-pink opacityhalf" onclick="ChangeField(c3,f3)">CONTINUE</button>
@@ -1591,12 +1588,12 @@ input[type=radio] {
                             </div>
 
                     <div class="buttonGroup bot-fix dd-flex flex-spacebtwn">
-                      <div class="count dd-flex">
-                          <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics go to the next step</p>
+                      
+                          <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics to go to the next step</p>
                         <div>
                           <span class="f14">01-</span><span class="f14">26</span>
                         </div>
-                      </div>
+                      
                       <div>
                         <button class="cancelit gobackbtn2" onclick="ChangeField(c2,f2) , removeBtn(c3)">Previous</button>
                         <button class="next-modif tabbt3 bg-pink opacityhalf" onclick="ChangeField(c4,f4)">CONTINUE</button>
@@ -2227,12 +2224,12 @@ input[type=radio] {
 
                     </div>
                         <div class="buttonGroup bot-fix dd-flex flex-spacebtwn">
-                          <div class="count dd-flex">
-                            <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics go to the next step</p>
+                          
+                            <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics to go to the next step</p>
                             <div>
                               <span class="f14">01-</span><span class="f14">26</span>
                             </div>
-                          </div>
+                          
                           <div>
                             <button class="cancelit gobackbtnn3" onclick="ChangeField(c3,f3) , removeBtn(c4)">Previous</button>
                             <button class="next-modif tabbt4 bg-pink opacityhalf" onclick="ChangeField(c5,f5)">CONTINUE</button>
@@ -2405,12 +2402,12 @@ input[type=radio] {
                     </div>
                 </div>
                     <div class="buttonGroup bot-fix dd-flex flex-spacebtwn">
-                      <div class="count dd-flex">
-                        <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics go to the next step</p>
+                      
+                        <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics to go to the next step</p>
                         <div>
                           <span class="f14">01-</span><span class="f14">26</span>
                         </div>
-                      </div>
+                      
                       <div>
                         <button class="cancelit gobackbtn4" onclick="ChangeField(c4,f4) , removeBtn(c5)">Previous</button>
                         <button class="submit successmsg">Submit</button>
@@ -2468,11 +2465,12 @@ input[type=radio] {
     </div>
     <div class="success-content">
         <div class="">
-                <h2>Thanks</h2>
-                <p>This UI screens are successfully reviewed Do you want to publish? <strong>Click Yes or No</strong></p>
+                
+                <p>This UI screens are successfully reviewed Do you want to Submit?</p>
+                <p>Check your evaluations before submitting, use the progressive step flow or the back button…</p>
         </div>
 		<div class="button-grp">
-		<button class="popupcanelbtn">Cancel</button> <button class="popupsavebtn">Save</button>
+		<button class="popupcanelbtn">Cancel</button> <button class="popupsavebtn">Submit</button>
 		</div>
     </div>
 </div>
@@ -2548,6 +2546,7 @@ $(document).ready(function () {
   });
   $(".tabbt4").click(function(){
     $(".stpe4").addClass("completefour");
+    $(".step5").addClass("completefive");
   });
   $(".gobackbtn4").click(function(){
     $(".stpe4").removeClass("completefour");
