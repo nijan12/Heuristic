@@ -1987,6 +1987,11 @@ select#iconSelector:focus-visible {
         width: auto;
         height: auto;
     }
+    .footnext {
+        width: 87%;
+        right: 1%;
+        bottom: 0;
+    }
 }
 
 
