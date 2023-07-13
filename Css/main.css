@@ -920,12 +920,12 @@ button:disabled {
 }
 
 .bot-fix {
-    right: 3%;
+    right: 2%;
     position: fixed;
     bottom: 0;
     background: #F6F4F4;
     padding: 1rem;
-    width: 81%;
+    width: 82%;
     padding-right: 2.5rem;
     display: flex;
     justify-content: flex-end;
