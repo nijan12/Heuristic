@@ -999,7 +999,7 @@ fieldset .f14 {
     display: flex;
     background: #28255B;
     color: #fff;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 500;
     align-items: center;
     position: sticky;
@@ -1863,6 +1863,27 @@ select#iconSelector:focus-visible {
 .hideitdiv {
     display: none!important;
 }
+
+/*Scroll changes*/
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
 
 /*Media query*/
 @media screen and (min-width:1824px) {

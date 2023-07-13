@@ -51,6 +51,7 @@
   .tooglepanel .nav-tabs .nav-link.active {
     border: none;
     color: #000!important;
+    margin-top: 1px;
 }
   .tooglepanel {
     margin-top: 1rem;
@@ -119,6 +120,16 @@ input[type=radio] {
 .bot-fix .f14 {
   padding-left: 0;
 }
+.count {
+	flex-direction: column;
+    text-align: left;
+}
+.count p {
+  font-size: 12px;
+  color: #393838;
+  margin-bottom: 0.3rem;
+}
+
 </style>
 
 </head>
@@ -238,10 +249,7 @@ input[type=radio] {
                                 <div class="wzcardcheck">
                                     <span class="width40 bold list-cont">1. Navigation options are visible and clear</span>
                                 </div>
-                              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                <span class="na-toggle list-color toggle-hone"></span>
-                                   
-                              </button>
+                              
                             </h5>
                           </div>
                   
@@ -279,27 +287,27 @@ input[type=radio] {
                               <div class="tooglepanel">
                                 <ul class="nav nav-tabs" role="tablist">
                                   <li class="nav-item">
-                                    <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                    <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
                                   </li>
                                   <li class="nav-item">
                                     <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                    <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
                                   </li>
                                 </ul><!-- Tab panes -->
                                 <div class="tab-content">
-                                  <div class="tab-pane active" id="tabs-1" role="tabpanel">
-                                    <input type="text" placeholder="Please enter your text here...">
-                                  </div>
-                                  <div class="tab-pane" id="tabs-2" role="tabpanel">
-                                    <input type="text" placeholder="Please enter your text here...">
-                                  </div>
                                   <div class="tab-pane" id="tabs-3" role="tabpanel">
                                     <div class="dragdrophere dd-flex ">
                                       <p><i class="fa-solid fa-folder-open"></i></p>
                                       <p>Drag and Drop your files here or <span>Browse file</span></p>
                                     </div>
+                                  </div>
+                                  <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                    <input type="text" placeholder="Please enter your text here...">
+                                  </div>
+                                  <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                    <input type="text" placeholder="Please enter your text here...">
                                   </div>
                                 </div>
 
@@ -326,27 +334,27 @@ input[type=radio] {
                               <div>  
 
                                   <div class="usableradio">
-                                    <input type="radio" value="NA = Not Applicable" name="Usability">
+                                    <input type="radio" value="NA = Not Applicable" name="Overall">
                                     <label for="html">NA - Not Applicable</label>
                                   </div>
                                   <div class="usableradio">
-                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <input type="radio" value="1 = The metric not met" name="Overall">
                                     <label for="html">1 - The metric is not met</label>
                                   </div>  
                                   <div class="usableradio">
-                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <input type="radio" value="1 = The metric not met" name="Overall">
                                     <label for="html">2 - The metric met very poorly</label>
                                   </div>
                                   <div class="usableradio">
-                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <input type="radio" value="1 = The metric not met" name="Overall">
                                     <label for="html">3 - The metric is partialy met</label>
                                   </div>
                                   <div class="usableradio">
-                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <input type="radio" value="1 = The metric not met" name="Overall">
                                     <label for="html">4 - The metric is met</label>
                                   </div>
                                   <div class="usableradio">
-                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <input type="radio" value="1 = The metric not met" name="Overall">
                                     <label for="html">5 - The metric is fully met or exceeded</label>
                                   </div>
                               </div>
@@ -354,30 +362,30 @@ input[type=radio] {
                               <div class="tooglepanel">
                                 <ul class="nav nav-tabs" role="tablist">
                                   <li class="nav-item">
-                                    <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                  <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                  <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                  <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
                                   </li>
                                 </ul><!-- Tab panes -->
                                 <div class="tab-content">
-                                  <div class="tab-pane active" id="tabs-1" role="tabpanel">
-                                    <input type="text" placeholder="Please enter your text here...">
+                                  <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                  <div class="dragdrophere dd-flex ">
+                                    <p><i class="fa-solid fa-folder-open"></i></p>
+                                    <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                  </div>
                                   </div>
                                   <div class="tab-pane" id="tabs-2" role="tabpanel">
-                                    <input type="text" placeholder="Please enter your text here...">
+                                  <input type="text" placeholder="Please enter your text here...">
                                   </div>
-                                  <div class="tab-pane" id="tabs-3" role="tabpanel">
-                                    <div class="dragdrophere dd-flex">
-                                      <p><i class="fa-solid fa-folder-open"></i></p>
-                                      <p>Drag and Drop your files here or <span>Browse file</span></p>
-                                    </div>
+                                  <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                  <input type="text" placeholder="Please enter your text here...">
                                   </div>
                                 </div>
-
+                              
                               </div>
                     
                             </div>
@@ -404,27 +412,27 @@ input[type=radio] {
                               <div>  
 
                                   <div class="usableradio">
-                                    <input type="radio" value="NA = Not Applicable" name="Usability">
+                                    <input type="radio" value="NA = Not Applicable" name="Sense">
                                     <label for="html">NA - Not Applicable</label>
                                   </div>
                                   <div class="usableradio">
-                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <input type="radio" value="1 = The metric not met" name="Sense">
                                     <label for="html">1 - The metric is not met</label>
                                   </div>  
                                   <div class="usableradio">
-                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <input type="radio" value="1 = The metric not met" name="Sense">
                                     <label for="html">2 - The metric met very poorly</label>
                                   </div>
                                   <div class="usableradio">
-                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <input type="radio" value="1 = The metric not met" name="Sense">
                                     <label for="html">3 - The metric is partialy met</label>
                                   </div>
                                   <div class="usableradio">
-                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <input type="radio" value="1 = The metric not met" name="Sense">
                                     <label for="html">4 - The metric is met</label>
                                   </div>
                                   <div class="usableradio">
-                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <input type="radio" value="1 = The metric not met" name="Sense">
                                     <label for="html">5 - The metric is fully met or exceeded</label>
                                   </div>
                               </div>
@@ -432,30 +440,30 @@ input[type=radio] {
                               <div class="tooglepanel">
                                 <ul class="nav nav-tabs" role="tablist">
                                   <li class="nav-item">
-                                    <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                  <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                  <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                  <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
                                   </li>
                                 </ul><!-- Tab panes -->
                                 <div class="tab-content">
-                                  <div class="tab-pane active" id="tabs-1" role="tabpanel">
-                                    <input type="text" placeholder="Please enter your text here...">
+                                  <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                  <div class="dragdrophere dd-flex ">
+                                    <p><i class="fa-solid fa-folder-open"></i></p>
+                                    <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                  </div>
                                   </div>
                                   <div class="tab-pane" id="tabs-2" role="tabpanel">
-                                    <input type="text" placeholder="Please enter your text here...">
+                                  <input type="text" placeholder="Please enter your text here...">
                                   </div>
-                                  <div class="tab-pane" id="tabs-3" role="tabpanel">
-                                    <div class="dragdrophere dd-flex">
-                                      <p><i class="fa-solid fa-folder-open"></i></p>
-                                      <p>Drag and Drop your files here or <span>Browse file</span></p>
-                                    </div>
+                                  <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                  <input type="text" placeholder="Please enter your text here...">
                                   </div>
                                 </div>
-
+                              
                               </div>
                     
                             </div>
@@ -479,27 +487,27 @@ input[type=radio] {
                               <div>  
 
                                   <div class="usableradio">
-                                    <input type="radio" value="NA = Not Applicable" name="Usability">
+                                    <input type="radio" value="NA = Not Applicable" name="Numbers">
                                     <label for="html">NA - Not Applicable</label>
                                   </div>
                                   <div class="usableradio">
-                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <input type="radio" value="1 = The metric not met" name="Numbers">
                                     <label for="html">1 - The metric is not met</label>
                                   </div>  
                                   <div class="usableradio">
-                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <input type="radio" value="1 = The metric not met" name="Numbers">
                                     <label for="html">2 - The metric met very poorly</label>
                                   </div>
                                   <div class="usableradio">
-                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <input type="radio" value="1 = The metric not met" name="Numbers">
                                     <label for="html">3 - The metric is partialy met</label>
                                   </div>
                                   <div class="usableradio">
-                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <input type="radio" value="1 = The metric not met" name="Numbers">
                                     <label for="html">4 - The metric is met</label>
                                   </div>
                                   <div class="usableradio">
-                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <input type="radio" value="1 = The metric not met" name="Numbers">
                                     <label for="html">5 - The metric is fully met or exceeded</label>
                                   </div>
                               </div>
@@ -507,30 +515,30 @@ input[type=radio] {
                               <div class="tooglepanel">
                                 <ul class="nav nav-tabs" role="tablist">
                                   <li class="nav-item">
-                                    <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                  <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                  <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                  <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
                                   </li>
                                 </ul><!-- Tab panes -->
                                 <div class="tab-content">
-                                  <div class="tab-pane active" id="tabs-1" role="tabpanel">
-                                    <input type="text" placeholder="Please enter your text here...">
+                                  <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                  <div class="dragdrophere dd-flex ">
+                                    <p><i class="fa-solid fa-folder-open"></i></p>
+                                    <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                  </div>
                                   </div>
                                   <div class="tab-pane" id="tabs-2" role="tabpanel">
-                                    <input type="text" placeholder="Please enter your text here...">
+                                  <input type="text" placeholder="Please enter your text here...">
                                   </div>
-                                  <div class="tab-pane" id="tabs-3" role="tabpanel">
-                                    <div class="dragdrophere dd-flex ">
-                                      <p><i class="fa-solid fa-folder-open"></i></p>
-                                      <p>Drag and Drop your files here or <span>Browse file</span></p>
-                                    </div>
+                                  <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                  <input type="text" placeholder="Please enter your text here...">
                                   </div>
                                 </div>
-
+                              
                               </div>
                     
                             </div>
@@ -554,27 +562,27 @@ input[type=radio] {
                               <div>  
 
                                   <div class="usableradio">
-                                    <input type="radio" value="NA = Not Applicable" name="Usability">
+                                    <input type="radio" value="NA = Not Applicable" name="Breadth">
                                     <label for="html">NA - Not Applicable</label>
                                   </div>
                                   <div class="usableradio">
-                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <input type="radio" value="1 = The metric not met" name="Breadth">
                                     <label for="html">1 - The metric is not met</label>
                                   </div>  
                                   <div class="usableradio">
-                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <input type="radio" value="1 = The metric not met" name="Breadth">
                                     <label for="html">2 - The metric met very poorly</label>
                                   </div>
                                   <div class="usableradio">
-                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <input type="radio" value="1 = The metric not met" name="Breadth">
                                     <label for="html">3 - The metric is partialy met</label>
                                   </div>
                                   <div class="usableradio">
-                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <input type="radio" value="1 = The metric not met" name="Breadth">
                                     <label for="html">4 - The metric is met</label>
                                   </div>
                                   <div class="usableradio">
-                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <input type="radio" value="1 = The metric not met" name="Breadth">
                                     <label for="html">5 - The metric is fully met or exceeded</label>
                                   </div>
                               </div>
@@ -582,30 +590,30 @@ input[type=radio] {
                               <div class="tooglepanel">
                                 <ul class="nav nav-tabs" role="tablist">
                                   <li class="nav-item">
-                                    <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                  <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                  <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                  <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
                                   </li>
                                 </ul><!-- Tab panes -->
                                 <div class="tab-content">
-                                  <div class="tab-pane active" id="tabs-1" role="tabpanel">
-                                    <input type="text" placeholder="Please enter your text here...">
+                                  <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                  <div class="dragdrophere dd-flex ">
+                                    <p><i class="fa-solid fa-folder-open"></i></p>
+                                    <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                  </div>
                                   </div>
                                   <div class="tab-pane" id="tabs-2" role="tabpanel">
-                                    <input type="text" placeholder="Please enter your text here...">
+                                  <input type="text" placeholder="Please enter your text here...">
                                   </div>
-                                  <div class="tab-pane" id="tabs-3" role="tabpanel">
-                                    <div class="dragdrophere dd-flex ">
-                                      <p><i class="fa-solid fa-folder-open"></i></p>
-                                      <p>Drag and Drop your files here or <span>Browse file</span></p>
-                                    </div>
+                                  <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                  <input type="text" placeholder="Please enter your text here...">
                                   </div>
                                 </div>
-
+                              
                               </div>
                     
                             </div>
@@ -629,27 +637,27 @@ input[type=radio] {
                               <div>  
 
                                   <div class="usableradio">
-                                    <input type="radio" value="NA = Not Applicable" name="Usability">
+                                    <input type="radio" value="NA = Not Applicable" name="Labels">
                                     <label for="html">NA - Not Applicable</label>
                                   </div>
                                   <div class="usableradio">
-                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <input type="radio" value="1 = The metric not met" name="Labels">
                                     <label for="html">1 - The metric is not met</label>
                                   </div>  
                                   <div class="usableradio">
-                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <input type="radio" value="1 = The metric not met" name="Labels">
                                     <label for="html">2 - The metric met very poorly</label>
                                   </div>
                                   <div class="usableradio">
-                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <input type="radio" value="1 = The metric not met" name="Labels">
                                     <label for="html">3 - The metric is partialy met</label>
                                   </div>
                                   <div class="usableradio">
-                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <input type="radio" value="1 = The metric not met" name="Labels">
                                     <label for="html">4 - The metric is met</label>
                                   </div>
                                   <div class="usableradio">
-                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <input type="radio" value="1 = The metric not met" name="Labels">
                                     <label for="html">5 - The metric is fully met or exceeded</label>
                                   </div>
                               </div>
@@ -657,30 +665,30 @@ input[type=radio] {
                               <div class="tooglepanel">
                                 <ul class="nav nav-tabs" role="tablist">
                                   <li class="nav-item">
-                                    <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                  <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                  <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                  <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
                                   </li>
                                 </ul><!-- Tab panes -->
                                 <div class="tab-content">
-                                  <div class="tab-pane active" id="tabs-1" role="tabpanel">
-                                    <input type="text" placeholder="Please enter your text here...">
+                                  <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                  <div class="dragdrophere dd-flex ">
+                                    <p><i class="fa-solid fa-folder-open"></i></p>
+                                    <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                  </div>
                                   </div>
                                   <div class="tab-pane" id="tabs-2" role="tabpanel">
-                                    <input type="text" placeholder="Please enter your text here...">
+                                  <input type="text" placeholder="Please enter your text here...">
                                   </div>
-                                  <div class="tab-pane" id="tabs-3" role="tabpanel">
-                                    <div class="dragdrophere dd-flex ">
-                                      <p><i class="fa-solid fa-folder-open"></i></p>
-                                      <p>Drag and Drop your files here or <span>Browse file</span></p>
-                                    </div>
+                                  <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                  <input type="text" placeholder="Please enter your text here...">
                                   </div>
                                 </div>
-
+                              
                               </div>
                     
                             </div>
@@ -704,27 +712,27 @@ input[type=radio] {
                               <div>  
 
                                   <div class="usableradio">
-                                    <input type="radio" value="NA = Not Applicable" name="Usability">
+                                    <input type="radio" value="NA = Not Applicable" name="items">
                                     <label for="html">NA - Not Applicable</label>
                                   </div>
                                   <div class="usableradio">
-                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <input type="radio" value="1 = The metric not met" name="items">
                                     <label for="html">1 - The metric is not met</label>
                                   </div>  
                                   <div class="usableradio">
-                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <input type="radio" value="1 = The metric not met" name="items">
                                     <label for="html">2 - The metric met very poorly</label>
                                   </div>
                                   <div class="usableradio">
-                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <input type="radio" value="1 = The metric not met" name="items">
                                     <label for="html">3 - The metric is partialy met</label>
                                   </div>
                                   <div class="usableradio">
-                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <input type="radio" value="1 = The metric not met" name="items">
                                     <label for="html">4 - The metric is met</label>
                                   </div>
                                   <div class="usableradio">
-                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <input type="radio" value="1 = The metric not met" name="items">
                                     <label for="html">5 - The metric is fully met or exceeded</label>
                                   </div>
                               </div>
@@ -732,30 +740,30 @@ input[type=radio] {
                               <div class="tooglepanel">
                                 <ul class="nav nav-tabs" role="tablist">
                                   <li class="nav-item">
-                                    <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                  <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                  <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                  <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
                                   </li>
                                 </ul><!-- Tab panes -->
                                 <div class="tab-content">
-                                  <div class="tab-pane active" id="tabs-1" role="tabpanel">
-                                    <input type="text" placeholder="Please enter your text here...">
+                                  <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                  <div class="dragdrophere dd-flex ">
+                                    <p><i class="fa-solid fa-folder-open"></i></p>
+                                    <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                  </div>
                                   </div>
                                   <div class="tab-pane" id="tabs-2" role="tabpanel">
-                                    <input type="text" placeholder="Please enter your text here...">
+                                  <input type="text" placeholder="Please enter your text here...">
                                   </div>
-                                  <div class="tab-pane" id="tabs-3" role="tabpanel">
-                                    <div class="dragdrophere dd-flex ">
-                                      <p><i class="fa-solid fa-folder-open"></i></p>
-                                      <p>Drag and Drop your files here or <span>Browse file</span></p>
-                                    </div>
+                                  <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                  <input type="text" placeholder="Please enter your text here...">
                                   </div>
                                 </div>
-
+                              
                               </div>
                     
                             </div>
@@ -779,27 +787,27 @@ input[type=radio] {
                               <div>  
 
                                   <div class="usableradio">
-                                    <input type="radio" value="NA = Not Applicable" name="Usability">
+                                    <input type="radio" value="NA = Not Applicable" name="promote">
                                     <label for="html">NA - Not Applicable</label>
                                   </div>
                                   <div class="usableradio">
-                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <input type="radio" value="1 = The metric not met" name="promote">
                                     <label for="html">1 - The metric is not met</label>
                                   </div>  
                                   <div class="usableradio">
-                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <input type="radio" value="1 = The metric not met" name="promote">
                                     <label for="html">2 - The metric met very poorly</label>
                                   </div>
                                   <div class="usableradio">
-                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <input type="radio" value="1 = The metric not met" name="promote">
                                     <label for="html">3 - The metric is partialy met</label>
                                   </div>
                                   <div class="usableradio">
-                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <input type="radio" value="1 = The metric not met" name="promote">
                                     <label for="html">4 - The metric is met</label>
                                   </div>
                                   <div class="usableradio">
-                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <input type="radio" value="1 = The metric not met" name="promote">
                                     <label for="html">5 - The metric is fully met or exceeded</label>
                                   </div>
                               </div>
@@ -807,44 +815,47 @@ input[type=radio] {
                               <div class="tooglepanel">
                                 <ul class="nav nav-tabs" role="tablist">
                                   <li class="nav-item">
-                                    <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                  <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                  <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                  <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
                                   </li>
                                 </ul><!-- Tab panes -->
                                 <div class="tab-content">
-                                  <div class="tab-pane active" id="tabs-1" role="tabpanel">
-                                    <input type="text" placeholder="Please enter your text here...">
+                                  <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                  <div class="dragdrophere dd-flex ">
+                                    <p><i class="fa-solid fa-folder-open"></i></p>
+                                    <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                  </div>
                                   </div>
                                   <div class="tab-pane" id="tabs-2" role="tabpanel">
-                                    <input type="text" placeholder="Please enter your text here...">
+                                  <input type="text" placeholder="Please enter your text here...">
                                   </div>
-                                  <div class="tab-pane" id="tabs-3" role="tabpanel">
-                                    <div class="dragdrophere dd-flex ">
-                                      <p><i class="fa-solid fa-folder-open"></i></p>
-                                      <p>Drag and Drop your files here or <span>Browse file</span></p>
-                                    </div>
+                                  <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                  <input type="text" placeholder="Please enter your text here...">
                                   </div>
                                 </div>
-
+                              
                               </div>
                     
                             </div>
                         </div>
                         </div>
                       </div>
-                      <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics go to the next step</p>
+                      
                    
                     </div>
                   </div>
             </div>
             <div class="buttonGroup bot-fix dd-flex flex-spacebtwn">
               <div class="count dd-flex">
-                <span class="f14">08-</span><span class="f14">40</span>
+                <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics go to the next step</p>
+                <div>
+                <span class="f14">01-</span><span class="f14">40</span>
+              </div>
               </div>
               <div>
                 <button class="cancelit gobackbtn" onclick="ChangeField(c1,f1), removeBtn(c2)">Previous</button>
@@ -881,27 +892,27 @@ input[type=radio] {
                                     <div>  
       
                                         <div class="usableradio">
-                                          <input type="radio" value="NA = Not Applicable" name="Usability">
+                                          <input type="radio" value="NA = Not Applicable" name="Good">
                                           <label for="html">NA - Not Applicable</label>
                                         </div>
                                         <div class="usableradio">
-                                          <input type="radio" value="1 = The metric not met" name="Usability">
+                                          <input type="radio" value="1 = The metric not met" name="Good">
                                           <label for="html">1 - The metric is not met</label>
                                         </div>  
                                         <div class="usableradio">
-                                          <input type="radio" value="1 = The metric not met" name="Usability">
+                                          <input type="radio" value="1 = The metric not met" name="Good">
                                           <label for="html">2 - The metric met very poorly</label>
                                         </div>
                                         <div class="usableradio">
-                                          <input type="radio" value="1 = The metric not met" name="Usability">
+                                          <input type="radio" value="1 = The metric not met" name="Good">
                                           <label for="html">3 - The metric is partialy met</label>
                                         </div>
                                         <div class="usableradio">
-                                          <input type="radio" value="1 = The metric not met" name="Usability">
+                                          <input type="radio" value="1 = The metric not met" name="Good">
                                           <label for="html">4 - The metric is met</label>
                                         </div>
                                         <div class="usableradio">
-                                          <input type="radio" value="1 = The metric not met" name="Usability">
+                                          <input type="radio" value="1 = The metric not met" name="Good">
                                           <label for="html">5 - The metric is fully met or exceeded</label>
                                         </div>
                                     </div>
@@ -909,30 +920,30 @@ input[type=radio] {
                                     <div class="tooglepanel">
                                       <ul class="nav nav-tabs" role="tablist">
                                         <li class="nav-item">
-                                          <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                        <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
                                         </li>
                                         <li class="nav-item">
-                                          <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                        <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
                                         </li>
                                         <li class="nav-item">
-                                          <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                        <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
                                         </li>
                                       </ul><!-- Tab panes -->
                                       <div class="tab-content">
-                                        <div class="tab-pane active" id="tabs-1" role="tabpanel">
-                                          <input type="text" placeholder="Please enter your text here...">
+                                        <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                        <div class="dragdrophere dd-flex ">
+                                          <p><i class="fa-solid fa-folder-open"></i></p>
+                                          <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                        </div>
                                         </div>
                                         <div class="tab-pane" id="tabs-2" role="tabpanel">
-                                          <input type="text" placeholder="Please enter your text here...">
+                                        <input type="text" placeholder="Please enter your text here...">
                                         </div>
-                                        <div class="tab-pane" id="tabs-3" role="tabpanel">
-                                          <div class="dragdrophere dd-flex ">
-                                            <p><i class="fa-solid fa-folder-open"></i></p>
-                                            <p>Drag and Drop your files here or <span>Browse file</span></p>
-                                          </div>
+                                        <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                        <input type="text" placeholder="Please enter your text here...">
                                         </div>
                                       </div>
-      
+                                    
                                     </div>
                           
                                   </div>
@@ -955,27 +966,27 @@ input[type=radio] {
                                       <div>  
         
                                           <div class="usableradio">
-                                            <input type="radio" value="NA = Not Applicable" name="Usability">
+                                            <input type="radio" value="NA = Not Applicable" name="Content">
                                             <label for="html">NA - Not Applicable</label>
                                           </div>
                                           <div class="usableradio">
-                                            <input type="radio" value="1 = The metric not met" name="Usability">
+                                            <input type="radio" value="1 = The metric not met" name="Content">
                                             <label for="html">1 - The metric is not met</label>
                                           </div>  
                                           <div class="usableradio">
-                                            <input type="radio" value="1 = The metric not met" name="Usability">
+                                            <input type="radio" value="1 = The metric not met" name="Content">
                                             <label for="html">2 - The metric met very poorly</label>
                                           </div>
                                           <div class="usableradio">
-                                            <input type="radio" value="1 = The metric not met" name="Usability">
+                                            <input type="radio" value="1 = The metric not met" name="Content">
                                             <label for="html">3 - The metric is partialy met</label>
                                           </div>
                                           <div class="usableradio">
-                                            <input type="radio" value="1 = The metric not met" name="Usability">
+                                            <input type="radio" value="1 = The metric not met" name="Content">
                                             <label for="html">4 - The metric is met</label>
                                           </div>
                                           <div class="usableradio">
-                                            <input type="radio" value="1 = The metric not met" name="Usability">
+                                            <input type="radio" value="1 = The metric not met" name="Content">
                                             <label for="html">5 - The metric is fully met or exceeded</label>
                                           </div>
                                       </div>
@@ -983,30 +994,30 @@ input[type=radio] {
                                       <div class="tooglepanel">
                                         <ul class="nav nav-tabs" role="tablist">
                                           <li class="nav-item">
-                                            <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
                                           </li>
                                           <li class="nav-item">
-                                            <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
                                           </li>
                                           <li class="nav-item">
-                                            <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                          <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
                                           </li>
                                         </ul><!-- Tab panes -->
                                         <div class="tab-content">
-                                          <div class="tab-pane active" id="tabs-1" role="tabpanel">
-                                            <input type="text" placeholder="Please enter your text here...">
+                                          <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                          <div class="dragdrophere dd-flex ">
+                                            <p><i class="fa-solid fa-folder-open"></i></p>
+                                            <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                          </div>
                                           </div>
                                           <div class="tab-pane" id="tabs-2" role="tabpanel">
-                                            <input type="text" placeholder="Please enter your text here...">
+                                          <input type="text" placeholder="Please enter your text here...">
                                           </div>
-                                          <div class="tab-pane" id="tabs-3" role="tabpanel">
-                                            <div class="dragdrophere dd-flex ">
-                                              <p><i class="fa-solid fa-folder-open"></i></p>
-                                              <p>Drag and Drop your files here or <span>Browse file</span></p>
-                                            </div>
+                                          <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
                                           </div>
                                         </div>
-        
+                                      
                                       </div>
                             
                                     </div>
@@ -1030,27 +1041,27 @@ input[type=radio] {
                                       <div>  
         
                                           <div class="usableradio">
-                                            <input type="radio" value="NA = Not Applicable" name="Usability">
+                                            <input type="radio" value="NA = Not Applicable" name="follows">
                                             <label for="html">NA - Not Applicable</label>
                                           </div>
                                           <div class="usableradio">
-                                            <input type="radio" value="1 = The metric not met" name="Usability">
+                                            <input type="radio" value="1 = The metric not met" name="follows">
                                             <label for="html">1 - The metric is not met</label>
                                           </div>  
                                           <div class="usableradio">
-                                            <input type="radio" value="1 = The metric not met" name="Usability">
+                                            <input type="radio" value="1 = The metric not met" name="follows">
                                             <label for="html">2 - The metric met very poorly</label>
                                           </div>
                                           <div class="usableradio">
-                                            <input type="radio" value="1 = The metric not met" name="Usability">
+                                            <input type="radio" value="1 = The metric not met" name="follows">
                                             <label for="html">3 - The metric is partialy met</label>
                                           </div>
                                           <div class="usableradio">
-                                            <input type="radio" value="1 = The metric not met" name="Usability">
+                                            <input type="radio" value="1 = The metric not met" name="follows">
                                             <label for="html">4 - The metric is met</label>
                                           </div>
                                           <div class="usableradio">
-                                            <input type="radio" value="1 = The metric not met" name="Usability">
+                                            <input type="radio" value="1 = The metric not met" name="follows">
                                             <label for="html">5 - The metric is fully met or exceeded</label>
                                           </div>
                                       </div>
@@ -1058,30 +1069,30 @@ input[type=radio] {
                                       <div class="tooglepanel">
                                         <ul class="nav nav-tabs" role="tablist">
                                           <li class="nav-item">
-                                            <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
                                           </li>
                                           <li class="nav-item">
-                                            <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
                                           </li>
                                           <li class="nav-item">
-                                            <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                          <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
                                           </li>
                                         </ul><!-- Tab panes -->
                                         <div class="tab-content">
-                                          <div class="tab-pane active" id="tabs-1" role="tabpanel">
-                                            <input type="text" placeholder="Please enter your text here...">
+                                          <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                          <div class="dragdrophere dd-flex ">
+                                            <p><i class="fa-solid fa-folder-open"></i></p>
+                                            <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                          </div>
                                           </div>
                                           <div class="tab-pane" id="tabs-2" role="tabpanel">
-                                            <input type="text" placeholder="Please enter your text here...">
+                                          <input type="text" placeholder="Please enter your text here...">
                                           </div>
-                                          <div class="tab-pane" id="tabs-3" role="tabpanel">
-                                            <div class="dragdrophere dd-flex ">
-                                              <p><i class="fa-solid fa-folder-open"></i></p>
-                                              <p>Drag and Drop your files here or <span>Browse file</span></p>
-                                            </div>
+                                          <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
                                           </div>
                                         </div>
-        
+                                      
                                       </div>
                             
                                     </div>
@@ -1105,27 +1116,27 @@ input[type=radio] {
                                       <div>  
         
                                           <div class="usableradio">
-                                            <input type="radio" value="NA = Not Applicable" name="Usability">
+                                            <input type="radio" value="NA = Not Applicable" name="appropriate">
                                             <label for="html">NA - Not Applicable</label>
                                           </div>
                                           <div class="usableradio">
-                                            <input type="radio" value="1 = The metric not met" name="Usability">
+                                            <input type="radio" value="1 = The metric not met" name="appropriate">
                                             <label for="html">1 - The metric is not met</label>
                                           </div>  
                                           <div class="usableradio">
-                                            <input type="radio" value="1 = The metric not met" name="Usability">
+                                            <input type="radio" value="1 = The metric not met" name="appropriate">
                                             <label for="html">2 - The metric met very poorly</label>
                                           </div>
                                           <div class="usableradio">
-                                            <input type="radio" value="1 = The metric not met" name="Usability">
+                                            <input type="radio" value="1 = The metric not met" name="appropriate">
                                             <label for="html">3 - The metric is partialy met</label>
                                           </div>
                                           <div class="usableradio">
-                                            <input type="radio" value="1 = The metric not met" name="Usability">
+                                            <input type="radio" value="1 = The metric not met" name="appropriate">
                                             <label for="html">4 - The metric is met</label>
                                           </div>
                                           <div class="usableradio">
-                                            <input type="radio" value="1 = The metric not met" name="Usability">
+                                            <input type="radio" value="1 = The metric not met" name="appropriate">
                                             <label for="html">5 - The metric is fully met or exceeded</label>
                                           </div>
                                       </div>
@@ -1133,30 +1144,30 @@ input[type=radio] {
                                       <div class="tooglepanel">
                                         <ul class="nav nav-tabs" role="tablist">
                                           <li class="nav-item">
-                                            <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
                                           </li>
                                           <li class="nav-item">
-                                            <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
                                           </li>
                                           <li class="nav-item">
-                                            <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                          <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
                                           </li>
                                         </ul><!-- Tab panes -->
                                         <div class="tab-content">
-                                          <div class="tab-pane active" id="tabs-1" role="tabpanel">
-                                            <input type="text" placeholder="Please enter your text here...">
+                                          <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                          <div class="dragdrophere dd-flex ">
+                                            <p><i class="fa-solid fa-folder-open"></i></p>
+                                            <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                          </div>
                                           </div>
                                           <div class="tab-pane" id="tabs-2" role="tabpanel">
-                                            <input type="text" placeholder="Please enter your text here...">
+                                          <input type="text" placeholder="Please enter your text here...">
                                           </div>
-                                          <div class="tab-pane" id="tabs-3" role="tabpanel">
-                                            <div class="dragdrophere dd-flex ">
-                                              <p><i class="fa-solid fa-folder-open"></i></p>
-                                              <p>Drag and Drop your files here or <span>Browse file</span></p>
-                                            </div>
+                                          <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
                                           </div>
                                         </div>
-        
+                                      
                                       </div>
                             
                                     </div>
@@ -1181,58 +1192,58 @@ input[type=radio] {
                                       <div>  
                                   
                                         <div class="usableradio">
-                                        <input type="radio" value="NA = Not Applicable" name="Usability">
+                                        <input type="radio" value="NA = Not Applicable" name="facilitates">
                                         <label for="html">NA - Not Applicable</label>
                                         </div>
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="facilitates">
                                         <label for="html">1 - The metric is not met</label>
                                         </div>  
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="facilitates">
                                         <label for="html">2 - The metric met very poorly</label>
                                         </div>
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="facilitates">
                                         <label for="html">3 - The metric is partialy met</label>
                                         </div>
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="facilitates">
                                         <label for="html">4 - The metric is met</label>
                                         </div>
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="facilitates">
                                         <label for="html">5 - The metric is fully met or exceeded</label>
                                         </div>
                                       </div>
                                       
                                       <div class="tooglepanel">
-                                      <ul class="nav nav-tabs" role="tablist">
-                                        <li class="nav-item">
-                                        <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
-                                        </li>
-                                        <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
-                                        </li>
-                                        <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
-                                        </li>
-                                      </ul><!-- Tab panes -->
-                                      <div class="tab-content">
-                                        <div class="tab-pane active" id="tabs-1" role="tabpanel">
-                                        <input type="text" placeholder="Please enter your text here...">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                          </li>
+                                        </ul><!-- Tab panes -->
+                                        <div class="tab-content">
+                                          <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                          <div class="dragdrophere dd-flex ">
+                                            <p><i class="fa-solid fa-folder-open"></i></p>
+                                            <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                          </div>
+                                          </div>
+                                          <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
+                                          <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
                                         </div>
-                                        <div class="tab-pane" id="tabs-2" role="tabpanel">
-                                        <input type="text" placeholder="Please enter your text here...">
-                                        </div>
-                                        <div class="tab-pane" id="tabs-3" role="tabpanel">
-                                        <div class="dragdrophere dd-flex ">
-                                          <p><i class="fa-solid fa-folder-open"></i></p>
-                                          <p>Drag and Drop your files here or <span>Browse file</span></p>
-                                        </div>
-                                        </div>
-                                      </div>
-                                  
+                                      
                                       </div>
                                   
                                     </div>
@@ -1245,7 +1256,10 @@ input[type=radio] {
                             </div>
                         <div class="buttonGroup bot-fix dd-flex flex-spacebtwn">
                           <div class="count dd-flex">
-                            <span class="f14">08-</span><span class="f14">40</span>
+                            <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics go to the next step</p>
+                            <div>
+                              <span class="f14">01-</span><span class="f14">40</span>
+                            </div>
                           </div>
                           <div>
                             <button class="cancelit gobackbtn" onclick="ChangeField(c1,f1) , removeBtn(c2)">Previous</button>
@@ -1284,58 +1298,58 @@ input[type=radio] {
                                     <div>  
                                 
                                       <div class="usableradio">
-                                      <input type="radio" value="NA = Not Applicable" name="Usability">
+                                      <input type="radio" value="NA = Not Applicable" name="balance">
                                       <label for="html">NA - Not Applicable</label>
                                       </div>
                                       <div class="usableradio">
-                                      <input type="radio" value="1 = The metric not met" name="Usability">
+                                      <input type="radio" value="1 = The metric not met" name="balance">
                                       <label for="html">1 - The metric is not met</label>
                                       </div>  
                                       <div class="usableradio">
-                                      <input type="radio" value="1 = The metric not met" name="Usability">
+                                      <input type="radio" value="1 = The metric not met" name="balance">
                                       <label for="html">2 - The metric met very poorly</label>
                                       </div>
                                       <div class="usableradio">
-                                      <input type="radio" value="1 = The metric not met" name="Usability">
+                                      <input type="radio" value="1 = The metric not met" name="balance">
                                       <label for="html">3 - The metric is partialy met</label>
                                       </div>
                                       <div class="usableradio">
-                                      <input type="radio" value="1 = The metric not met" name="Usability">
+                                      <input type="radio" value="1 = The metric not met" name="balance">
                                       <label for="html">4 - The metric is met</label>
                                       </div>
                                       <div class="usableradio">
-                                      <input type="radio" value="1 = The metric not met" name="Usability">
+                                      <input type="radio" value="1 = The metric not met" name="balance">
                                       <label for="html">5 - The metric is fully met or exceeded</label>
                                       </div>
                                     </div>
                                     
                                     <div class="tooglepanel">
-                                    <ul class="nav nav-tabs" role="tablist">
-                                      <li class="nav-item">
-                                      <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
-                                      </li>
-                                      <li class="nav-item">
-                                      <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
-                                      </li>
-                                      <li class="nav-item">
-                                      <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
-                                      </li>
-                                    </ul><!-- Tab panes -->
-                                    <div class="tab-content">
-                                      <div class="tab-pane active" id="tabs-1" role="tabpanel">
-                                      <input type="text" placeholder="Please enter your text here...">
+                                      <ul class="nav nav-tabs" role="tablist">
+                                        <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                        </li>
+                                        <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                        </li>
+                                        <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                        </li>
+                                      </ul><!-- Tab panes -->
+                                      <div class="tab-content">
+                                        <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                        <div class="dragdrophere dd-flex ">
+                                          <p><i class="fa-solid fa-folder-open"></i></p>
+                                          <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                        </div>
+                                        </div>
+                                        <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                        <input type="text" placeholder="Please enter your text here...">
+                                        </div>
+                                        <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                        <input type="text" placeholder="Please enter your text here...">
+                                        </div>
                                       </div>
-                                      <div class="tab-pane" id="tabs-2" role="tabpanel">
-                                      <input type="text" placeholder="Please enter your text here...">
-                                      </div>
-                                      <div class="tab-pane" id="tabs-3" role="tabpanel">
-                                      <div class="dragdrophere dd-flex ">
-                                        <p><i class="fa-solid fa-folder-open"></i></p>
-                                        <p>Drag and Drop your files here or <span>Browse file</span></p>
-                                      </div>
-                                      </div>
-                                    </div>
-                                
+                                    
                                     </div>
                                 
                                   </div>
@@ -1359,58 +1373,58 @@ input[type=radio] {
                                       <div>  
                                   
                                         <div class="usableradio">
-                                        <input type="radio" value="NA = Not Applicable" name="Usability">
+                                        <input type="radio" value="NA = Not Applicable" name="Color">
                                         <label for="html">NA - Not Applicable</label>
                                         </div>
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="Color">
                                         <label for="html">1 - The metric is not met</label>
                                         </div>  
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="Color">
                                         <label for="html">2 - The metric met very poorly</label>
                                         </div>
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="Color">
                                         <label for="html">3 - The metric is partialy met</label>
                                         </div>
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="Color">
                                         <label for="html">4 - The metric is met</label>
                                         </div>
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="Color">
                                         <label for="html">5 - The metric is fully met or exceeded</label>
                                         </div>
                                       </div>
                                       
                                       <div class="tooglepanel">
-                                      <ul class="nav nav-tabs" role="tablist">
-                                        <li class="nav-item">
-                                        <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
-                                        </li>
-                                        <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
-                                        </li>
-                                        <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
-                                        </li>
-                                      </ul><!-- Tab panes -->
-                                      <div class="tab-content">
-                                        <div class="tab-pane active" id="tabs-1" role="tabpanel">
-                                        <input type="text" placeholder="Please enter your text here...">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                          </li>
+                                        </ul><!-- Tab panes -->
+                                        <div class="tab-content">
+                                          <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                          <div class="dragdrophere dd-flex ">
+                                            <p><i class="fa-solid fa-folder-open"></i></p>
+                                            <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                          </div>
+                                          </div>
+                                          <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
+                                          <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
                                         </div>
-                                        <div class="tab-pane" id="tabs-2" role="tabpanel">
-                                        <input type="text" placeholder="Please enter your text here...">
-                                        </div>
-                                        <div class="tab-pane" id="tabs-3" role="tabpanel">
-                                        <div class="dragdrophere dd-flex ">
-                                          <p><i class="fa-solid fa-folder-open"></i></p>
-                                          <p>Drag and Drop your files here or <span>Browse file</span></p>
-                                        </div>
-                                        </div>
-                                      </div>
-                                  
+                                      
                                       </div>
                                   
                                     </div>
@@ -1435,58 +1449,58 @@ input[type=radio] {
                                       <div>  
                                   
                                         <div class="usableradio">
-                                        <input type="radio" value="NA = Not Applicable" name="Usability">
+                                        <input type="radio" value="NA = Not Applicable" name="enhances">
                                         <label for="html">NA - Not Applicable</label>
                                         </div>
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="enhances">
                                         <label for="html">1 - The metric is not met</label>
                                         </div>  
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="enhances">
                                         <label for="html">2 - The metric met very poorly</label>
                                         </div>
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="enhances">
                                         <label for="html">3 - The metric is partialy met</label>
                                         </div>
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="enhances">
                                         <label for="html">4 - The metric is met</label>
                                         </div>
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="enhances">
                                         <label for="html">5 - The metric is fully met or exceeded</label>
                                         </div>
                                       </div>
                                       
                                       <div class="tooglepanel">
-                                      <ul class="nav nav-tabs" role="tablist">
-                                        <li class="nav-item">
-                                        <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
-                                        </li>
-                                        <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
-                                        </li>
-                                        <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
-                                        </li>
-                                      </ul><!-- Tab panes -->
-                                      <div class="tab-content">
-                                        <div class="tab-pane active" id="tabs-1" role="tabpanel">
-                                        <input type="text" placeholder="Please enter your text here...">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                          </li>
+                                        </ul><!-- Tab panes -->
+                                        <div class="tab-content">
+                                          <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                          <div class="dragdrophere dd-flex ">
+                                            <p><i class="fa-solid fa-folder-open"></i></p>
+                                            <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                          </div>
+                                          </div>
+                                          <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                              <input type="text" placeholder="Please enter your text here...">
+                                          </div>
+                                          <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                              <input type="text" placeholder="Please enter your text here...">
+                                          </div>
                                         </div>
-                                        <div class="tab-pane" id="tabs-2" role="tabpanel">
-                                        <input type="text" placeholder="Please enter your text here...">
-                                        </div>
-                                        <div class="tab-pane" id="tabs-3" role="tabpanel">
-                                        <div class="dragdrophere dd-flex ">
-                                          <p><i class="fa-solid fa-folder-open"></i></p>
-                                          <p>Drag and Drop your files here or <span>Browse file</span></p>
-                                        </div>
-                                        </div>
-                                      </div>
-                                  
+                                      
                                       </div>
                                   
                                     </div>
@@ -1510,58 +1524,58 @@ input[type=radio] {
                                       <div>  
                                   
                                         <div class="usableradio">
-                                        <input type="radio" value="NA = Not Applicable" name="Usability">
+                                        <input type="radio" value="NA = Not Applicable" name="legibility">
                                         <label for="html">NA - Not Applicable</label>
                                         </div>
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="legibility">
                                         <label for="html">1 - The metric is not met</label>
                                         </div>  
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="legibility">
                                         <label for="html">2 - The metric met very poorly</label>
                                         </div>
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="legibility">
                                         <label for="html">3 - The metric is partialy met</label>
                                         </div>
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="legibility">
                                         <label for="html">4 - The metric is met</label>
                                         </div>
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="legibility">
                                         <label for="html">5 - The metric is fully met or exceeded</label>
                                         </div>
                                       </div>
                                       
                                       <div class="tooglepanel">
-                                      <ul class="nav nav-tabs" role="tablist">
-                                        <li class="nav-item">
-                                        <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
-                                        </li>
-                                        <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
-                                        </li>
-                                        <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
-                                        </li>
-                                      </ul><!-- Tab panes -->
-                                      <div class="tab-content">
-                                        <div class="tab-pane active" id="tabs-1" role="tabpanel">
-                                        <input type="text" placeholder="Please enter your text here...">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                          </li>
+                                        </ul><!-- Tab panes -->
+                                        <div class="tab-content">
+                                          <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                          <div class="dragdrophere dd-flex ">
+                                            <p><i class="fa-solid fa-folder-open"></i></p>
+                                            <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                          </div>
+                                          </div>
+                                          <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
+                                          <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
                                         </div>
-                                        <div class="tab-pane" id="tabs-2" role="tabpanel">
-                                        <input type="text" placeholder="Please enter your text here...">
-                                        </div>
-                                        <div class="tab-pane" id="tabs-3" role="tabpanel">
-                                        <div class="dragdrophere dd-flex ">
-                                          <p><i class="fa-solid fa-folder-open"></i></p>
-                                          <p>Drag and Drop your files here or <span>Browse file</span></p>
-                                        </div>
-                                        </div>
-                                      </div>
-                                  
+                                      
                                       </div>
                                   
                                     </div>
@@ -1575,7 +1589,10 @@ input[type=radio] {
 
                     <div class="buttonGroup bot-fix dd-flex flex-spacebtwn">
                       <div class="count dd-flex">
-                        <span class="f14">08-</span><span class="f14">40</span>
+                          <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics go to the next step</p>
+                        <div>
+                          <span class="f14">01-</span><span class="f14">40</span>
+                        </div>
                       </div>
                       <div>
                         <button class="cancelit gobackbtn2" onclick="ChangeField(c2,f2) , removeBtn(c3)">Previous</button>
@@ -1613,58 +1630,58 @@ input[type=radio] {
                                     <div>  
                                 
                                       <div class="usableradio">
-                                      <input type="radio" value="NA = Not Applicable" name="Usability">
+                                      <input type="radio" value="NA = Not Applicable" name="model">
                                       <label for="html">NA - Not Applicable</label>
                                       </div>
                                       <div class="usableradio">
-                                      <input type="radio" value="1 = The metric not met" name="Usability">
+                                      <input type="radio" value="1 = The metric not met" name="model">
                                       <label for="html">1 - The metric is not met</label>
                                       </div>  
                                       <div class="usableradio">
-                                      <input type="radio" value="1 = The metric not met" name="Usability">
+                                      <input type="radio" value="1 = The metric not met" name="model">
                                       <label for="html">2 - The metric met very poorly</label>
                                       </div>
                                       <div class="usableradio">
-                                      <input type="radio" value="1 = The metric not met" name="Usability">
+                                      <input type="radio" value="1 = The metric not met" name="model">
                                       <label for="html">3 - The metric is partialy met</label>
                                       </div>
                                       <div class="usableradio">
-                                      <input type="radio" value="1 = The metric not met" name="Usability">
+                                      <input type="radio" value="1 = The metric not met" name="model">
                                       <label for="html">4 - The metric is met</label>
                                       </div>
                                       <div class="usableradio">
-                                      <input type="radio" value="1 = The metric not met" name="Usability">
+                                      <input type="radio" value="1 = The metric not met" name="model">
                                       <label for="html">5 - The metric is fully met or exceeded</label>
                                       </div>
                                     </div>
                                     
                                     <div class="tooglepanel">
-                                    <ul class="nav nav-tabs" role="tablist">
-                                      <li class="nav-item">
-                                      <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
-                                      </li>
-                                      <li class="nav-item">
-                                      <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
-                                      </li>
-                                      <li class="nav-item">
-                                      <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
-                                      </li>
-                                    </ul><!-- Tab panes -->
-                                    <div class="tab-content">
-                                      <div class="tab-pane active" id="tabs-1" role="tabpanel">
-                                      <input type="text" placeholder="Please enter your text here...">
+                                      <ul class="nav nav-tabs" role="tablist">
+                                        <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                        </li>
+                                        <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                        </li>
+                                        <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                        </li>
+                                      </ul><!-- Tab panes -->
+                                      <div class="tab-content">
+                                        <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                        <div class="dragdrophere dd-flex ">
+                                          <p><i class="fa-solid fa-folder-open"></i></p>
+                                          <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                        </div>
+                                        </div>
+                                        <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                        <input type="text" placeholder="Please enter your text here...">
+                                        </div>
+                                        <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                        <input type="text" placeholder="Please enter your text here...">
+                                        </div>
                                       </div>
-                                      <div class="tab-pane" id="tabs-2" role="tabpanel">
-                                      <input type="text" placeholder="Please enter your text here...">
-                                      </div>
-                                      <div class="tab-pane" id="tabs-3" role="tabpanel">
-                                      <div class="dragdrophere dd-flex ">
-                                        <p><i class="fa-solid fa-folder-open"></i></p>
-                                        <p>Drag and Drop your files here or <span>Browse file</span></p>
-                                      </div>
-                                      </div>
-                                    </div>
-                                
+                                    
                                     </div>
                                 
                                   </div>
@@ -1688,58 +1705,58 @@ input[type=radio] {
                                       <div>  
                                   
                                         <div class="usableradio">
-                                        <input type="radio" value="NA = Not Applicable" name="Usability">
+                                        <input type="radio" value="NA = Not Applicable" name="suitable">
                                         <label for="html">NA - Not Applicable</label>
                                         </div>
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="suitable">
                                         <label for="html">1 - The metric is not met</label>
                                         </div>  
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="suitable">
                                         <label for="html">2 - The metric met very poorly</label>
                                         </div>
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="suitable">
                                         <label for="html">3 - The metric is partialy met</label>
                                         </div>
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="suitable">
                                         <label for="html">4 - The metric is met</label>
                                         </div>
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="suitable">
                                         <label for="html">5 - The metric is fully met or exceeded</label>
                                         </div>
                                       </div>
                                       
                                       <div class="tooglepanel">
-                                      <ul class="nav nav-tabs" role="tablist">
-                                        <li class="nav-item">
-                                        <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
-                                        </li>
-                                        <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
-                                        </li>
-                                        <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
-                                        </li>
-                                      </ul><!-- Tab panes -->
-                                      <div class="tab-content">
-                                        <div class="tab-pane active" id="tabs-1" role="tabpanel">
-                                        <input type="text" placeholder="Please enter your text here...">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                          </li>
+                                        </ul><!-- Tab panes -->
+                                        <div class="tab-content">
+                                          <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                          <div class="dragdrophere dd-flex ">
+                                            <p><i class="fa-solid fa-folder-open"></i></p>
+                                            <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                          </div>
+                                          </div>
+                                          <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
+                                          <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
                                         </div>
-                                        <div class="tab-pane" id="tabs-2" role="tabpanel">
-                                        <input type="text" placeholder="Please enter your text here...">
-                                        </div>
-                                        <div class="tab-pane" id="tabs-3" role="tabpanel">
-                                        <div class="dragdrophere dd-flex ">
-                                          <p><i class="fa-solid fa-folder-open"></i></p>
-                                          <p>Drag and Drop your files here or <span>Browse file</span></p>
-                                        </div>
-                                        </div>
-                                      </div>
-                                  
+                                      
                                       </div>
                                   
                                     </div>
@@ -1762,58 +1779,58 @@ input[type=radio] {
                                       <div>  
                                   
                                         <div class="usableradio">
-                                        <input type="radio" value="NA = Not Applicable" name="Usability">
+                                        <input type="radio" value="NA = Not Applicable" name="Strong">
                                         <label for="html">NA - Not Applicable</label>
                                         </div>
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="Strong">
                                         <label for="html">1 - The metric is not met</label>
                                         </div>  
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="Strong">
                                         <label for="html">2 - The metric met very poorly</label>
                                         </div>
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="Strong">
                                         <label for="html">3 - The metric is partialy met</label>
                                         </div>
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="Strong">
                                         <label for="html">4 - The metric is met</label>
                                         </div>
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="Strong">
                                         <label for="html">5 - The metric is fully met or exceeded</label>
                                         </div>
                                       </div>
                                       
                                       <div class="tooglepanel">
-                                      <ul class="nav nav-tabs" role="tablist">
-                                        <li class="nav-item">
-                                        <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
-                                        </li>
-                                        <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
-                                        </li>
-                                        <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
-                                        </li>
-                                      </ul><!-- Tab panes -->
-                                      <div class="tab-content">
-                                        <div class="tab-pane active" id="tabs-1" role="tabpanel">
-                                        <input type="text" placeholder="Please enter your text here...">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                          </li>
+                                        </ul><!-- Tab panes -->
+                                        <div class="tab-content">
+                                          <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                          <div class="dragdrophere dd-flex ">
+                                            <p><i class="fa-solid fa-folder-open"></i></p>
+                                            <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                          </div>
+                                          </div>
+                                          <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
+                                          <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
                                         </div>
-                                        <div class="tab-pane" id="tabs-2" role="tabpanel">
-                                        <input type="text" placeholder="Please enter your text here...">
-                                        </div>
-                                        <div class="tab-pane" id="tabs-3" role="tabpanel">
-                                        <div class="dragdrophere dd-flex ">
-                                          <p><i class="fa-solid fa-folder-open"></i></p>
-                                          <p>Drag and Drop your files here or <span>Browse file</span></p>
-                                        </div>
-                                        </div>
-                                      </div>
-                                  
+                                      
                                       </div>
                                   
                                     </div>
@@ -1836,58 +1853,58 @@ input[type=radio] {
                                       <div>  
                                   
                                         <div class="usableradio">
-                                        <input type="radio" value="NA = Not Applicable" name="Usability">
+                                        <input type="radio" value="NA = Not Applicable" name="controls">
                                         <label for="html">NA - Not Applicable</label>
                                         </div>
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="controls">
                                         <label for="html">1 - The metric is not met</label>
                                         </div>  
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="controls">
                                         <label for="html">2 - The metric met very poorly</label>
                                         </div>
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="controls">
                                         <label for="html">3 - The metric is partialy met</label>
                                         </div>
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="controls">
                                         <label for="html">4 - The metric is met</label>
                                         </div>
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="controls">
                                         <label for="html">5 - The metric is fully met or exceeded</label>
                                         </div>
                                       </div>
                                       
                                       <div class="tooglepanel">
-                                      <ul class="nav nav-tabs" role="tablist">
-                                        <li class="nav-item">
-                                        <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
-                                        </li>
-                                        <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
-                                        </li>
-                                        <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
-                                        </li>
-                                      </ul><!-- Tab panes -->
-                                      <div class="tab-content">
-                                        <div class="tab-pane active" id="tabs-1" role="tabpanel">
-                                        <input type="text" placeholder="Please enter your text here...">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                          </li>
+                                        </ul><!-- Tab panes -->
+                                        <div class="tab-content">
+                                          <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                          <div class="dragdrophere dd-flex ">
+                                            <p><i class="fa-solid fa-folder-open"></i></p>
+                                            <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                          </div>
+                                          </div>
+                                          <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
+                                          <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
                                         </div>
-                                        <div class="tab-pane" id="tabs-2" role="tabpanel">
-                                        <input type="text" placeholder="Please enter your text here...">
-                                        </div>
-                                        <div class="tab-pane" id="tabs-3" role="tabpanel">
-                                        <div class="dragdrophere dd-flex ">
-                                          <p><i class="fa-solid fa-folder-open"></i></p>
-                                          <p>Drag and Drop your files here or <span>Browse file</span></p>
-                                        </div>
-                                        </div>
-                                      </div>
-                                  
+                                      
                                       </div>
                                   
                                     </div>
@@ -1913,58 +1930,58 @@ input[type=radio] {
                                       <div>  
                                   
                                         <div class="usableradio">
-                                        <input type="radio" value="NA = Not Applicable" name="Usability">
+                                        <input type="radio" value="NA = Not Applicable" name="windows">
                                         <label for="html">NA - Not Applicable</label>
                                         </div>
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="windows">
                                         <label for="html">1 - The metric is not met</label>
                                         </div>  
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="windows">
                                         <label for="html">2 - The metric met very poorly</label>
                                         </div>
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="windows">
                                         <label for="html">3 - The metric is partialy met</label>
                                         </div>
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="windows">
                                         <label for="html">4 - The metric is met</label>
                                         </div>
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="windows">
                                         <label for="html">5 - The metric is fully met or exceeded</label>
                                         </div>
                                       </div>
                                       
                                       <div class="tooglepanel">
-                                      <ul class="nav nav-tabs" role="tablist">
-                                        <li class="nav-item">
-                                        <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
-                                        </li>
-                                        <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
-                                        </li>
-                                        <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
-                                        </li>
-                                      </ul><!-- Tab panes -->
-                                      <div class="tab-content">
-                                        <div class="tab-pane active" id="tabs-1" role="tabpanel">
-                                        <input type="text" placeholder="Please enter your text here...">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                          </li>
+                                        </ul><!-- Tab panes -->
+                                        <div class="tab-content">
+                                          <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                          <div class="dragdrophere dd-flex ">
+                                            <p><i class="fa-solid fa-folder-open"></i></p>
+                                            <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                          </div>
+                                          </div>
+                                          <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
+                                          <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
                                         </div>
-                                        <div class="tab-pane" id="tabs-2" role="tabpanel">
-                                        <input type="text" placeholder="Please enter your text here...">
-                                        </div>
-                                        <div class="tab-pane" id="tabs-3" role="tabpanel">
-                                        <div class="dragdrophere dd-flex ">
-                                          <p><i class="fa-solid fa-folder-open"></i></p>
-                                          <p>Drag and Drop your files here or <span>Browse file</span></p>
-                                        </div>
-                                        </div>
-                                      </div>
-                                  
+                                      
                                       </div>
                                   
                                     </div>
@@ -1991,58 +2008,58 @@ input[type=radio] {
                                       <div>  
                                   
                                         <div class="usableradio">
-                                        <input type="radio" value="NA = Not Applicable" name="Usability">
+                                        <input type="radio" value="NA = Not Applicable" name="Appropriate">
                                         <label for="html">NA - Not Applicable</label>
                                         </div>
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="Appropriate">
                                         <label for="html">1 - The metric is not met</label>
                                         </div>  
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="Appropriate">
                                         <label for="html">2 - The metric met very poorly</label>
                                         </div>
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="Appropriate">
                                         <label for="html">3 - The metric is partialy met</label>
                                         </div>
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="Appropriate">
                                         <label for="html">4 - The metric is met</label>
                                         </div>
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="Appropriate">
                                         <label for="html">5 - The metric is fully met or exceeded</label>
                                         </div>
                                       </div>
                                       
                                       <div class="tooglepanel">
-                                      <ul class="nav nav-tabs" role="tablist">
-                                        <li class="nav-item">
-                                        <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
-                                        </li>
-                                        <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
-                                        </li>
-                                        <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
-                                        </li>
-                                      </ul><!-- Tab panes -->
-                                      <div class="tab-content">
-                                        <div class="tab-pane active" id="tabs-1" role="tabpanel">
-                                        <input type="text" placeholder="Please enter your text here...">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                          </li>
+                                        </ul><!-- Tab panes -->
+                                        <div class="tab-content">
+                                          <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                          <div class="dragdrophere dd-flex ">
+                                            <p><i class="fa-solid fa-folder-open"></i></p>
+                                            <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                          </div>
+                                          </div>
+                                          <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
+                                          <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
                                         </div>
-                                        <div class="tab-pane" id="tabs-2" role="tabpanel">
-                                        <input type="text" placeholder="Please enter your text here...">
-                                        </div>
-                                        <div class="tab-pane" id="tabs-3" role="tabpanel">
-                                        <div class="dragdrophere dd-flex ">
-                                          <p><i class="fa-solid fa-folder-open"></i></p>
-                                          <p>Drag and Drop your files here or <span>Browse file</span></p>
-                                        </div>
-                                        </div>
-                                      </div>
-                                  
+                                      
                                       </div>
                                   
                                     </div>
@@ -2066,58 +2083,58 @@ input[type=radio] {
                                       <div>  
                                   
                                         <div class="usableradio">
-                                        <input type="radio" value="NA = Not Applicable" name="Usability">
+                                        <input type="radio" value="NA = Not Applicable" name="Speedy">
                                         <label for="html">NA - Not Applicable</label>
                                         </div>
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="Speedy">
                                         <label for="html">1 - The metric is not met</label>
                                         </div>  
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="Speedy">
                                         <label for="html">2 - The metric met very poorly</label>
                                         </div>
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="Speedy">
                                         <label for="html">3 - The metric is partialy met</label>
                                         </div>
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="Speedy">
                                         <label for="html">4 - The metric is met</label>
                                         </div>
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="Speedy">
                                         <label for="html">5 - The metric is fully met or exceeded</label>
                                         </div>
                                       </div>
                                       
                                       <div class="tooglepanel">
-                                      <ul class="nav nav-tabs" role="tablist">
-                                        <li class="nav-item">
-                                        <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
-                                        </li>
-                                        <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
-                                        </li>
-                                        <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
-                                        </li>
-                                      </ul><!-- Tab panes -->
-                                      <div class="tab-content">
-                                        <div class="tab-pane active" id="tabs-1" role="tabpanel">
-                                        <input type="text" placeholder="Please enter your text here...">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                          </li>
+                                        </ul><!-- Tab panes -->
+                                        <div class="tab-content">
+                                          <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                          <div class="dragdrophere dd-flex ">
+                                            <p><i class="fa-solid fa-folder-open"></i></p>
+                                            <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                          </div>
+                                          </div>
+                                          <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
+                                          <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
                                         </div>
-                                        <div class="tab-pane" id="tabs-2" role="tabpanel">
-                                        <input type="text" placeholder="Please enter your text here...">
-                                        </div>
-                                        <div class="tab-pane" id="tabs-3" role="tabpanel">
-                                        <div class="dragdrophere dd-flex ">
-                                          <p><i class="fa-solid fa-folder-open"></i></p>
-                                          <p>Drag and Drop your files here or <span>Browse file</span></p>
-                                        </div>
-                                        </div>
-                                      </div>
-                                  
+                                      
                                       </div>
                                   
                                     </div>
@@ -2142,58 +2159,58 @@ input[type=radio] {
                                       <div>  
                                   
                                         <div class="usableradio">
-                                        <input type="radio" value="NA = Not Applicable" name="Usability">
+                                        <input type="radio" value="NA = Not Applicable" name="feedback">
                                         <label for="html">NA - Not Applicable</label>
                                         </div>
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="feedback">
                                         <label for="html">1 - The metric is not met</label>
                                         </div>  
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="feedback">
                                         <label for="html">2 - The metric met very poorly</label>
                                         </div>
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="feedback">
                                         <label for="html">3 - The metric is partialy met</label>
                                         </div>
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="feedback">
                                         <label for="html">4 - The metric is met</label>
                                         </div>
                                         <div class="usableradio">
-                                        <input type="radio" value="1 = The metric not met" name="Usability">
+                                        <input type="radio" value="1 = The metric not met" name="feedback">
                                         <label for="html">5 - The metric is fully met or exceeded</label>
                                         </div>
                                       </div>
                                       
                                       <div class="tooglepanel">
-                                      <ul class="nav nav-tabs" role="tablist">
-                                        <li class="nav-item">
-                                        <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
-                                        </li>
-                                        <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
-                                        </li>
-                                        <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
-                                        </li>
-                                      </ul><!-- Tab panes -->
-                                      <div class="tab-content">
-                                        <div class="tab-pane active" id="tabs-1" role="tabpanel">
-                                        <input type="text" placeholder="Please enter your text here...">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                          </li>
+                                        </ul><!-- Tab panes -->
+                                        <div class="tab-content">
+                                          <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                          <div class="dragdrophere dd-flex ">
+                                            <p><i class="fa-solid fa-folder-open"></i></p>
+                                            <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                          </div>
+                                          </div>
+                                          <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
+                                          <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
                                         </div>
-                                        <div class="tab-pane" id="tabs-2" role="tabpanel">
-                                        <input type="text" placeholder="Please enter your text here...">
-                                        </div>
-                                        <div class="tab-pane" id="tabs-3" role="tabpanel">
-                                        <div class="dragdrophere dd-flex ">
-                                          <p><i class="fa-solid fa-folder-open"></i></p>
-                                          <p>Drag and Drop your files here or <span>Browse file</span></p>
-                                        </div>
-                                        </div>
-                                      </div>
-                                  
+                                      
                                       </div>
                                   
                                     </div>
@@ -2208,7 +2225,10 @@ input[type=radio] {
                     </div>
                         <div class="buttonGroup bot-fix dd-flex flex-spacebtwn">
                           <div class="count dd-flex">
-                            <span class="f14">08-</span><span class="f14">40</span>
+                            <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics go to the next step</p>
+                            <div>
+                              <span class="f14">01-</span><span class="f14">40</span>
+                            </div>
                           </div>
                           <div>
                             <button class="cancelit gobackbtnn3" onclick="ChangeField(c3,f3) , removeBtn(c4)">Previous</button>
@@ -2245,58 +2265,58 @@ input[type=radio] {
                                 <div>  
                             
                                   <div class="usableradio">
-                                  <input type="radio" value="NA = Not Applicable" name="Usability">
+                                  <input type="radio" value="NA = Not Applicable" name="needs">
                                   <label for="html">NA - Not Applicable</label>
                                   </div>
                                   <div class="usableradio">
-                                  <input type="radio" value="1 = The metric not met" name="Usability">
+                                  <input type="radio" value="1 = The metric not met" name="needs">
                                   <label for="html">1 - The metric is not met</label>
                                   </div>  
                                   <div class="usableradio">
-                                  <input type="radio" value="1 = The metric not met" name="Usability">
+                                  <input type="radio" value="1 = The metric not met" name="needs">
                                   <label for="html">2 - The metric met very poorly</label>
                                   </div>
                                   <div class="usableradio">
-                                  <input type="radio" value="1 = The metric not met" name="Usability">
+                                  <input type="radio" value="1 = The metric not met" name="needs">
                                   <label for="html">3 - The metric is partialy met</label>
                                   </div>
                                   <div class="usableradio">
-                                  <input type="radio" value="1 = The metric not met" name="Usability">
+                                  <input type="radio" value="1 = The metric not met" name="needs">
                                   <label for="html">4 - The metric is met</label>
                                   </div>
                                   <div class="usableradio">
-                                  <input type="radio" value="1 = The metric not met" name="Usability">
+                                  <input type="radio" value="1 = The metric not met" name="needs">
                                   <label for="html">5 - The metric is fully met or exceeded</label>
                                   </div>
                                 </div>
                                 
                                 <div class="tooglepanel">
-                                <ul class="nav nav-tabs" role="tablist">
-                                  <li class="nav-item">
-                                  <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
-                                  </li>
-                                  <li class="nav-item">
-                                  <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
-                                  </li>
-                                  <li class="nav-item">
-                                  <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
-                                  </li>
-                                </ul><!-- Tab panes -->
-                                <div class="tab-content">
-                                  <div class="tab-pane active" id="tabs-1" role="tabpanel">
-                                  <input type="text" placeholder="Please enter your text here...">
+                                  <ul class="nav nav-tabs" role="tablist">
+                                    <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                    </li>
+                                    <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                    </li>
+                                    <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                    </li>
+                                  </ul><!-- Tab panes -->
+                                  <div class="tab-content">
+                                    <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                    <div class="dragdrophere dd-flex ">
+                                      <p><i class="fa-solid fa-folder-open"></i></p>
+                                      <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                    </div>
+                                    </div>
+                                    <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                    <input type="text" placeholder="Please enter your text here...">
+                                    </div>
+                                    <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                    <input type="text" placeholder="Please enter your text here...">
+                                    </div>
                                   </div>
-                                  <div class="tab-pane" id="tabs-2" role="tabpanel">
-                                  <input type="text" placeholder="Please enter your text here...">
-                                  </div>
-                                  <div class="tab-pane" id="tabs-3" role="tabpanel">
-                                  <div class="dragdrophere dd-flex ">
-                                    <p><i class="fa-solid fa-folder-open"></i></p>
-                                    <p>Drag and Drop your files here or <span>Browse file</span></p>
-                                  </div>
-                                  </div>
-                                </div>
-                            
+                                
                                 </div>
                             
                               </div>
@@ -2320,58 +2340,58 @@ input[type=radio] {
                                   <div>  
                               
                                     <div class="usableradio">
-                                    <input type="radio" value="NA = Not Applicable" name="Usability">
+                                    <input type="radio" value="NA = Not Applicable" name="features">
                                     <label for="html">NA - Not Applicable</label>
                                     </div>
                                     <div class="usableradio">
-                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <input type="radio" value="1 = The metric not met" name="features">
                                     <label for="html">1 - The metric is not met</label>
                                     </div>  
                                     <div class="usableradio">
-                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <input type="radio" value="1 = The metric not met" name="features">
                                     <label for="html">2 - The metric met very poorly</label>
                                     </div>
                                     <div class="usableradio">
-                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <input type="radio" value="1 = The metric not met" name="features">
                                     <label for="html">3 - The metric is partialy met</label>
                                     </div>
                                     <div class="usableradio">
-                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <input type="radio" value="1 = The metric not met" name="features">
                                     <label for="html">4 - The metric is met</label>
                                     </div>
                                     <div class="usableradio">
-                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <input type="radio" value="1 = The metric not met" name="features">
                                     <label for="html">5 - The metric is fully met or exceeded</label>
                                     </div>
                                   </div>
                                   
                                   <div class="tooglepanel">
-                                  <ul class="nav nav-tabs" role="tablist">
-                                    <li class="nav-item">
-                                    <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
-                                    </li>
-                                    <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
-                                    </li>
-                                    <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
-                                    </li>
-                                  </ul><!-- Tab panes -->
-                                  <div class="tab-content">
-                                    <div class="tab-pane active" id="tabs-1" role="tabpanel">
-                                    <input type="text" placeholder="Please enter your text here...">
+                                    <ul class="nav nav-tabs" role="tablist">
+                                      <li class="nav-item">
+                                      <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                      </li>
+                                      <li class="nav-item">
+                                      <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                      </li>
+                                      <li class="nav-item">
+                                      <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                      </li>
+                                    </ul><!-- Tab panes -->
+                                    <div class="tab-content">
+                                      <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                      <div class="dragdrophere dd-flex ">
+                                        <p><i class="fa-solid fa-folder-open"></i></p>
+                                        <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                      </div>
+                                      </div>
+                                      <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                      <input type="text" placeholder="Please enter your text here...">
+                                      </div>
+                                      <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                      <input type="text" placeholder="Please enter your text here...">
+                                      </div>
                                     </div>
-                                    <div class="tab-pane" id="tabs-2" role="tabpanel">
-                                    <input type="text" placeholder="Please enter your text here...">
-                                    </div>
-                                    <div class="tab-pane" id="tabs-3" role="tabpanel">
-                                    <div class="dragdrophere dd-flex ">
-                                      <p><i class="fa-solid fa-folder-open"></i></p>
-                                      <p>Drag and Drop your files here or <span>Browse file</span></p>
-                                    </div>
-                                    </div>
-                                  </div>
-                              
+                                  
                                   </div>
                               
                                 </div>
@@ -2383,7 +2403,10 @@ input[type=radio] {
                 </div>
                     <div class="buttonGroup bot-fix dd-flex flex-spacebtwn">
                       <div class="count dd-flex">
-                        <span class="f14">08-</span><span class="f14">40</span>
+                        <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics go to the next step</p>
+                        <div>
+                          <span class="f14">01-</span><span class="f14">40</span>
+                        </div>
                       </div>
                       <div>
                         <button class="cancelit gobackbtn4" onclick="ChangeField(c4,f4) , removeBtn(c5)">Previous</button>
