@@ -125,6 +125,7 @@ input[type=radio] {
   font-size: 12px;
   color: #393838;
   margin-bottom: 0.3rem;
+  margin-top:0.5rem;
 }
 .bot-fix > div > span {
     font-weight: 500;
@@ -167,8 +168,8 @@ input[type=radio] {
           
           <div id="showimgs"></div>
         </div>
-    <div class="inner-content dynamic-container" style="flex:1;">
-    <div class="heuristic-inner">
+        <div class="inner-content dynamic-container" style="flex:1;">
+        <div class="heuristic-inner">
                 <div class="reviewer-info bg-white dd-flex flex-spacebtwn">
                     <div class="reviewername dd-flex">
                       <p class="f14">Title: <span>RGP</span></p>
@@ -854,7 +855,7 @@ input[type=radio] {
               
                 <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics to go to the next step</p>
                 <div>
-                  <span class="f14">01</span>/<span class="f14">26</span>
+                  <span class="f14">01</span>/<span class="f14">30</span>
               </div>
               
               <div>
@@ -1258,7 +1259,7 @@ input[type=radio] {
                           
                             <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics to go to the next step</p>
                             <div>
-                              <span class="f14">01-</span><span class="f14">26</span>
+                              <span class="f14">09</span>/<span class="f14">30</span>
                             </div>
                           
                           <div>
@@ -1591,7 +1592,7 @@ input[type=radio] {
                       
                           <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics to go to the next step</p>
                         <div>
-                          <span class="f14">01-</span><span class="f14">26</span>
+                          <span class="f14">14</span>/<span class="f14">30</span>
                         </div>
                       
                       <div>
@@ -1609,7 +1610,6 @@ input[type=radio] {
                 <div class="innercont">
                     
                     <div class="wiz-inner-content">
-                        
                         <div id="accordion">
                             <h4 class="mb-0 useab-head">
                                 Interaction
@@ -2221,20 +2221,19 @@ input[type=radio] {
                               <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics go to the next step</p>
                            
                             </div>
-
                     </div>
                         <div class="buttonGroup bot-fix dd-flex flex-spacebtwn">
                           
                             <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics to go to the next step</p>
                             <div>
-                              <span class="f14">01-</span><span class="f14">26</span>
+                              <span class="f14">19</span>/<span class="f14">30</span>
                             </div>
                           
                           <div>
                             <button class="cancelit gobackbtnn3" onclick="ChangeField(c3,f3) , removeBtn(c4)">Previous</button>
                             <button class="next-modif tabbt4 bg-pink opacityhalf" onclick="ChangeField(c5,f5)">CONTINUE</button>
                           </div>
-                          </div>
+                        </div>
                     
                 </div>
             </fieldset>
@@ -2405,7 +2404,7 @@ input[type=radio] {
                       
                         <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics to go to the next step</p>
                         <div>
-                          <span class="f14">01-</span><span class="f14">26</span>
+                          <span class="f14">27</span>/<span class="f14">30</span>
                         </div>
                       
                       <div>
@@ -2467,7 +2466,7 @@ input[type=radio] {
         <div class="">
                 
                 <p>This UI screens are successfully reviewed Do you want to Submit?</p>
-                <p>Check your evaluations before submitting, use the progressive step flow or the back button…</p>
+                <p>Check your evaluations before submitting, use the progressive step flow or the back Previous…</p>
         </div>
 		<div class="button-grp">
 		<button class="popupcanelbtn">Cancel</button> <button class="popupsavebtn">Submit</button>
@@ -2543,6 +2542,7 @@ $(document).ready(function () {
   });
   $(".gobackbtnn3").click(function(){
     $(".step3").removeClass("completethree");
+    $(".step5").removeClass("completefive");
   });
   $(".tabbt4").click(function(){
     $(".stpe4").addClass("completefour");
