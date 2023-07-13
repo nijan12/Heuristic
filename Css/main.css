@@ -1922,9 +1922,7 @@ select#iconSelector:focus-visible {
     .footer {
         margin: 1rem;
     }
-    .nav-link li a {
-        font-size: 18px;  
-    }
+    
     .navigation .nav-link li a img {
         padding-right: 0.7rem;
     }
@@ -1983,6 +1981,10 @@ select#iconSelector:focus-visible {
         position: fixed;
         bottom: 0px;
         width: 86.5%;
+    }
+    .logo img {
+        width: auto;
+        height: auto;
     }
 }
 
