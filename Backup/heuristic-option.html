@@ -1,0 +1,2689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../Css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+    <script src="https://kit.fontawesome.com/9b45b95bcc.js" crossorigin="anonymous"></script>
+    <script src="../Js/main.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+  <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"  crossorigin="anonymous"></script>
+
+<style>
+  .usableradio {
+    display: flex;
+    align-items: center;
+    background: #fdfcfc;
+    margin-bottom: 0.3rem;
+    padding: 0.8rem;
+  }
+  .usableradio label {
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: none;
+    font-family: 'Poppins';
+    color: #000;
+    padding-left: 10px;
+  }
+  .usableradio input {
+	  width: 15px;
+    margin: 0;
+    height: auto;
+  }
+
+  .tooglepanel .nav-tabs .nav-link.active {
+    border: none;
+    color: #000!important;
+    margin-top: 1px;
+}
+  .tooglepanel {
+    margin-top: 1rem;
+    padding: 0 1rem;
+    
+  }
+  .tooglepanel .nav-tabs .nav-item {
+    padding-right: 3rem;
+  }
+  .tooglepanel .nav-tabs .nav-item {
+    margin-bottom: 0;
+  }
+  #accordion .card-body {
+    padding: 0;
+  }
+  #accordion .nav-tabs .nav-link {
+    color: #9B9B9B;
+    font-size: 12px;
+  }
+  #accordion .nav-tabs .nav-link:hover {
+    border-color: transparent;
+  }
+  input::placeholder {
+    font-size: 13px;
+  }
+.tooglepanel .tab-content .tab-pane input {
+  border: 1px solid #D7D6D6;
+  height: 62px;
+}
+.tooglepanel .nav-tabs {
+  border-bottom: none;
+}
+.dragdrophere {
+  border: 1px dashed #ccc;
+  border-radius: 10px;
+  margin: 20px 0;
+  flex-direction: column;
+  text-align: center;
+  height: 62px;
+} 
+.dragdrophere i:before {
+  font-size: 25px;
+    color: #0d0dad;
+}
+.dragdrophere p:first-child {
+    margin-bottom: 0.4rem;
+    margin-top: 0.4rem;
+}
+.dragdrophere p:nth-child(2) {
+  color: #6F6F6F;
+  font-size: 13px;
+}
+.dragdrophere p:nth-child(2) span {
+  color: #B02270;
+  font-weight: 500;
+}
+input[type=radio] {
+  accent-color: #B02270;
+}
+.tooglepanel input[type="text"] {
+    font-size: 13px;
+}
+#accordion .card:last-child {
+  margin-bottom: 1rem;
+}
+.bot-fix .f14 {
+  padding-left: 0;
+}
+
+.bot-fix p {
+  font-size: 12px;
+  color: #393838;
+  margin-bottom: 0.3rem;
+  margin-top:0.5rem;
+}
+.bot-fix > div > span {
+    font-weight: 500;
+}
+#accordion .card {
+  display: none;
+}
+#accordion .card.activeme {
+  display: block;
+}
+.footnext {
+  position: fixed;
+  bottom: 0;
+}
+.footnext {
+  position: fixed;
+  bottom: 0;
+  right: 2%;
+  background: #F6F4F4;
+  padding: 1rem;
+  width: 82%;
+  padding-right: 2.5rem;
+  align-items: center;
+}
+.footnext p {
+  font-size: 12px;
+  color: #393838 !important;
+  margin-bottom: 0.3rem;
+  margin-top: 0.5rem !important;
+}
+.footnext span:first-child {
+	padding-right: 0.2rem;
+  font-weight: 500;
+}
+.footnext span:last-child {
+  padding-left: 0.2rem;
+  font-weight: 500;
+}
+
+.footnext .cancelit {
+    line-height: 10px;
+}
+.hidedisp {
+  display: none;
+}
+.buttonGroup.bot-fix.activeme {
+  display: flex;
+  justify-content: space-between;
+}
+.footnext .next-modif, .footnext .cancelit {
+    border-radius: 17px;
+    outline: none;
+}
+</style>
+
+</head>
+<body>
+  
+    <!--header start here-->
+    <div class="container-wrap">
+        <div class="logo-main dd-flex">
+            <div class="logo">
+              <img src="../Image/LatestlogimgRe.png" alt="logo">
+            </div>
+            <div class="notify-sec dd-flex flex-spacebtwn">
+              <p>Heuristics Analysis Tool - <span>Beta</span></p>
+              <div class="notification">
+                <div class="account dd-flex flex-hcenter">
+                  <span class="help-count"><i class="fa-solid fa-headphones-simple"></i></span>
+                  <p class="notify-count">10</p>
+                    <span class="bell-count"><i class="fa-sharp fa-regular fa-bell"></i></span>
+                    <span class="user">John Wick</span>
+                    <span><img src="../Image/profile.PNG" alt="" ></span>
+                    <i class="fa-solid fa-angle-down" class="prof-downarrow"></i>
+                    
+                </div>
+              </div>
+          </div>
+        </div> 
+    <!--header end here--> 
+
+    <div class="content-area dd-flex">
+        <div class="navigation">
+            <ul class="nav-link">
+                <li><a href="index.html"> <img src="../Image/dashboard-icon.PNG" alt="dashboard icon"> Dashboard</a></li>
+                <li><a href="#"> <img src="../Image/logout-icon.PNG" alt=""> Logout</a></li>
+            </ul>
+          
+          <div id="showimgs"></div>
+        </div>
+        <div class="inner-content dynamic-container" style="flex:1;">
+        <div class="heuristic-inner">
+                <div class="reviewer-info bg-white dd-flex flex-spacebtwn">
+                    <div class="reviewername dd-flex">
+                      <p class="f14">Title: <span>RGP</span></p>
+                      <p class="f14">Reviewer Name: <span>John Wick</span></p>
+                    </div>
+                    <div class="urlsection dd-flex">
+                        <p class="f14">Date: <span>05/02/2023</span></p>
+                        <p class="f14">URL: <span>www.rgp.com</span></p>
+                    </div>
+                </div>
+                
+
+
+          <div class="section" style="background: transparent;">
+            <div class="dd-flex flex-just-contecenter">
+            <div id="c1" class="circle active step1" >
+                <p class="round"><i class="fa-solid fa-check"></i></p>
+                <div class="circle-content ">
+                    <span>Navigation & IA</span>
+                </div>
+            </div>
+            <div id="c2" class="circle step2">
+                <p class="round"><i class="fa-solid fa-check"></i></p>
+                <div class="circle-content">
+                    <span>Content</span>
+                </div>
+            </div>
+            <div id="c3" class="circle step3">
+                <p class="round"><i class="fa-solid fa-check"></i></p>
+                <div class="circle-content">
+                    <span>Presentation</span>
+                </div>
+            </div>
+            <div id="c4" class="circle stpe4">
+                <p class="round"><i class="fa-solid fa-check"></i></p>
+                <div class="circle-content">
+                    <span>Interaction</span>
+                </div>
+            </div>
+            <div id="c5" class="circle step5">
+                <p class="round"><i class="fa-solid fa-check"></i></p>
+                <div class="circle-content">
+                    <span>Value & Usefulness</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+      <fieldset class="form-NS activeForm" id="f1">
+        <div class="innercont">
+            
+            
+            <div class="wiz-inner-content">
+                
+                <div id="accordion">
+                    <h4 class="mb-0 useab-head">
+                        Navigation & Information Architecture
+                    </h4>
+
+                   <!-- <div class="card avg-score" style="display: none;">
+                      <div class="card-header headone" >
+                        <h5 class="mb-0 dd-flex flex-spacebtwn">
+                            <div class="wzcardcheck">
+                                
+                                <span class="width40 bold list-cont" style="font-weight: 500;">Complete Percentage of Navigation & IA</span>
+                            </div>
+                          <button class="btn btn-link" aria-expanded="true" aria-controls="collapseOne">
+                            <span class="na-toggle list-color avg-head" style="font-size: 14px; font-weight: 500;">Average Score  <img src="../Image/percent.PNG"</span>
+                               
+                          </button>
+                        </h5>
+                      </div>
+                    </div>-->
+                    <div class="card cardone activeme">
+                        <div class="card-header headone" id="">
+                            <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                <div class="wzcardcheck">
+                                    <span class="width40 bold list-cont">1. Navigation options are visible and clear</span>
+                                </div>
+                              
+                            </h5>
+                          </div>
+                  
+                      <div>
+                        <div class="card-body">
+                            <div class="dd-flex flex-dircol">
+                              <div>  
+
+                                  <div class="usableradio">
+                                    <input type="radio" value="NA = Not Applicable" name="Usability">
+                                    <label for="html">NA - Not Applicable</label>
+                                  </div>
+                                  <div class="usableradio">
+                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <label for="html">1 - The metric is not met</label>
+                                  </div>  
+                                  <div class="usableradio">
+                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <label for="html">2 - The metric met very poorly</label>
+                                  </div>
+                                  <div class="usableradio">
+                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <label for="html">3 - The metric is partialy met</label>
+                                  </div>
+                                  <div class="usableradio">
+                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <label for="html">4 - The metric is met</label>
+                                  </div>
+                                  <div class="usableradio">
+                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <label for="html">5 - The metric is fully met or exceeded</label>
+                                  </div>
+                              </div>
+                              
+                              <div class="tooglepanel">
+                                <ul class="nav nav-tabs" role="tablist">
+                                  <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                  </li>
+                                </ul><!-- Tab panes -->
+                                <div class="tab-content">
+                                  <div class="tab-pane active" id="tabs-3" role="tabpanel">
+                                    <div class="dragdrophere dd-flex ">
+                                      <p><i class="fa-solid fa-folder-open"></i></p>
+                                      <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                    </div>
+                                  </div>
+                                  <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                    <input type="text" placeholder="Please enter your text here...">
+                                  </div>
+                                  <div class="tab-pane " id="tabs-1" role="tabpanel">
+                                    <input type="text" placeholder="Please enter your text here...">
+                                  </div>
+                                </div>
+
+                              </div>
+                    
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="footnext dd-flex flex-spacebtwn">
+                        <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics to go to the next step</p>
+                        <div>
+                          <span class="f14">01</span>/<span class="f14">30</span>
+                        </div>
+                        <div>
+                          <button disabled class="cancelit">Cancel</button>
+                          <button class="nexttab1 bg-pink next-modif">continue</button>
+                        </div>
+                      </div>
+
+                    </div>
+                    
+                    <div class="card cardtwo">
+                        <div class="card-header headtwo" id="headingTwo">
+                          <h5 class="mb-0 dd-flex flex-spacebtwn">
+                            <div class="wzcardcheck">
+                                
+                              <span class="width40 bold list-cont ">2. Overall navigation supports primary task flows and works as an integrated whole</span>
+                            </div>
+                              
+                          </h5>
+                        </div>
+                    
+                        <div>
+                          <div class="card-body">
+                            <div class="dd-flex flex-dircol">
+                              <div>  
+
+                                  <div class="usableradio">
+                                    <input type="radio" value="NA = Not Applicable" name="Overall">
+                                    <label for="html">NA - Not Applicable</label>
+                                  </div>
+                                  <div class="usableradio">
+                                    <input type="radio" value="1 = The metric not met" name="Overall">
+                                    <label for="html">1 - The metric is not met</label>
+                                  </div>  
+                                  <div class="usableradio">
+                                    <input type="radio" value="1 = The metric not met" name="Overall">
+                                    <label for="html">2 - The metric met very poorly</label>
+                                  </div>
+                                  <div class="usableradio">
+                                    <input type="radio" value="1 = The metric not met" name="Overall">
+                                    <label for="html">3 - The metric is partialy met</label>
+                                  </div>
+                                  <div class="usableradio">
+                                    <input type="radio" value="1 = The metric not met" name="Overall">
+                                    <label for="html">4 - The metric is met</label>
+                                  </div>
+                                  <div class="usableradio">
+                                    <input type="radio" value="1 = The metric not met" name="Overall">
+                                    <label for="html">5 - The metric is fully met or exceeded</label>
+                                  </div>
+                              </div>
+                              
+                              <div class="tooglepanel">
+                                <ul class="nav nav-tabs" role="tablist">
+                                  <li class="nav-item">
+                                  <a class="nav-link active" data-toggle="tab" href="#tabsn-3" role="tab">Upload Images</a>
+                                  </li>
+                                  <li class="nav-item">
+                                  <a class="nav-link" data-toggle="tab" href="#tabsn-2" role="tab">Observations</a>
+                                  </li>
+                                  <li class="nav-item">
+                                  <a class="nav-link" data-toggle="tab" href="#tabsn-1" role="tab">Recommendations</a>
+                                  </li>
+                                </ul><!-- Tab panes -->
+                                <div class="tab-content">
+                                  <div class="tab-pane active" id="tabsn-3" role="tabpanel">
+                                  <div class="dragdrophere dd-flex ">
+                                    <p><i class="fa-solid fa-folder-open"></i></p>
+                                    <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                  </div>
+                                  </div>
+                                  <div class="tab-pane" id="tabsn-2" role="tabpanel">
+                                  <input type="text" placeholder="Please enter your text here...">
+                                  </div>
+                                  <div class="tab-pane" id="tabsn-1" role="tabpanel">
+                                  <input type="text" placeholder="Please enter your text here...">
+                                  </div>
+                                </div>
+                              
+                              </div>
+                    
+                            </div>
+                        </div>
+                        </div>
+                        <div class="footnext dd-flex flex-spacebtwn">
+                          <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics to go to the next step</p>
+                          <div>
+                            <span class="f14">02</span>/<span class="f14">30</span>
+                          </div>
+                          <div>
+                          <button class="canceltab1 cancelit">Cancel</button>
+                          <button class="nexttab2 bg-pink next-modif">continue</button>
+                        </div>
+                        </div>
+                      </div>
+                      
+                      <div class="card cardthree">
+                        <div class="card-header">
+                          <h5 class="mb-0 dd-flex flex-spacebtwn">
+                            <div class="wzcardcheck">
+                              
+                              <span class="width40 bold list-cont">3. Sense of place is clear</span>
+                              </div>
+                            
+                          </h5>
+                        </div>
+                    
+                        <div>
+                          <div class="card-body">
+                            <div class="dd-flex flex-dircol">
+                              <div>  
+
+                                  <div class="usableradio">
+                                    <input type="radio" value="NA = Not Applicable" name="Sense">
+                                    <label for="html">NA - Not Applicable</label>
+                                  </div>
+                                  <div class="usableradio">
+                                    <input type="radio" value="1 = The metric not met" name="Sense">
+                                    <label for="html">1 - The metric is not met</label>
+                                  </div>  
+                                  <div class="usableradio">
+                                    <input type="radio" value="1 = The metric not met" name="Sense">
+                                    <label for="html">2 - The metric met very poorly</label>
+                                  </div>
+                                  <div class="usableradio">
+                                    <input type="radio" value="1 = The metric not met" name="Sense">
+                                    <label for="html">3 - The metric is partialy met</label>
+                                  </div>
+                                  <div class="usableradio">
+                                    <input type="radio" value="1 = The metric not met" name="Sense">
+                                    <label for="html">4 - The metric is met</label>
+                                  </div>
+                                  <div class="usableradio">
+                                    <input type="radio" value="1 = The metric not met" name="Sense">
+                                    <label for="html">5 - The metric is fully met or exceeded</label>
+                                  </div>
+                              </div>
+                              
+                              <div class="tooglepanel">
+                                <ul class="nav nav-tabs" role="tablist">
+                                  <li class="nav-item">
+                                  <a class="nav-link active" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                  </li>
+                                  <li class="nav-item">
+                                  <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                  </li>
+                                  <li class="nav-item">
+                                  <a class="nav-link " data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                  </li>
+                                </ul><!-- Tab panes -->
+                                <div class="tab-content">
+                                  <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                  <div class="dragdrophere dd-flex ">
+                                    <p><i class="fa-solid fa-folder-open"></i></p>
+                                    <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                  </div>
+                                  </div>
+                                  <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                  <input type="text" placeholder="Please enter your text here...">
+                                  </div>
+                                  <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                  <input type="text" placeholder="Please enter your text here...">
+                                  </div>
+                                </div>
+                              
+                              </div>
+                    
+                            </div>
+                        </div>
+                        </div>
+                        <div class="footnext dd-flex flex-spacebtwn">
+                          <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics to go to the next step</p>
+                          <div>
+                            <span class="f14">03</span>/<span class="f14">30</span>
+                          </div>
+                          <div>
+                            <button class="canceltab2 cancelit">Cancel</button>
+                            <button class="nexttab3 bg-pink next-modif">continue</button>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="card cardfour">
+                        <div class="card-header">
+                          <h5 class="mb-0 dd-flex flex-spacebtwn">
+                            <div class="wzcardcheck">
+                                
+                              <span class="width40 bold list-cont">4. Number of pages to complete task is appropriate Effective Information approach</span>
+                            </div>
+                              
+                          </h5>
+                        </div>
+                    
+                        <div>
+                          <div class="card-body">
+                            <div class="dd-flex flex-dircol">
+                              <div>  
+
+                                  <div class="usableradio">
+                                    <input type="radio" value="NA = Not Applicable" name="Numbers">
+                                    <label for="html">NA - Not Applicable</label>
+                                  </div>
+                                  <div class="usableradio">
+                                    <input type="radio" value="1 = The metric not met" name="Numbers">
+                                    <label for="html">1 - The metric is not met</label>
+                                  </div>  
+                                  <div class="usableradio">
+                                    <input type="radio" value="1 = The metric not met" name="Numbers">
+                                    <label for="html">2 - The metric met very poorly</label>
+                                  </div>
+                                  <div class="usableradio">
+                                    <input type="radio" value="1 = The metric not met" name="Numbers">
+                                    <label for="html">3 - The metric is partialy met</label>
+                                  </div>
+                                  <div class="usableradio">
+                                    <input type="radio" value="1 = The metric not met" name="Numbers">
+                                    <label for="html">4 - The metric is met</label>
+                                  </div>
+                                  <div class="usableradio">
+                                    <input type="radio" value="1 = The metric not met" name="Numbers">
+                                    <label for="html">5 - The metric is fully met or exceeded</label>
+                                  </div>
+                              </div>
+                              
+                              <div class="tooglepanel">
+                                <ul class="nav nav-tabs" role="tablist">
+                                  <li class="nav-item">
+                                  <a class="nav-link active" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                  </li>
+                                  <li class="nav-item">
+                                  <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                  </li>
+                                  <li class="nav-item">
+                                  <a class="nav-link" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                  </li>
+                                </ul><!-- Tab panes -->
+                                <div class="tab-content">
+                                  <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                  <div class="dragdrophere dd-flex ">
+                                    <p><i class="fa-solid fa-folder-open"></i></p>
+                                    <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                  </div>
+                                  </div>
+                                  <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                  <input type="text" placeholder="Please enter your text here...">
+                                  </div>
+                                  <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                  <input type="text" placeholder="Please enter your text here...">
+                                  </div>
+                                </div>
+                              
+                              </div>
+                    
+                            </div>
+                        </div>
+                        </div>
+                        <div class="footnext dd-flex flex-spacebtwn">
+                          <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics to go to the next step</p>
+                          <div>
+                            <span class="f14">04</span>/<span class="f14">30</span>
+                          </div>
+                          <div>
+                            <button class="canceltab3 cancelit">Cancel</button>
+                            <button class="nexttab4 bg-pink next-modif">continue</button>
+                        </div>
+                        </div>
+                      </div>
+                      
+                      <div class="card cardfive">
+                        <div class="card-header">
+                          <h5 class="mb-0 dd-flex flex-spacebtwn">
+                            <div class="wzcardcheck">
+                                
+                              <span class="width40 bold list-cont">5. Breadth and depth fit user needs</span>
+                              </div>
+                            
+                          </h5>
+                        </div>
+                    
+                        <div>
+                          <div class="card-body">
+                            <div class="dd-flex flex-dircol">
+                              <div>  
+
+                                  <div class="usableradio">
+                                    <input type="radio" value="NA = Not Applicable" name="Breadth">
+                                    <label for="html">NA - Not Applicable</label>
+                                  </div>
+                                  <div class="usableradio">
+                                    <input type="radio" value="1 = The metric not met" name="Breadth">
+                                    <label for="html">1 - The metric is not met</label>
+                                  </div>  
+                                  <div class="usableradio">
+                                    <input type="radio" value="1 = The metric not met" name="Breadth">
+                                    <label for="html">2 - The metric met very poorly</label>
+                                  </div>
+                                  <div class="usableradio">
+                                    <input type="radio" value="1 = The metric not met" name="Breadth">
+                                    <label for="html">3 - The metric is partialy met</label>
+                                  </div>
+                                  <div class="usableradio">
+                                    <input type="radio" value="1 = The metric not met" name="Breadth">
+                                    <label for="html">4 - The metric is met</label>
+                                  </div>
+                                  <div class="usableradio">
+                                    <input type="radio" value="1 = The metric not met" name="Breadth">
+                                    <label for="html">5 - The metric is fully met or exceeded</label>
+                                  </div>
+                              </div>
+                              
+                              <div class="tooglepanel">
+                                <ul class="nav nav-tabs" role="tablist">
+                                  <li class="nav-item">
+                                  <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                  </li>
+                                  <li class="nav-item active">
+                                  <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                  </li>
+                                  <li class="nav-item">
+                                  <a class="nav-link" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                  </li>
+                                </ul><!-- Tab panes -->
+                                <div class="tab-content">
+                                  <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                  <div class="dragdrophere dd-flex ">
+                                    <p><i class="fa-solid fa-folder-open"></i></p>
+                                    <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                  </div>
+                                  </div>
+                                  <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                  <input type="text" placeholder="Please enter your text here...">
+                                  </div>
+                                  <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                  <input type="text" placeholder="Please enter your text here...">
+                                  </div>
+                                </div>
+                              
+                              </div>
+                    
+                            </div>
+                        </div>
+                          </div>
+                          <div class="footnext dd-flex flex-spacebtwn">
+                            <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics to go to the next step</p>
+                            <div>
+                              <span class="f14">05</span>/<span class="f14">30</span>
+                            </div>
+                            <div>
+                            <button class="canceltab4 cancelit">Cancel</button>
+                            <button class="nexttab5 bg-pink next-modif">continue</button>
+                          </div>
+                          </div>
+                        </div>
+                        
+                      <div class="card cardsix">
+                        <div class="card-header">
+                          <h5 class="mb-0 dd-flex flex-spacebtwn">
+                            <div class="wzcardcheck">
+                              <span class="width40 bold list-cont">6. Labels are distinctive and descriptive</span>
+                            </div>
+                              
+                          </h5>
+                        </div>
+                    
+                        <div>
+                          <div class="card-body">
+                            <div class="dd-flex flex-dircol">
+                              <div>  
+
+                                  <div class="usableradio">
+                                    <input type="radio" value="NA = Not Applicable" name="Labels">
+                                    <label for="html">NA - Not Applicable</label>
+                                  </div>
+                                  <div class="usableradio">
+                                    <input type="radio" value="1 = The metric not met" name="Labels">
+                                    <label for="html">1 - The metric is not met</label>
+                                  </div>  
+                                  <div class="usableradio">
+                                    <input type="radio" value="1 = The metric not met" name="Labels">
+                                    <label for="html">2 - The metric met very poorly</label>
+                                  </div>
+                                  <div class="usableradio">
+                                    <input type="radio" value="1 = The metric not met" name="Labels">
+                                    <label for="html">3 - The metric is partialy met</label>
+                                  </div>
+                                  <div class="usableradio">
+                                    <input type="radio" value="1 = The metric not met" name="Labels">
+                                    <label for="html">4 - The metric is met</label>
+                                  </div>
+                                  <div class="usableradio">
+                                    <input type="radio" value="1 = The metric not met" name="Labels">
+                                    <label for="html">5 - The metric is fully met or exceeded</label>
+                                  </div>
+                              </div>
+                              
+                              <div class="tooglepanel">
+                                <ul class="nav nav-tabs" role="tablist">
+                                  <li class="nav-item">
+                                  <a class="nav-link active" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                  </li>
+                                  <li class="nav-item">
+                                  <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                  </li>
+                                  <li class="nav-item">
+                                  <a class="nav-link " data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                  </li>
+                                </ul><!-- Tab panes -->
+                                <div class="tab-content">
+                                  <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                  <div class="dragdrophere dd-flex ">
+                                    <p><i class="fa-solid fa-folder-open"></i></p>
+                                    <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                  </div>
+                                  </div>
+                                  <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                  <input type="text" placeholder="Please enter your text here...">
+                                  </div>
+                                  <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                  <input type="text" placeholder="Please enter your text here...">
+                                  </div>
+                                </div>
+                              
+                              </div>
+                    
+                            </div>
+                        </div>
+                        </div>
+                        <div class="footnext dd-flex flex-spacebtwn">
+                          <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics to go to the next step</p>
+                          <div>
+                            <span class="f14">06</span>/<span class="f14">30</span>
+                          </div>
+                          <div>
+                            <button class="canceltab5 cancelit">Cancel</button>
+                            <button class="nexttab6 bg-pink next-modif">continue</button>
+                          </div>
+                        </div>
+                      </div>
+                      
+
+
+                    </div>
+                  </div>
+            </div>
+            <div class="buttonGroup bot-fix dd-flex flex-spacebtwn">
+              
+                <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics to go to the next step</p>
+                <div>
+                  <span class="f14">06</span>/<span class="f14">30</span>
+              </div>
+              
+              <div>
+                <button class="cancelit gobackbtn" onclick="ChangeField(c1,f1), removeBtn(c2)">Previous</button>
+                <button class="next-modif tabbt1 bg-pink opacityhalf" onclick="ChangeField(c2,f2)">CONTINUE</button>
+              </div>
+            </div>
+        
+        </fieldset>
+        
+            <fieldset class="form-NS" id="f2">
+                
+                <div class="innercont">
+                    
+                    <div class="wiz-inner-content">
+                       
+                        <div id="accordion">
+                            <h4 class="mb-0 useab-head">
+                                Content
+                            </h4>
+                            <div class="card" style="display: block;">
+                                <div class="card-header">
+                                    <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                        <div class="wzcardcheck">
+                                            
+                                            <span class="width40 bold list-cont">1. Good content, good writing, message on target</span>
+                                        </div>
+                                      
+                                    </h5>
+                                  </div>
+                          
+                              <div>
+                                <div class="card-body">
+                                  <div class="dd-flex flex-dircol">
+                                    <div>  
+      
+                                        <div class="usableradio">
+                                          <input type="radio" value="NA = Not Applicable" name="Good">
+                                          <label for="html">NA - Not Applicable</label>
+                                        </div>
+                                        <div class="usableradio">
+                                          <input type="radio" value="1 = The metric not met" name="Good">
+                                          <label for="html">1 - The metric is not met</label>
+                                        </div>  
+                                        <div class="usableradio">
+                                          <input type="radio" value="1 = The metric not met" name="Good">
+                                          <label for="html">2 - The metric met very poorly</label>
+                                        </div>
+                                        <div class="usableradio">
+                                          <input type="radio" value="1 = The metric not met" name="Good">
+                                          <label for="html">3 - The metric is partialy met</label>
+                                        </div>
+                                        <div class="usableradio">
+                                          <input type="radio" value="1 = The metric not met" name="Good">
+                                          <label for="html">4 - The metric is met</label>
+                                        </div>
+                                        <div class="usableradio">
+                                          <input type="radio" value="1 = The metric not met" name="Good">
+                                          <label for="html">5 - The metric is fully met or exceeded</label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="tooglepanel">
+                                      <ul class="nav nav-tabs" role="tablist">
+                                        <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                        </li>
+                                        <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                        </li>
+                                        <li class="nav-item">
+                                        <a class="nav-link " data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                        </li>
+                                      </ul><!-- Tab panes -->
+                                      <div class="tab-content">
+                                        <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                        <div class="dragdrophere dd-flex ">
+                                          <p><i class="fa-solid fa-folder-open"></i></p>
+                                          <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                        </div>
+                                        </div>
+                                        <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                        <input type="text" placeholder="Please enter your text here...">
+                                        </div>
+                                        <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                        <input type="text" placeholder="Please enter your text here...">
+                                        </div>
+                                      </div>
+                                    
+                                    </div>
+                          
+                                  </div>
+                              </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                  <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck"> 
+                                      <span class="width40 bold list-cont">2. Content written for scanning</span>
+                                    </div>
+                                      
+                                  </h5>
+                                </div>
+                            
+                                <div>
+                                  <div class="card-body">
+                                    <div class="dd-flex flex-dircol">
+                                      <div>  
+        
+                                          <div class="usableradio">
+                                            <input type="radio" value="NA = Not Applicable" name="Content">
+                                            <label for="html">NA - Not Applicable</label>
+                                          </div>
+                                          <div class="usableradio">
+                                            <input type="radio" value="1 = The metric not met" name="Content">
+                                            <label for="html">1 - The metric is not met</label>
+                                          </div>  
+                                          <div class="usableradio">
+                                            <input type="radio" value="1 = The metric not met" name="Content">
+                                            <label for="html">2 - The metric met very poorly</label>
+                                          </div>
+                                          <div class="usableradio">
+                                            <input type="radio" value="1 = The metric not met" name="Content">
+                                            <label for="html">3 - The metric is partialy met</label>
+                                          </div>
+                                          <div class="usableradio">
+                                            <input type="radio" value="1 = The metric not met" name="Content">
+                                            <label for="html">4 - The metric is met</label>
+                                          </div>
+                                          <div class="usableradio">
+                                            <input type="radio" value="1 = The metric not met" name="Content">
+                                            <label for="html">5 - The metric is fully met or exceeded</label>
+                                          </div>
+                                      </div>
+                                      
+                                      <div class="tooglepanel">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                          <li class="nav-item">
+                                          <a class="nav-link active" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                          </li>
+                                        </ul><!-- Tab panes -->
+                                        <div class="tab-content">
+                                          <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                          <div class="dragdrophere dd-flex ">
+                                            <p><i class="fa-solid fa-folder-open"></i></p>
+                                            <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                          </div>
+                                          </div>
+                                          <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
+                                          <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
+                                        </div>
+                                      
+                                      </div>
+                            
+                                    </div>
+                                </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header">
+                                  <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck">
+                                        
+                                      <span class="width40 bold list-cont">3. Content follows summary / detail format</span>
+                                      </div>
+                                    
+                                  </h5>
+                                </div>
+                            
+                                <div>
+                                  <div class="card-body">
+                                    <div class="dd-flex flex-dircol">
+                                      <div>  
+        
+                                          <div class="usableradio">
+                                            <input type="radio" value="NA = Not Applicable" name="follows">
+                                            <label for="html">NA - Not Applicable</label>
+                                          </div>
+                                          <div class="usableradio">
+                                            <input type="radio" value="1 = The metric not met" name="follows">
+                                            <label for="html">1 - The metric is not met</label>
+                                          </div>  
+                                          <div class="usableradio">
+                                            <input type="radio" value="1 = The metric not met" name="follows">
+                                            <label for="html">2 - The metric met very poorly</label>
+                                          </div>
+                                          <div class="usableradio">
+                                            <input type="radio" value="1 = The metric not met" name="follows">
+                                            <label for="html">3 - The metric is partialy met</label>
+                                          </div>
+                                          <div class="usableradio">
+                                            <input type="radio" value="1 = The metric not met" name="follows">
+                                            <label for="html">4 - The metric is met</label>
+                                          </div>
+                                          <div class="usableradio">
+                                            <input type="radio" value="1 = The metric not met" name="follows">
+                                            <label for="html">5 - The metric is fully met or exceeded</label>
+                                          </div>
+                                      </div>
+                                      
+                                      <div class="tooglepanel">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                          <li class="nav-item">
+                                          <a class="nav-link active" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                          </li>
+                                        </ul><!-- Tab panes -->
+                                        <div class="tab-content">
+                                          <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                          <div class="dragdrophere dd-flex ">
+                                            <p><i class="fa-solid fa-folder-open"></i></p>
+                                            <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                          </div>
+                                          </div>
+                                          <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
+                                          <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
+                                        </div>
+                                      
+                                      </div>
+                            
+                                    </div>
+                                </div>
+                                </div>
+                              </div>
+                              
+                              <div class="card">
+                                <div class="card-header">
+                                  <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck"> 
+                                      <span class="width40 bold list-cont">4. Tone of writing is appropriate</span>
+                                      </div>
+                                    
+                                  </h5>
+                                </div>
+                            
+                                <div>
+                                  <div class="card-body">
+                                    <div class="dd-flex flex-dircol">
+                                      <div>  
+        
+                                          <div class="usableradio">
+                                            <input type="radio" value="NA = Not Applicable" name="appropriate">
+                                            <label for="html">NA - Not Applicable</label>
+                                          </div>
+                                          <div class="usableradio">
+                                            <input type="radio" value="1 = The metric not met" name="appropriate">
+                                            <label for="html">1 - The metric is not met</label>
+                                          </div>  
+                                          <div class="usableradio">
+                                            <input type="radio" value="1 = The metric not met" name="appropriate">
+                                            <label for="html">2 - The metric met very poorly</label>
+                                          </div>
+                                          <div class="usableradio">
+                                            <input type="radio" value="1 = The metric not met" name="appropriate">
+                                            <label for="html">3 - The metric is partialy met</label>
+                                          </div>
+                                          <div class="usableradio">
+                                            <input type="radio" value="1 = The metric not met" name="appropriate">
+                                            <label for="html">4 - The metric is met</label>
+                                          </div>
+                                          <div class="usableradio">
+                                            <input type="radio" value="1 = The metric not met" name="appropriate">
+                                            <label for="html">5 - The metric is fully met or exceeded</label>
+                                          </div>
+                                      </div>
+                                      
+                                      <div class="tooglepanel">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                          <li class="nav-item">
+                                          <a class="nav-link active" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                          </li>
+                                        </ul><!-- Tab panes -->
+                                        <div class="tab-content">
+                                          <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                          <div class="dragdrophere dd-flex ">
+                                            <p><i class="fa-solid fa-folder-open"></i></p>
+                                            <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                          </div>
+                                          </div>
+                                          <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
+                                          <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
+                                        </div>
+                                      
+                                      </div>
+                            
+                                    </div>
+                                </div>
+
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingFourteen">
+                                  <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck">
+                                        
+                                      <span class="width40 bold list-cont">5. Content facilitates decision making</span>
+                                    </div>
+                                      
+                                  </h5>
+                                </div>
+                            
+                                <div>
+                                  <div class="card-body">
+                                    <div class="dd-flex flex-dircol">
+                                      <div>  
+                                  
+                                        <div class="usableradio">
+                                        <input type="radio" value="NA = Not Applicable" name="facilitates">
+                                        <label for="html">NA - Not Applicable</label>
+                                        </div>
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="facilitates">
+                                        <label for="html">1 - The metric is not met</label>
+                                        </div>  
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="facilitates">
+                                        <label for="html">2 - The metric met very poorly</label>
+                                        </div>
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="facilitates">
+                                        <label for="html">3 - The metric is partialy met</label>
+                                        </div>
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="facilitates">
+                                        <label for="html">4 - The metric is met</label>
+                                        </div>
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="facilitates">
+                                        <label for="html">5 - The metric is fully met or exceeded</label>
+                                        </div>
+                                      </div>
+                                      
+                                      <div class="tooglepanel">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                          <li class="nav-item">
+                                          <a class="nav-link active" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                          </li>
+                                        </ul><!-- Tab panes -->
+                                        <div class="tab-content">
+                                          <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                          <div class="dragdrophere dd-flex ">
+                                            <p><i class="fa-solid fa-folder-open"></i></p>
+                                            <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                          </div>
+                                          </div>
+                                          <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
+                                          <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
+                                        </div>
+                                      
+                                      </div>
+                                  
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            
+                              
+                           
+                            </div>
+                        <div class="buttonGroup bot-fix dd-flex flex-spacebtwn">
+                          
+                            <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics to go to the next step</p>
+                            <div>
+                              <span class="f14">09</span>/<span class="f14">30</span>
+                            </div>
+                          
+                          <div>
+                            <button class="cancelit gobackbtn" onclick="ChangeField(c1,f1) , removeBtn(c2)">Previous</button>
+                            <button class="next-modif tabbt2 bg-pink opacityhalf" onclick="ChangeField(c3,f3)">CONTINUE</button>
+                          </div>
+                          </div>
+                    </div>
+                </div>
+            </fieldset>
+    
+        
+        
+            <fieldset class="form-NS" id="f3">
+                <div class="innercont">
+                    
+                    <div class="wiz-inner-content">
+                        
+                        <div id="accordion">
+                            <h4 class="mb-0 useab-head">
+                                Presentation
+                            </h4>
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                        <div class="wzcardcheck">
+                                            
+                                            <span class="width40 bold list-cont">1. Layout - good balance, low visual complexity, clear visual hierarchy</span>
+                                        </div>
+                                      
+                                    </h5>
+                                  </div>
+                          
+                              <div>
+                                <div class="card-body">
+                                  <div class="dd-flex flex-dircol">
+                                    <div>  
+                                
+                                      <div class="usableradio">
+                                      <input type="radio" value="NA = Not Applicable" name="balance">
+                                      <label for="html">NA - Not Applicable</label>
+                                      </div>
+                                      <div class="usableradio">
+                                      <input type="radio" value="1 = The metric not met" name="balance">
+                                      <label for="html">1 - The metric is not met</label>
+                                      </div>  
+                                      <div class="usableradio">
+                                      <input type="radio" value="1 = The metric not met" name="balance">
+                                      <label for="html">2 - The metric met very poorly</label>
+                                      </div>
+                                      <div class="usableradio">
+                                      <input type="radio" value="1 = The metric not met" name="balance">
+                                      <label for="html">3 - The metric is partialy met</label>
+                                      </div>
+                                      <div class="usableradio">
+                                      <input type="radio" value="1 = The metric not met" name="balance">
+                                      <label for="html">4 - The metric is met</label>
+                                      </div>
+                                      <div class="usableradio">
+                                      <input type="radio" value="1 = The metric not met" name="balance">
+                                      <label for="html">5 - The metric is fully met or exceeded</label>
+                                      </div>
+                                    </div>
+                                    
+                                    <div class="tooglepanel">
+                                      <ul class="nav nav-tabs" role="tablist">
+                                        <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                        </li>
+                                        <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                        </li>
+                                        <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                        </li>
+                                      </ul><!-- Tab panes -->
+                                      <div class="tab-content">
+                                        <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                        <div class="dragdrophere dd-flex ">
+                                          <p><i class="fa-solid fa-folder-open"></i></p>
+                                          <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                        </div>
+                                        </div>
+                                        <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                        <input type="text" placeholder="Please enter your text here...">
+                                        </div>
+                                        <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                        <input type="text" placeholder="Please enter your text here...">
+                                        </div>
+                                      </div>
+                                    
+                                    </div>
+                                
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                  <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck">
+                                    
+                                      <span class="width40 bold list-cont">2. Color - appropriate for brand, guides attention, aids in grouping</span>
+                                    </div>
+                                      
+                                  </h5>
+                                </div>
+                            
+                                <div>
+                                  <div class="card-body">
+                                    <div class="dd-flex flex-dircol">
+                                      <div>  
+                                  
+                                        <div class="usableradio">
+                                        <input type="radio" value="NA = Not Applicable" name="Color">
+                                        <label for="html">NA - Not Applicable</label>
+                                        </div>
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="Color">
+                                        <label for="html">1 - The metric is not met</label>
+                                        </div>  
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="Color">
+                                        <label for="html">2 - The metric met very poorly</label>
+                                        </div>
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="Color">
+                                        <label for="html">3 - The metric is partialy met</label>
+                                        </div>
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="Color">
+                                        <label for="html">4 - The metric is met</label>
+                                        </div>
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="Color">
+                                        <label for="html">5 - The metric is fully met or exceeded</label>
+                                        </div>
+                                      </div>
+                                      
+                                      <div class="tooglepanel">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                          <li class="nav-item">
+                                          <a class="nav-link active" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                          </li>
+                                        </ul><!-- Tab panes -->
+                                        <div class="tab-content">
+                                          <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                          <div class="dragdrophere dd-flex ">
+                                            <p><i class="fa-solid fa-folder-open"></i></p>
+                                            <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                          </div>
+                                          </div>
+                                          <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
+                                          <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
+                                        </div>
+                                      
+                                      </div>
+                                  
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header">
+                                  <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck">
+                                        
+                                      <span class="width40 bold list-cont">3. Graphics - supports brand, follows a clear purpose, enhances layout</span>
+                                      </div>
+                                    
+                                  </h5>
+                                </div>
+                            
+                                <div>
+                                  
+                                  <div class="card-body">
+                                    <div class="dd-flex flex-dircol">
+                                      <div>  
+                                  
+                                        <div class="usableradio">
+                                        <input type="radio" value="NA = Not Applicable" name="enhances">
+                                        <label for="html">NA - Not Applicable</label>
+                                        </div>
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="enhances">
+                                        <label for="html">1 - The metric is not met</label>
+                                        </div>  
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="enhances">
+                                        <label for="html">2 - The metric met very poorly</label>
+                                        </div>
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="enhances">
+                                        <label for="html">3 - The metric is partialy met</label>
+                                        </div>
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="enhances">
+                                        <label for="html">4 - The metric is met</label>
+                                        </div>
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="enhances">
+                                        <label for="html">5 - The metric is fully met or exceeded</label>
+                                        </div>
+                                      </div>
+                                      
+                                      <div class="tooglepanel">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                          <li class="nav-item">
+                                          <a class="nav-link active" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                          </li>
+                                        </ul><!-- Tab panes -->
+                                        <div class="tab-content">
+                                          <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                          <div class="dragdrophere dd-flex ">
+                                            <p><i class="fa-solid fa-folder-open"></i></p>
+                                            <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                          </div>
+                                          </div>
+                                          <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                              <input type="text" placeholder="Please enter your text here...">
+                                          </div>
+                                          <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                              <input type="text" placeholder="Please enter your text here...">
+                                          </div>
+                                        </div>
+                                      
+                                      </div>
+                                  
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header">
+                                  <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck">
+                                        
+                                      <span class="width40 bold list-cont">4. Typography - clear type hierarchy, appropriate size, good legibility</span>
+                                    </div>
+                                      
+                                  </h5>
+                                </div>
+                            
+                                <div>
+                                  <div class="card-body">
+                                    <div class="dd-flex flex-dircol">
+                                      <div>  
+                                  
+                                        <div class="usableradio">
+                                        <input type="radio" value="NA = Not Applicable" name="legibility">
+                                        <label for="html">NA - Not Applicable</label>
+                                        </div>
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="legibility">
+                                        <label for="html">1 - The metric is not met</label>
+                                        </div>  
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="legibility">
+                                        <label for="html">2 - The metric met very poorly</label>
+                                        </div>
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="legibility">
+                                        <label for="html">3 - The metric is partialy met</label>
+                                        </div>
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="legibility">
+                                        <label for="html">4 - The metric is met</label>
+                                        </div>
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="legibility">
+                                        <label for="html">5 - The metric is fully met or exceeded</label>
+                                        </div>
+                                      </div>
+                                      
+                                      <div class="tooglepanel">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                          <li class="nav-item">
+                                          <a class="nav-link active" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                          </li>
+                                        </ul><!-- Tab panes -->
+                                        <div class="tab-content">
+                                          <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                          <div class="dragdrophere dd-flex ">
+                                            <p><i class="fa-solid fa-folder-open"></i></p>
+                                            <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                          </div>
+                                          </div>
+                                          <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
+                                          <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
+                                        </div>
+                                      
+                                      </div>
+                                  
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                              
+                           
+                            </div>
+
+                    <div class="buttonGroup bot-fix dd-flex flex-spacebtwn">
+                      
+                          <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics to go to the next step</p>
+                        <div>
+                          <span class="f14">14</span>/<span class="f14">30</span>
+                        </div>
+                      
+                      <div>
+                        <button class="cancelit gobackbtn2" onclick="ChangeField(c2,f2) , removeBtn(c3)">Previous</button>
+                        <button class="next-modif tabbt3 bg-pink opacityhalf" onclick="ChangeField(c4,f4)">CONTINUE</button>
+                      </div>
+                      </div>
+                </div>
+                
+            </div>
+            </fieldset>
+        
+        
+            <fieldset class="form-NS" id="f4">
+                <div class="innercont">
+                    
+                    <div class="wiz-inner-content">
+                        <div id="accordion">
+                            <h4 class="mb-0 useab-head">
+                                Interaction
+                            </h4>
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                        <div class="wzcardcheck">
+                                            <span class="width40 bold list-cont">1. Good use of controls and interaction model</span>
+                                        </div>
+                                      
+                                    </h5>
+                                  </div>
+                          
+                              <div>
+                                <div class="card-body">
+                                  <div class="dd-flex flex-dircol">
+                                    <div>  
+                                
+                                      <div class="usableradio">
+                                      <input type="radio" value="NA = Not Applicable" name="model">
+                                      <label for="html">NA - Not Applicable</label>
+                                      </div>
+                                      <div class="usableradio">
+                                      <input type="radio" value="1 = The metric not met" name="model">
+                                      <label for="html">1 - The metric is not met</label>
+                                      </div>  
+                                      <div class="usableradio">
+                                      <input type="radio" value="1 = The metric not met" name="model">
+                                      <label for="html">2 - The metric met very poorly</label>
+                                      </div>
+                                      <div class="usableradio">
+                                      <input type="radio" value="1 = The metric not met" name="model">
+                                      <label for="html">3 - The metric is partialy met</label>
+                                      </div>
+                                      <div class="usableradio">
+                                      <input type="radio" value="1 = The metric not met" name="model">
+                                      <label for="html">4 - The metric is met</label>
+                                      </div>
+                                      <div class="usableradio">
+                                      <input type="radio" value="1 = The metric not met" name="model">
+                                      <label for="html">5 - The metric is fully met or exceeded</label>
+                                      </div>
+                                    </div>
+                                    
+                                    <div class="tooglepanel">
+                                      <ul class="nav nav-tabs" role="tablist">
+                                        <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                        </li>
+                                        <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                        </li>
+                                        <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                        </li>
+                                      </ul><!-- Tab panes -->
+                                      <div class="tab-content">
+                                        <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                        <div class="dragdrophere dd-flex ">
+                                          <p><i class="fa-solid fa-folder-open"></i></p>
+                                          <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                        </div>
+                                        </div>
+                                        <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                        <input type="text" placeholder="Please enter your text here...">
+                                        </div>
+                                        <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                        <input type="text" placeholder="Please enter your text here...">
+                                        </div>
+                                      </div>
+                                    
+                                    </div>
+                                
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                  <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck">
+                                        
+                                      <span class="width40 bold list-cont">2. Number of micro-interactions to complete task is suitable</span>
+                                    </div>
+                                      
+                                  </h5>
+                                </div>
+                            
+                                <div>
+                                  <div class="card-body">
+                                    <div class="dd-flex flex-dircol">
+                                      <div>  
+                                  
+                                        <div class="usableradio">
+                                        <input type="radio" value="NA = Not Applicable" name="suitable">
+                                        <label for="html">NA - Not Applicable</label>
+                                        </div>
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="suitable">
+                                        <label for="html">1 - The metric is not met</label>
+                                        </div>  
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="suitable">
+                                        <label for="html">2 - The metric met very poorly</label>
+                                        </div>
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="suitable">
+                                        <label for="html">3 - The metric is partialy met</label>
+                                        </div>
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="suitable">
+                                        <label for="html">4 - The metric is met</label>
+                                        </div>
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="suitable">
+                                        <label for="html">5 - The metric is fully met or exceeded</label>
+                                        </div>
+                                      </div>
+                                      
+                                      <div class="tooglepanel">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                          <li class="nav-item">
+                                          <a class="nav-link active" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                          </li>
+                                        </ul><!-- Tab panes -->
+                                        <div class="tab-content">
+                                          <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                          <div class="dragdrophere dd-flex ">
+                                            <p><i class="fa-solid fa-folder-open"></i></p>
+                                            <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                          </div>
+                                          </div>
+                                          <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
+                                          <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
+                                        </div>
+                                      
+                                      </div>
+                                  
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header">
+                                  <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck"> 
+                                      <span class="width40 bold list-cont">3. Strong visual affordances for selection</span>
+                                      </div>
+                                    
+                                  </h5>
+                                </div>
+                            
+                                <div>
+                                  <div class="card-body">
+                                    <div class="dd-flex flex-dircol">
+                                      <div>  
+                                  
+                                        <div class="usableradio">
+                                        <input type="radio" value="NA = Not Applicable" name="Strong">
+                                        <label for="html">NA - Not Applicable</label>
+                                        </div>
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="Strong">
+                                        <label for="html">1 - The metric is not met</label>
+                                        </div>  
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="Strong">
+                                        <label for="html">2 - The metric met very poorly</label>
+                                        </div>
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="Strong">
+                                        <label for="html">3 - The metric is partialy met</label>
+                                        </div>
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="Strong">
+                                        <label for="html">4 - The metric is met</label>
+                                        </div>
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="Strong">
+                                        <label for="html">5 - The metric is fully met or exceeded</label>
+                                        </div>
+                                      </div>
+                                      
+                                      <div class="tooglepanel">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                          <li class="nav-item">
+                                          <a class="nav-link active" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                          </li>
+                                        </ul><!-- Tab panes -->
+                                        <div class="tab-content">
+                                          <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                          <div class="dragdrophere dd-flex ">
+                                            <p><i class="fa-solid fa-folder-open"></i></p>
+                                            <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                          </div>
+                                          </div>
+                                          <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
+                                          <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
+                                        </div>
+                                      
+                                      </div>
+                                  
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header">
+                                  <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck">
+                                      <span class="width40 bold list-cont">4. Good error prevention strategy – format cues, controls, help Use of secondary windows, screens, and hover-overs</span>
+                                    </div>   
+                                  </h5>
+                                </div>
+                            
+                                <div>
+                                  
+                                  <div class="card-body">
+                                    <div class="dd-flex flex-dircol">
+                                      <div>  
+                                  
+                                        <div class="usableradio">
+                                        <input type="radio" value="NA = Not Applicable" name="controls">
+                                        <label for="html">NA - Not Applicable</label>
+                                        </div>
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="controls">
+                                        <label for="html">1 - The metric is not met</label>
+                                        </div>  
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="controls">
+                                        <label for="html">2 - The metric met very poorly</label>
+                                        </div>
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="controls">
+                                        <label for="html">3 - The metric is partialy met</label>
+                                        </div>
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="controls">
+                                        <label for="html">4 - The metric is met</label>
+                                        </div>
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="controls">
+                                        <label for="html">5 - The metric is fully met or exceeded</label>
+                                        </div>
+                                      </div>
+                                      
+                                      <div class="tooglepanel">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                          <li class="nav-item">
+                                          <a class="nav-link active" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                          </li>
+                                        </ul><!-- Tab panes -->
+                                        <div class="tab-content">
+                                          <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                          <div class="dragdrophere dd-flex ">
+                                            <p><i class="fa-solid fa-folder-open"></i></p>
+                                            <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                          </div>
+                                          </div>
+                                          <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
+                                          <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
+                                        </div>
+                                      
+                                      </div>
+                                  
+                                    </div>
+                                  </div>
+
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header">
+                                  <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck">
+                                        
+                                      <span class="width40 bold list-cont">5. Secondary windows or hover-overs work as expected</span>
+                                    </div>
+                                    
+                                  </h5>
+                                </div>
+                            
+                                <div>
+                                  
+                                  <div class="card-body">
+                                    <div class="dd-flex flex-dircol">
+                                      <div>  
+                                  
+                                        <div class="usableradio">
+                                        <input type="radio" value="NA = Not Applicable" name="windows">
+                                        <label for="html">NA - Not Applicable</label>
+                                        </div>
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="windows">
+                                        <label for="html">1 - The metric is not met</label>
+                                        </div>  
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="windows">
+                                        <label for="html">2 - The metric met very poorly</label>
+                                        </div>
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="windows">
+                                        <label for="html">3 - The metric is partialy met</label>
+                                        </div>
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="windows">
+                                        <label for="html">4 - The metric is met</label>
+                                        </div>
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="windows">
+                                        <label for="html">5 - The metric is fully met or exceeded</label>
+                                        </div>
+                                      </div>
+                                      
+                                      <div class="tooglepanel">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                          <li class="nav-item">
+                                          <a class="nav-link active" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                          </li>
+                                        </ul><!-- Tab panes -->
+                                        <div class="tab-content">
+                                          <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                          <div class="dragdrophere dd-flex ">
+                                            <p><i class="fa-solid fa-folder-open"></i></p>
+                                            <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                          </div>
+                                          </div>
+                                          <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
+                                          <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
+                                        </div>
+                                      
+                                      </div>
+                                  
+                                    </div>
+                                  </div>
+
+                                </div>
+                              </div>
+
+
+                              <div class="card">
+                                <div class="card-header" id="headingTwentyfour">
+                                  <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck">
+                                       
+                                      <span class="width40 bold list-cont">6. Appropriate content relationship between windows Response to user input</span>
+                                    </div>
+                                      
+                                  </h5>
+                                </div>
+                            
+                                <div>
+                                  <div class="card-body">
+                                    <div class="dd-flex flex-dircol">
+                                      <div>  
+                                  
+                                        <div class="usableradio">
+                                        <input type="radio" value="NA = Not Applicable" name="Appropriate">
+                                        <label for="html">NA - Not Applicable</label>
+                                        </div>
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="Appropriate">
+                                        <label for="html">1 - The metric is not met</label>
+                                        </div>  
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="Appropriate">
+                                        <label for="html">2 - The metric met very poorly</label>
+                                        </div>
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="Appropriate">
+                                        <label for="html">3 - The metric is partialy met</label>
+                                        </div>
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="Appropriate">
+                                        <label for="html">4 - The metric is met</label>
+                                        </div>
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="Appropriate">
+                                        <label for="html">5 - The metric is fully met or exceeded</label>
+                                        </div>
+                                      </div>
+                                      
+                                      <div class="tooglepanel">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                          <li class="nav-item">
+                                          <a class="nav-link active" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                          </li>
+                                        </ul><!-- Tab panes -->
+                                        <div class="tab-content">
+                                          <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                          <div class="dragdrophere dd-flex ">
+                                            <p><i class="fa-solid fa-folder-open"></i></p>
+                                            <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                          </div>
+                                          </div>
+                                          <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
+                                          <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
+                                        </div>
+                                      
+                                      </div>
+                                  
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header">
+                                  <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck">
+                                        
+                                      <span class="width40 bold list-cont">7. Speedy system response</span>
+                                    </div>
+                                      
+                                  </h5>
+                                </div>
+                            
+                                <div>
+                                  <div class="card-body">
+                                    <div class="dd-flex flex-dircol">
+                                      <div>  
+                                  
+                                        <div class="usableradio">
+                                        <input type="radio" value="NA = Not Applicable" name="Speedy">
+                                        <label for="html">NA - Not Applicable</label>
+                                        </div>
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="Speedy">
+                                        <label for="html">1 - The metric is not met</label>
+                                        </div>  
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="Speedy">
+                                        <label for="html">2 - The metric met very poorly</label>
+                                        </div>
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="Speedy">
+                                        <label for="html">3 - The metric is partialy met</label>
+                                        </div>
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="Speedy">
+                                        <label for="html">4 - The metric is met</label>
+                                        </div>
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="Speedy">
+                                        <label for="html">5 - The metric is fully met or exceeded</label>
+                                        </div>
+                                      </div>
+                                      
+                                      <div class="tooglepanel">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                          <li class="nav-item">
+                                          <a class="nav-link active" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                          </li>
+                                        </ul><!-- Tab panes -->
+                                        <div class="tab-content">
+                                          <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                          <div class="dragdrophere dd-flex ">
+                                            <p><i class="fa-solid fa-folder-open"></i></p>
+                                            <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                          </div>
+                                          </div>
+                                          <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
+                                          <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
+                                        </div>
+                                      
+                                      </div>
+                                  
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header">
+                                  <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck">
+                                       
+                                      <span class="width40 bold list-cont">8. Appropriate messaging and feedback</span>
+                                    </div>
+                                      
+                                  </h5>
+                                </div>
+                            
+                                <div>
+                                  
+                                  <div class="card-body">
+                                    <div class="dd-flex flex-dircol">
+                                      <div>  
+                                  
+                                        <div class="usableradio">
+                                        <input type="radio" value="NA = Not Applicable" name="feedback">
+                                        <label for="html">NA - Not Applicable</label>
+                                        </div>
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="feedback">
+                                        <label for="html">1 - The metric is not met</label>
+                                        </div>  
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="feedback">
+                                        <label for="html">2 - The metric met very poorly</label>
+                                        </div>
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="feedback">
+                                        <label for="html">3 - The metric is partialy met</label>
+                                        </div>
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="feedback">
+                                        <label for="html">4 - The metric is met</label>
+                                        </div>
+                                        <div class="usableradio">
+                                        <input type="radio" value="1 = The metric not met" name="feedback">
+                                        <label for="html">5 - The metric is fully met or exceeded</label>
+                                        </div>
+                                      </div>
+                                      
+                                      <div class="tooglepanel">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                          <li class="nav-item">
+                                          <a class="nav-link active" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                          </li>
+                                        </ul><!-- Tab panes -->
+                                        <div class="tab-content">
+                                          <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                          <div class="dragdrophere dd-flex ">
+                                            <p><i class="fa-solid fa-folder-open"></i></p>
+                                            <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                          </div>
+                                          </div>
+                                          <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
+                                          <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                          <input type="text" placeholder="Please enter your text here...">
+                                          </div>
+                                        </div>
+                                      
+                                      </div>
+                                  
+                                    </div>
+                                  </div>
+
+                                </div>
+                              </div>
+                              
+                           
+                            </div>
+                    </div>
+                        <div class="buttonGroup bot-fix dd-flex flex-spacebtwn">
+                          
+                            <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics to go to the next step</p>
+                            <div>
+                              <span class="f14">19</span>/<span class="f14">30</span>
+                            </div>
+                          
+                          <div>
+                            <button class="cancelit gobackbtnn3" onclick="ChangeField(c3,f3) , removeBtn(c4)">Previous</button>
+                            <button class="next-modif tabbt4 bg-pink opacityhalf" onclick="ChangeField(c5,f5)">CONTINUE</button>
+                          </div>
+                        </div>
+                    
+                </div>
+            </fieldset>
+        
+            <fieldset class="form-NS" id="f5">
+                <div class="innercont">
+                    
+                <div class="wiz-inner-content">
+                    
+                    <div id="accordion">
+                        <h4 class="mb-0 useab-head">
+                            Value & Usefulness
+                        </h4>
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                    <div class="wzcardcheck">
+                                        
+                                        <span class="width40 bold list-cont">1. The content meets the user's needs.</span>
+                                    </div>
+                                  
+                                </h5>
+                              </div>
+                      
+                          <div>
+                            <div class="card-body">
+                              <div class="dd-flex flex-dircol">
+                                <div>  
+                            
+                                  <div class="usableradio">
+                                  <input type="radio" value="NA = Not Applicable" name="needs">
+                                  <label for="html">NA - Not Applicable</label>
+                                  </div>
+                                  <div class="usableradio">
+                                  <input type="radio" value="1 = The metric not met" name="needs">
+                                  <label for="html">1 - The metric is not met</label>
+                                  </div>  
+                                  <div class="usableradio">
+                                  <input type="radio" value="1 = The metric not met" name="needs">
+                                  <label for="html">2 - The metric met very poorly</label>
+                                  </div>
+                                  <div class="usableradio">
+                                  <input type="radio" value="1 = The metric not met" name="needs">
+                                  <label for="html">3 - The metric is partialy met</label>
+                                  </div>
+                                  <div class="usableradio">
+                                  <input type="radio" value="1 = The metric not met" name="needs">
+                                  <label for="html">4 - The metric is met</label>
+                                  </div>
+                                  <div class="usableradio">
+                                  <input type="radio" value="1 = The metric not met" name="needs">
+                                  <label for="html">5 - The metric is fully met or exceeded</label>
+                                  </div>
+                                </div>
+                                
+                                <div class="tooglepanel">
+                                  <ul class="nav nav-tabs" role="tablist">
+                                    <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                    </li>
+                                    <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                    </li>
+                                    <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                    </li>
+                                  </ul><!-- Tab panes -->
+                                  <div class="tab-content">
+                                    <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                    <div class="dragdrophere dd-flex ">
+                                      <p><i class="fa-solid fa-folder-open"></i></p>
+                                      <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                    </div>
+                                    </div>
+                                    <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                    <input type="text" placeholder="Please enter your text here...">
+                                    </div>
+                                    <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                    <input type="text" placeholder="Please enter your text here...">
+                                    </div>
+                                  </div>
+                                
+                                </div>
+                            
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                              <h5 class="mb-0 dd-flex flex-spacebtwn">
+                                <div class="wzcardcheck">
+                                    
+                                  <span class="width40 bold list-cont">2. The features are useful and meet the user's needs.</span>
+                                </div>
+                                  
+                              </h5>
+                            </div>
+                        
+                            <div>
+                              <div class="card-body">
+                                <div class="dd-flex flex-dircol">
+                                  <div>  
+                              
+                                    <div class="usableradio">
+                                    <input type="radio" value="NA = Not Applicable" name="features">
+                                    <label for="html">NA - Not Applicable</label>
+                                    </div>
+                                    <div class="usableradio">
+                                    <input type="radio" value="1 = The metric not met" name="features">
+                                    <label for="html">1 - The metric is not met</label>
+                                    </div>  
+                                    <div class="usableradio">
+                                    <input type="radio" value="1 = The metric not met" name="features">
+                                    <label for="html">2 - The metric met very poorly</label>
+                                    </div>
+                                    <div class="usableradio">
+                                    <input type="radio" value="1 = The metric not met" name="features">
+                                    <label for="html">3 - The metric is partialy met</label>
+                                    </div>
+                                    <div class="usableradio">
+                                    <input type="radio" value="1 = The metric not met" name="features">
+                                    <label for="html">4 - The metric is met</label>
+                                    </div>
+                                    <div class="usableradio">
+                                    <input type="radio" value="1 = The metric not met" name="features">
+                                    <label for="html">5 - The metric is fully met or exceeded</label>
+                                    </div>
+                                  </div>
+                                  
+                                  <div class="tooglepanel">
+                                    <ul class="nav nav-tabs" role="tablist">
+                                      <li class="nav-item">
+                                      <a class="nav-link active" data-toggle="tab" href="#tabs-3" role="tab">Upload Images</a>
+                                      </li>
+                                      <li class="nav-item">
+                                      <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Observations</a>
+                                      </li>
+                                      <li class="nav-item">
+                                      <a class="nav-link" data-toggle="tab" href="#tabs-1" role="tab">Recommendations</a>
+                                      </li>
+                                    </ul><!-- Tab panes -->
+                                    <div class="tab-content">
+                                      <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                      <div class="dragdrophere dd-flex ">
+                                        <p><i class="fa-solid fa-folder-open"></i></p>
+                                        <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                      </div>
+                                      </div>
+                                      <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                      <input type="text" placeholder="Please enter your text here...">
+                                      </div>
+                                      <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                      <input type="text" placeholder="Please enter your text here...">
+                                      </div>
+                                    </div>
+                                  
+                                  </div>
+                              
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                    </div>
+                </div>
+                    <div class="buttonGroup bot-fix dd-flex flex-spacebtwn">
+                      
+                        <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics to go to the next step</p>
+                        <div>
+                          <span class="f14">27</span>/<span class="f14">30</span>
+                        </div>
+                      
+                      <div>
+                        <button class="cancelit gobackbtn4" onclick="ChangeField(c4,f4) , removeBtn(c5)">Previous</button>
+                        <button class="submit successmsg">Submit</button>
+                      </div>
+                    </div>
+              </div>
+        </fieldset>
+        
+    <div class="footer" style="justify-content: center;">Copyrights @ All rights reserved group Heuristic Evaluation, 2023 <span>|</span> <a href="#">Privay Policy</a></div>
+    
+<!--Popup-->
+    <div class="popup-main"> 
+        <div class="popup-header dd-flex flex-spacebtwn">
+            <span>Add New</span>
+            <a href="" class="close-popup"><span><i class="fa-solid fa-xmark"></i></span></a>
+        </div>
+        
+        
+        <div class="popup-content">
+            <div class="dd-flex flex-spacebtwn">
+                <div class="dd-flex flex-dircol">
+                    <label>Usability Dimensions</label>
+                    <select id="iconSelector">
+                        <option value="box">Navigation & Information Architecture</option> 
+                        <option value="piano">Content</option>    
+                        <option value="books">Presentation</option>
+                        <option value="dog">Interaction</option>     
+                        <option value="car">Value & Usefulness</option>
+                    </select>
+                </div>
+                <div class="dd-flex flex-dircol">
+                    <label>Reviewer Name</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="inputadd mrt-3">
+                <input type="text">
+                <span id="add-class" class="add-classpop"><i class="fa-solid fa-plus"></i> Add</span>
+            </div>
+            <div class="button-grp">
+                <button class="popupcanelbtn">Cancel</button> 
+                <button class="popupsavebtn">Save</button>
+            </div>
+        </div>
+    </div>
+    <div class="backdrop">
+
+    </div>
+<!--PopupEnd-->
+
+<!--Success message-->
+<div class="success"> 
+    <div class="success-header ">
+        <a href="" class="close-suc"><span><i class="fa-solid fa-xmark"></i></span></a>
+    </div>
+    <div class="success-content">
+        <div class="">
+                
+                <p>The UI screens are successfully reviewed</p>
+                <p>Do you want to Submit?</p>
+        </div>
+		<div class="button-grp">
+		<button class="popupcanelbtn">Cancel</button> <button class="popupsavebtn">Submit</button>
+		</div>
+    </div>
+</div>
+
+<div class="backdrop"></div>
+<!--Success message End-->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="js/layout.js"></script>
+<script>
+  
+$(document).ready(function () {
+  $('#inputBtn').prop('disabled', true);
+  $('fieldset').keyup(function(){
+    var kname = $('#name').val();
+    var sname = $('#surname').val();
+    
+    if((kname != "") || (sname != "")){
+      if((kname.length < 4 ) || (sname.length < 4)){
+        $('#inputBtn').prop('disabled', true);
+        $('#nsMessage').text('Enter more the 4 letter.');
+      }
+      else{
+        $('#inputBtn').prop('disabled', false);
+        $('#nsMessage').text('');
+      }
+    }
+    else{
+      $('#inputBtn').prop('disabled', true);
+    }
+  })
+  
+//Custome Popup Click 
+
+  $(".clickit").click(function(){
+    $(".popup-main").addClass("addpop");
+    $(".backdrop").fadeTo(200, 1);
+  });
+
+  $(".close-popup").click(function(){
+    $(".popup-main").removeClass("addpop");
+    $(".backdrop").fadeOut(200);
+  });
+
+
+
+  
+//Popup End
+  //tab highlight bg
+
+  $(".tabbt1").click(function(){
+    $(".step1").addClass("Complete");
+  });
+  $(".gobackbtn").click(function(){
+    $(".step1").removeClass("Complete");
+  });
+  $(".tabbt2").click(function(){
+    $(".step2").addClass("completetwo");
+  });
+  $(".gobackbtn2").click(function(){
+    $(".step2").removeClass("completetwo");
+  });
+  $(".tabbt3").click(function(){
+    $(".step3").addClass("completethree");
+  });
+  $(".gobackbtnn3").click(function(){
+    $(".step3").removeClass("completethree");
+    $(".step5").removeClass("completefive");
+  });
+  $(".tabbt4").click(function(){
+    $(".stpe4").addClass("completefour");
+    $(".step5").addClass("completefive");
+  });
+  $(".gobackbtn4").click(function(){
+    $(".stpe4").removeClass("completefour");
+  });
+  $(".tabbt5").click(function(){
+    $(".step5").addClass("completefive");
+  });
+  $(".gobackbtn5").click(function(){
+    $(".step5").removeClass("completefive");
+    $(".step6").removeClass("completesix");
+  });
+$(".tabbt6").click(function(){
+    $(".step6").addClass("completesix");
+});
+
+
+
+//success
+
+
+  $(".successmsg").click(function(){
+    $(".success").addClass("showsuccess");
+    $(".backdrop").fadeTo(200, 1);
+  });
+
+  $(".close-suc").click(function(){
+    $(".success").removeClass("showsuccess");
+    $(".backdrop").fadeOut(200);
+  });
+
+//wizard stepper card class adding 
+$(".toggle-hone").click(function(){
+    $(".headone").addClass("headhighlight");
+  });
+  $(".toggle-htwo").click(function(){
+    $(".headone").removeClass("headhighlight");
+    $(".headone").addClass("headcomplete");
+    $(".headtwo").addClass("headhighlight");
+  });
+
+  $(".toggle-hthree").click(function(){
+    $(".headtwo").removeClass("headhighlight");
+    $(".headtwo").addClass("headcomplete");
+    $(".headthree").addClass("headhighlight");
+  });
+  $(".toggle-hfour").click(function(){
+    $(".headthree").removeClass("headhighlight");
+    $(".headthree").addClass("headcomplete");
+    $(".headfour").addClass("headhighlight");
+  });
+  $(".toggle-hfive").click(function(){
+    $(".headfour").removeClass("headhighlight");
+    $(".headfour").addClass("headcomplete");
+    $(".headfive").addClass("headhighlight");
+  });
+  $(".toggle-hsix").click(function(){
+    $(".headfive").removeClass("headhighlight");
+    $(".headfive").addClass("headcomplete");
+    $(".headsix").addClass("headhighlight");
+  });
+  $(".toggle-hseven").click(function(){
+    $(".headsix").removeClass("headhighlight");
+    $(".headsix").addClass("headcomplete");
+    $(".headseven").addClass("headhighlight");
+  });
+  $(".toggle-height").click(function(){
+    $(".headseven").removeClass("headhighlight");
+    $(".headseven").addClass("headcomplete");
+    $(".headeight").addClass("headhighlight");
+  });
+  $(".continueclick").click(function(){
+    $(".headeight").removeClass("headhighlight");
+    $(".headeight").addClass("headcomplete");
+    $(".avg-score").addClass("blockcontain");
+    $(".green-color").addClass("blockcontain");
+    $(".continueclick").addClass("hideitdiv");
+  });
+
+//Second option click func
+$(".nexttab1").click(function(){
+
+$(".cardone").removeClass("activeme");
+$(".cardtwo").addClass("activeme");
+});
+$(".nexttab2").click(function(){
+  $(".cardtwo").removeClass("activeme");
+  $(".cardthree").addClass("activeme");
+});
+$(".canceltab1").click(function(){
+  $(".cardtwo").removeClass("activeme");
+  $(".cardone").addClass("activeme");
+});
+$(".canceltab2").click(function(){
+  $(".cardthree").removeClass("activeme");
+  $(".cardtwo").addClass("activeme");
+});
+$(".canceltab3").click(function(){
+  $(".cardfour").removeClass("activeme");
+  $(".cardthree").addClass("activeme");
+});
+$(".canceltab4").click(function(){
+  $(".cardfive").removeClass("activeme");
+  $(".cardfour").addClass("activeme");
+});
+$(".canceltab5").click(function(){
+  $(".cardsix").removeClass("activeme");
+  $(".cardfive").addClass("activeme");
+});
+$(".nexttab2").click(function(){
+  $(".cardtwo").removeClass("activeme");
+  $(".cardthree").addClass("activeme");
+});
+$(".nexttab3").click(function(){
+  $(".cardthree").removeClass("activeme");
+  $(".cardfour").addClass("activeme");
+});
+$(".nexttab4").click(function(){
+  $(".cardfour").removeClass("activeme");
+  $(".cardfive").addClass("activeme");
+});
+$(".nexttab5").click(function(){
+  $(".cardfive").removeClass("activeme");
+  $(".cardsix").addClass("activeme");
+});
+$(".nexttab6").click(function(){
+  $(".footnext").addClass("hidedisp");
+  $(".bot-fix").addClass("activeme");
+});
+
+
+});
+
+
+
+function ChangeField(bId, fId) {
+    // $(bId).removeClass('active');
+    $(bId).addClass('active');
+    $('.form-NS').removeClass('activeForm');
+    $(fId).addClass('activeForm');
+};
+
+function removeBtn(btn) {
+    $(btn).removeClass('active');
+}
+
+
+
+//dragdrop
+function uploadFiles() {
+    var files = document.getElementById('file_upload').files;
+    if(files.length==0){
+        alert("Please first choose or drop any file(s)...");
+        return;
+    }
+    var filenames="";
+	
+    for(var i=0;i<files.length;i++){
+        filenames+= "<p>"+ files[i].name +"</p>";
+		
+    }
+	
+	document.getElementById('file_lable').innerHTML = filenames;
+	document.getElementById('file_lable').style.display = "block";
+    //alert("Selected file(s) :\n____________________\n"+filenames);
+}
+function imggrid() {
+var dispimg = document.getElementById('file_lable').innerHTML;
+document.getElementById('showimgs').innerHTML = dispimg;
+}
+
+
+
+
+
+</script>
+
+</body>
+</html>

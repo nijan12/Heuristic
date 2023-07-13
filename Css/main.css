@@ -919,7 +919,7 @@ button:disabled {
     cursor: pointer;
 }
 
-.bot-fix {
+.buttonGroup.bot-fix {
     right: 2%;
     position: fixed;
     bottom: 0;
@@ -930,6 +930,7 @@ button:disabled {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    display: none;
 }
 .buttonGroup.bot-fix > button {
     margin-right: 0.5rem;
