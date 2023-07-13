@@ -1988,8 +1988,8 @@ select#iconSelector:focus-visible {
         height: auto;
     }
     .footnext {
-        width: 87% !important;
-        right:1% !important;
+        width: 87%!important;
+        right:1%!important;
         bottom: 0;
     }
 }
