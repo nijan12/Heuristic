@@ -126,9 +126,13 @@ input[type=radio] {
   color: #393838;
   margin-bottom: 0.3rem;
   margin-top:0.5rem;
+  font-style: italic;
 }
 .bot-fix > div > span {
     font-weight: 500;
+}
+.bot-fix .star {
+    padding: 0 0.2rem;
 }
 #accordion .card {
   display: none;
@@ -178,6 +182,12 @@ input[type=radio] {
 .footnext .next-modif, .footnext .cancelit {
     border-radius: 17px;
     outline: none;
+}
+.footnext.hidedisp.activeme {
+    display: flex;
+}
+.fullopacity {
+  opacity: 1;
 }
 @media screen and (min-width:1824px) { 
   .card .footnext {
@@ -318,7 +328,7 @@ input[type=radio] {
                                     <label for="html">NA - Not Applicable</label>
                                   </div>
                                   <div class="usableradio">
-                                    <input type="radio" value="1 = The metric not met" name="Usability">
+                                    <input type="radio" value="1 = The metric not met" name="Usability" class="radioone">
                                     <label for="html">1 - The metric is not met</label>
                                   </div>  
                                   <div class="usableradio">
@@ -378,7 +388,7 @@ input[type=radio] {
                           <span class="f14">01</span>/<span class="f14">30</span>
                         </div>
                         <div>
-                          <button disabled class="cancelit" style="display:none;">Cancel</button>
+                          <button disabled class="cancelit" style="visibility:hidden;">Previous</button>
                           <button class="nexttab1 bg-pink next-modif opacityhalf">continue</button>
                         </div>
                       </div>
@@ -410,7 +420,7 @@ input[type=radio] {
                                     <label for="html">1 - The metric is not met</label>
                                   </div>  
                                   <div class="usableradio">
-                                    <input type="radio" value="1 = The metric not met" name="Overall">
+                                    <input type="radio" value="1 = The metric not met" name="Overall" class="radiotwo">
                                     <label for="html">2 - The metric met very poorly</label>
                                   </div>
                                   <div class="usableradio">
@@ -465,7 +475,7 @@ input[type=radio] {
                             <span class="f14">02</span>/<span class="f14">30</span>
                           </div>
                           <div>
-                          <button class="canceltab1 cancelit">Cancel</button>
+                          <button class="canceltab1 cancelit">Previous</button>
                           <button class="nexttab2 bg-pink next-modif opacityhalf">continue</button>
                         </div>
                         </div>
@@ -551,8 +561,8 @@ input[type=radio] {
                             <span class="f14">03</span>/<span class="f14">30</span>
                           </div>
                           <div>
-                            <button class="canceltab2 cancelit">Cancel</button>
-                            <button class="nexttab3 bg-pink next-modif">continue</button>
+                            <button class="canceltab2 cancelit">Previous</button>
+                            <button class="nexttab3 bg-pink next-modif opacityhalf">continue</button>
                           </div>
                         </div>
                       </div>
@@ -637,8 +647,8 @@ input[type=radio] {
                             <span class="f14">04</span>/<span class="f14">30</span>
                           </div>
                           <div>
-                            <button class="canceltab3 cancelit">Cancel</button>
-                            <button class="nexttab4 bg-pink next-modif">continue</button>
+                            <button class="canceltab3 cancelit">Previous</button>
+                            <button class="nexttab4 bg-pink next-modif opacityhalf">continue</button>
                         </div>
                         </div>
                       </div>
@@ -723,8 +733,8 @@ input[type=radio] {
                               <span class="f14">05</span>/<span class="f14">30</span>
                             </div>
                             <div>
-                            <button class="canceltab4 cancelit">Cancel</button>
-                            <button class="nexttab5 bg-pink next-modif">continue</button>
+                            <button class="canceltab4 cancelit">Previous</button>
+                            <button class="nexttab5 bg-pink next-modif opacityhalf">continue</button>
                           </div>
                           </div>
                         </div>
@@ -808,8 +818,8 @@ input[type=radio] {
                             <span class="f14">06</span>/<span class="f14">30</span>
                           </div>
                           <div>
-                            <button class="canceltab5 cancelit">Cancel</button>
-                            <button class="nexttab6 bg-pink next-modif">continue</button>
+                            <button class="canceltab5 cancelit">Previous</button>
+                            <button class="nexttab6 bg-pink next-modif opacityhalf">continue</button>
                           </div>
                         </div>
                       </div>
@@ -827,7 +837,7 @@ input[type=radio] {
               </div>
               
               <div>
-                <button class="cancelit gobackbtn" onclick="ChangeField(c1,f1), removeBtn(c2)">Previous</button>
+                <button class="cancelit gobackbtn canceltab6">Previous</button>
                 <button class="next-modif tabbt1 bg-pink opacityhalf" onclick="ChangeField(c2,f2)">CONTINUE</button>
               </div>
             </div>
@@ -844,7 +854,7 @@ input[type=radio] {
                             <h4 class="mb-0 useab-head">
                                 Content
                             </h4>
-                            <div class="card" style="display: block;">
+                            <div class="card">
                                 <div class="card-header">
                                     <h5 class="mb-0 dd-flex flex-spacebtwn">
                                         <div class="wzcardcheck">
@@ -1144,7 +1154,7 @@ input[type=radio] {
 
                                 </div>
                               </div>
-                              <div class="card">
+                              <div class="card cardcont" style="display: block;">
                                 <div class="card-header" id="headingFourteen">
                                   <h5 class="mb-0 dd-flex flex-spacebtwn">
                                     <div class="wzcardcheck">
@@ -1476,7 +1486,7 @@ input[type=radio] {
                                   </div>
                                 </div>
                               </div>
-                              <div class="card">
+                              <div class="card" style="display: block;">
                                 <div class="card-header">
                                   <h5 class="mb-0 dd-flex flex-spacebtwn">
                                     <div class="wzcardcheck">
@@ -2109,7 +2119,7 @@ input[type=radio] {
                                   </div>
                                 </div>
                               </div>
-                              <div class="card">
+                              <div class="card" style="display: block;">
                                 <div class="card-header">
                                   <h5 class="mb-0 dd-flex flex-spacebtwn">
                                     <div class="wzcardcheck">
@@ -2290,7 +2300,7 @@ input[type=radio] {
                             </div>
                           </div>
                         </div>
-                        <div class="card">
+                        <div class="card" style="display: block;">
                             <div class="card-header">
                               <h5 class="mb-0 dd-flex flex-spacebtwn">
                                 <div class="wzcardcheck">
@@ -2617,9 +2627,15 @@ $(".canceltab3").click(function(){
 });
 $(".canceltab4").click(function(){
   $(".cardfive").removeClass("activeme");
-  $(".cardfour").addClass("activeme");
+  $(".cardthree").addClass("activeme");
 });
 $(".canceltab5").click(function(){
+  $(".cardfive").removeClass("activeme");
+  $(".cardfour").addClass("activeme");
+});
+$(".canceltab6").click(function(){
+  $(".bot-fix").removeClass("activeme");
+  $(".footnext").addClass("activeme");
   $(".cardsix").removeClass("activeme");
   $(".cardfive").addClass("activeme");
 });
@@ -2642,6 +2658,27 @@ $(".nexttab5").click(function(){
 $(".nexttab6").click(function(){
   $(".footnext").addClass("hidedisp");
   $(".bot-fix").addClass("activeme");
+});
+$(".cardone input").click(function(){
+  $(".nexttab1").addClass("fullopacity");
+});
+$(".cardtwo input").click(function(){
+  $(".nexttab2").addClass("fullopacity");
+});
+$(".cardthree input").click(function() {
+  $(".nexttab3").addClass("fullopacity");
+});
+$(".cardfour input").click(function() {
+  $(".nexttab4").addClass("fullopacity");
+});
+$(".cardfive input").click(function() {
+  $(".nexttab5").addClass("fullopacity");
+});
+$(".cardsix input").click(function() {
+  $(".nexttab6").addClass("fullopacity");
+});
+$(".cardcont input").click(function() {
+  $(".tabbt2").addClass("fullopacity");
 });
 
 
