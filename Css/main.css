@@ -928,9 +928,7 @@ button:disabled {
     width: 82%;
     padding-right: 2.5rem;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-    display: none;
 }
 .buttonGroup.bot-fix > button {
     margin-right: 0.5rem;
