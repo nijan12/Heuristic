@@ -189,6 +189,12 @@ input[type=radio] {
 .fullopacity {
   opacity: 1;
 }
+.ctsec > span {
+    width: 35px;
+}
+
+
+
 @media screen and (min-width:1824px) { 
   .card .footnext {
     width: 87%!important;
@@ -384,11 +390,11 @@ input[type=radio] {
 
                       <div class="footnext dd-flex flex-spacebtwn">
                         <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics to go to the next step</p>
-                        <div>
+                        <div class="ctsec">
                           <span class="f14">01</span>/<span class="f14">30</span>
                         </div>
                         <div>
-                          <button disabled class="cancelit" style="visibility:hidden;">Previous</button>
+                          <button disabled class="cancelit">Cancel</button>
                           <button class="nexttab1 bg-pink next-modif opacityhalf">continue</button>
                         </div>
                       </div>
@@ -471,7 +477,7 @@ input[type=radio] {
                         </div>
                         <div class="footnext dd-flex flex-spacebtwn">
                           <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics to go to the next step</p>
-                          <div>
+                          <div class="ctsec">
                             <span class="f14">02</span>/<span class="f14">30</span>
                           </div>
                           <div>
@@ -557,7 +563,7 @@ input[type=radio] {
                         </div>
                         <div class="footnext dd-flex flex-spacebtwn">
                           <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics to go to the next step</p>
-                          <div>
+                          <div class="ctsec">
                             <span class="f14">03</span>/<span class="f14">30</span>
                           </div>
                           <div>
@@ -643,7 +649,7 @@ input[type=radio] {
                         </div>
                         <div class="footnext dd-flex flex-spacebtwn">
                           <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics to go to the next step</p>
-                          <div>
+                          <div class="ctsec">
                             <span class="f14">04</span>/<span class="f14">30</span>
                           </div>
                           <div>
@@ -729,7 +735,7 @@ input[type=radio] {
                           </div>
                           <div class="footnext dd-flex flex-spacebtwn">
                             <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics to go to the next step</p>
-                            <div>
+                            <div class="ctsec">
                               <span class="f14">05</span>/<span class="f14">30</span>
                             </div>
                             <div>
@@ -814,7 +820,7 @@ input[type=radio] {
                         </div>
                         <div class="footnext dd-flex flex-spacebtwn">
                           <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics to go to the next step</p>
-                          <div>
+                          <div class="ctsec">
                             <span class="f14">06</span>/<span class="f14">30</span>
                           </div>
                           <div>
@@ -832,9 +838,9 @@ input[type=radio] {
             <div class="buttonGroup bot-fix dd-flex flex-spacebtwn">
               
                 <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics to go to the next step</p>
-                <div>
+                <div class="ctsec">
                   <span class="f14">06</span>/<span class="f14">30</span>
-              </div>
+                </div>
               
               <div>
                 <button class="cancelit gobackbtn canceltab6">Previous</button>
@@ -1236,7 +1242,7 @@ input[type=radio] {
                         <div class="buttonGroup bot-fix dd-flex flex-spacebtwn">
                           
                             <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics to go to the next step</p>
-                            <div>
+                            <div class="ctsec">
                               <span class="f14">09</span>/<span class="f14">30</span>
                             </div>
                           
@@ -1486,7 +1492,7 @@ input[type=radio] {
                                   </div>
                                 </div>
                               </div>
-                              <div class="card" style="display: block;">
+                              <div class="card cardprecent" style="display: block;">
                                 <div class="card-header">
                                   <h5 class="mb-0 dd-flex flex-spacebtwn">
                                     <div class="wzcardcheck">
@@ -1566,10 +1572,10 @@ input[type=radio] {
                            
                             </div>
 
-                    <div class="buttonGroup bot-fix dd-flex flex-spacebtwn">
+                      <div class="buttonGroup bot-fix dd-flex flex-spacebtwn">
                       
                           <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics to go to the next step</p>
-                        <div>
+                        <div class="ctsec">
                           <span class="f14">14</span>/<span class="f14">30</span>
                         </div>
                       
@@ -2203,7 +2209,7 @@ input[type=radio] {
                         <div class="buttonGroup bot-fix dd-flex flex-spacebtwn">
                           
                             <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics to go to the next step</p>
-                            <div>
+                            <div class="ctsec">
                               <span class="f14">19</span>/<span class="f14">30</span>
                             </div>
                           
@@ -2381,7 +2387,7 @@ input[type=radio] {
                     <div class="buttonGroup bot-fix dd-flex flex-spacebtwn">
                       
                         <p class="font-style"><span class="star"><i class="fa-solid fa-star-of-life"></i></span> Complete all the metrics to go to the next step</p>
-                        <div>
+                        <div class="ctsec">
                           <span class="f14">27</span>/<span class="f14">30</span>
                         </div>
                       
@@ -2676,10 +2682,15 @@ $(".cardfive input").click(function() {
 });
 $(".cardsix input").click(function() {
   $(".nexttab6").addClass("fullopacity");
+  $(".tabbt1").addClass("fullopacity");
 });
 $(".cardcont input").click(function() {
   $(".tabbt2").addClass("fullopacity");
 });
+$(".cardprecent input").click(function() {
+  $(".tabbt3").addClass("fullopacity");
+});
+
 
 
 });
