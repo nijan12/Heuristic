@@ -196,9 +196,9 @@ input[type=radio] {
 
 
 @media screen and (min-width:1824px) { 
-  .card .footnext {
-    width: 87%!important;
-    right: 1%!important;
+  .card .footnext, .bot-fix{
+    width: 86.3%!important;
+    right: 0.8%!important;
   }
 }
 </style>
@@ -394,7 +394,7 @@ input[type=radio] {
                           <span class="f14">01</span>/<span class="f14">30</span>
                         </div>
                         <div>
-                          <button disabled class="cancelit">Cancel</button>
+                          <button disabled class="cancelit" style="padding:0.5rem 1.5rem;">Cancel</button>
                           <button class="nexttab1 bg-pink next-modif opacityhalf">continue</button>
                         </div>
                       </div>
@@ -2125,7 +2125,7 @@ input[type=radio] {
                                   </div>
                                 </div>
                               </div>
-                              <div class="card" style="display: block;">
+                              <div class="card intercard" style="display: block;">
                                 <div class="card-header">
                                   <h5 class="mb-0 dd-flex flex-spacebtwn">
                                     <div class="wzcardcheck">
@@ -2533,7 +2533,7 @@ $(document).ready(function () {
     $(".step5").addClass("completefive");
   });
   $(".gobackbtn4").click(function(){
-    $(".stpe4").removeClass("completefour");
+    $(".stpe4").removeClass("completefive");
   });
   $(".tabbt5").click(function(){
     $(".step5").addClass("completefive");
@@ -2690,7 +2690,9 @@ $(".cardcont input").click(function() {
 $(".cardprecent input").click(function() {
   $(".tabbt3").addClass("fullopacity");
 });
-
+$(".intercard input").click(function() {
+  $(".tabbt4").addClass("fullopacity");
+});
 
 
 });
