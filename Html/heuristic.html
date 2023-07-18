@@ -55,7 +55,7 @@
 }
   .tooglepanel {
     margin-top: 1rem;
-    padding: 0 1rem;
+    padding: 0 2rem;
     
   }
   .tooglepanel .nav-tabs .nav-item {
@@ -85,20 +85,17 @@
   border-bottom: none;
 }
 .dragdrophere {
-  border: 1px dashed #ccc;
   border-radius: 10px;
   margin: 20px 0;
-  flex-direction: column;
-  text-align: center;
-  height: 62px;
+  align-items: center;
 } 
 .dragdrophere i:before {
   font-size: 25px;
     color: #0d0dad;
 }
 .dragdrophere p:first-child {
-    margin-bottom: 0.4rem;
-    margin-top: 0.4rem;
+    margin-bottom: 0.6rem;
+    margin-top: 0.6rem;
 }
 .dragdrophere p:nth-child(2) {
   color: #6F6F6F;
@@ -129,6 +126,18 @@ input[type=radio] {
 }
 .bot-fix > div > span {
     font-weight: 500;
+}
+.dragimagehere {
+  flex-basis: 50%;
+  border: 2px dashed #D7D6D6;
+  text-align: center;
+  border-radius: 5px;
+  margin-right: 2rem;  
+}
+.dragdrophere div > img {
+  width: 72px;
+  height: 62px;
+  margin-right: 5px;
 }
 
 </style>
@@ -300,8 +309,16 @@ input[type=radio] {
                                 <div class="tab-content">
                                   <div class="tab-pane active" id="tabs-3" role="tabpanel">
                                     <div class="dragdrophere dd-flex ">
-                                      <p><i class="fa-solid fa-folder-open"></i></p>
-                                      <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                      <div class="dragimagehere">
+                                        <p><i class="fa-solid fa-folder-open"></i></p>
+                                        <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                      </div>
+                                      <div class="dd-flex">
+                                        <img src="../Image/uploadwtcl.PNG" alt="upload image">
+                                        <img src="../Image/uplaodimg.PNG" alt="upload image without">
+                                        <img src="../Image/uplaodimg.PNG" alt="upload image without">
+                                        <img src="../Image/uplaodimg.PNG" alt="upload image without">
+                                      </div>
                                     </div>
                                   </div>
                                   <div class="tab-pane" id="tabs-2" role="tabpanel">
@@ -374,10 +391,18 @@ input[type=radio] {
                                 </ul><!-- Tab panes -->
                                 <div class="tab-content">
                                   <div class="tab-pane active" id="tabsn-3" role="tabpanel">
-                                  <div class="dragdrophere dd-flex ">
-                                    <p><i class="fa-solid fa-folder-open"></i></p>
-                                    <p>Drag and Drop your files here or <span>Browse file</span></p>
-                                  </div>
+                                    <div class="dragdrophere dd-flex ">
+                                      <div class="dragimagehere">
+                                        <p><i class="fa-solid fa-folder-open"></i></p>
+                                        <p>Drag and Drop your files here or <span>Browse file</span></p>
+                                      </div>
+                                      <div class="dd-flex">
+                                        <img src="../Image/uploadwtcl.PNG" alt="upload image">
+                                        <img src="../Image/uplaodimg.PNG" alt="upload image without">
+                                        <img src="../Image/uplaodimg.PNG" alt="upload image without">
+                                        <img src="../Image/uplaodimg.PNG" alt="upload image without">
+                                      </div>
+                                    </div>
                                   </div>
                                   <div class="tab-pane" id="tabsn-2" role="tabpanel">
                                   <input type="text" placeholder="Please enter your text here...">
