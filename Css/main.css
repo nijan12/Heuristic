@@ -1887,6 +1887,8 @@ select#iconSelector:focus-visible {
     background: #555; 
   }
 
+
+  .european_animals_item { display: none; }
   
 
 /*Media query*/
@@ -1991,6 +1993,16 @@ select#iconSelector:focus-visible {
         width: 87%!important;
         right:1%!important;
         bottom: 0;
+    }
+    .dragimagehere { 
+        width: 30%;
+    }
+    .pdf-carousel-section .container {
+        min-width: 100%;
+    }
+    .contentdropdown .obserrecom, .contentdropdown .metrics .metricshead {
+        padding: 1rem 1.5rem;
+
     }
 }
 
