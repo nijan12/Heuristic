@@ -100,7 +100,7 @@
 		}
 		.overallrate .overall-image {
 			flex-basis: 17%;
-			margin-right: 4rem;
+			margin-right: 2rem;
 			position: relative;
 		}
 		.carousel-item .overallrate .overall-image {
@@ -114,8 +114,8 @@
 		}
 		.overall-content .Overall-chead {
 			font-size: 15px;
-			font-weight: 500;
-			margin-bottom: 2rem;
+			font-weight: 600;
+			margin-bottom: 1rem;
 		}
 		.overall-content p {
 			font-size: 13px;
@@ -171,13 +171,15 @@
 		}
 		.contentdropdown select {
 			position: absolute;
-			top: -40px;
+			top: -33px;
 			right: 0;
 			z-index: 999;
 			width: 200px;
 			line-height: 1;
 			font-size: 0.8rem;
 			font-weight: 600;
+			padding: 0.2rem;
+    		height: auto;
 		}
 		.contentdropdown .alert-info {
 			background: transparent;
@@ -214,6 +216,8 @@
 		.pdf-carousel-section .overallrate.inner-overall {
 			background: #fff !important;
     		padding: 1.5rem 1rem;
+			position: sticky;
+    		top:5px;
 		}
 		.contentdropdown .metrics {
     		background: #fff;
@@ -231,18 +235,20 @@
 		}
 		.contentdropdown .metrics .metricshead {
 			border-bottom: 1px solid #E9E9E9;
-    		padding: 1rem;
+    		padding: 0.8rem;
 			align-items: center;
 		}
 		.contentdropdown .metrics .metricshead h6 {
 			margin-bottom: 0;
+			font-size: 14px;
 		}
 		.contentdropdown .obserrecom {
-			padding: 1.5rem 1rem;
+			padding: 1rem 1rem;
 			border-bottom: 1px solid #E9E9E9;
 		}
 		.contentdropdown .obserrecom h6 {
 			color: #000;
+			font-size: 14px;
 		}
 		.contentdropdown .obserrecom p {
 			font-size: 13px;
@@ -253,6 +259,11 @@
 		.metricshead .innerrateing h6 span {
 			padding-right: 0.3rem;
 		}
+		.metric-inner {
+			overflow: scroll;
+    		max-height: 450px;
+		}
+
 	</style>
  </head>
 <body>
@@ -333,7 +344,7 @@
 				<div class="pdf-carousel-section">
 
 					<div class="container mt-3">
-						<div class="overallrate dd-flex" style="margin-top: 3rem;">
+						<div class="overallrate dd-flex" style="margin-top:2.5rem;">
 
 							<!--Dropdown selection conetent cahnge end-->
 							<main class="container">
@@ -370,12 +381,13 @@
 												</div>
 
 											</div>
+										<div class="metric-inner">
 											<div class="metrics">
 												<div>
 													<div class="dd-flex metricshead">
 														<h6>Navigation options are visible and clear</h6>
 														<div class="innerrateing">
-															<h6>Rating-<span>3</span>😐</h6>
+															<h6>Ratings-<span>3</span>😐</h6>
 														</div>
 													</div>
 												</div>
@@ -397,7 +409,7 @@
 													<div class="dd-flex metricshead">
 														<h6>Overall navigation supports primary task flows and works as an integrated whole</h6>
 														<div class="innerrateing">
-															<h6>Rating-<span>5</span>😑</h6>
+															<h6>Ratings-<span>5</span>😑</h6>
 														</div>
 													</div>
 												</div>
@@ -419,7 +431,7 @@
 													<div class="dd-flex metricshead">
 														<h6>Sense of place is clear</h6>
 														<div class="innerrateing">
-															<h6>Rating-<span>5</span>😑</h6>
+															<h6>Ratings-<span>5</span>😑</h6>
 														</div>
 													</div>
 												</div>
@@ -548,65 +560,126 @@
 											</div>
 
 										</div>
+										</div>
 					
 										<div class="european_animals_item" data-option="1">
 											
-											<div class="overall-image">
-									
-												<div class="dd-flex" style="justify-content:center;">
-													<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" data-value="45">
-													<circle r="45" cx="50" cy="50" />
-													<!-- 282.78302001953125 is auto-calculated by path.getTotalLength() -->
-													<path class="meter" d="M5,50a45,45 0 1,0 90,0a45,45 0 1,0 -90,0" stroke-linecap="round" stroke-linejoin="round" stroke-dashoffset="282.78302001953125" stroke-dasharray="282.78302001953125" />
-													<!-- Value automatically updates based on data-value set above -->
-													<text x="50" y="50" text-anchor="middle" dominant-baseline="central" font-size="20"></text>
-													</svg>
-												</div>
-												<div class="text-center" style="margin-top:1rem;">
-													<h6>Content</h6>
-												</div>
-											</div>
-											<div class="overall-content">
-												<p class="list-color Overall-chead">(Showing a thumbnail, on clicking the actual image appears with markings as mentioned in today’s call – future development)</p>
-												<div class="pdusability dd-flex">
-													<div>
-													<h5 class="pdh5">Usability Dimension</h2>
-														<ul>
-															
-															<li class="bold">Good content, good writing, message on target</li>
-															<li><span>🙂</span> Content written for scanning</li>
-		
-															<li><span>🙂</span> Content follows summary / detail format</li>
-		
-															<li><span>😐</span> Tone of writing is appropriate</li>
-															
-															<li><span>😐</span> Content facilitates decision making</li>
-		
-														<ul>
-													</div>
-													<div>
-													<h5 class="pdh5">Recommendations</h2>
-													<ul>
-															<li>Content written for scanning Content written for scanning</li>
-		
-															<li>Content follows summary / detail format Content follows summary / detail format </li>
-		
-															<li>Tone of writing is appropriate Tone of writing is appropriate</li>
-															
-															<li>Content facilitates decision making Content facilitates decision making</li>
-		
-														<ul>
+											<div class="overallrate inner-overall dd-flex">
+												<div class="overall-image">
+													<div class="dd-flex" style="justify-content:center;">
+														<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" data-value="45">
+														<circle r="45" cx="50" cy="50" />
+														<!-- 282.78302001953125 is auto-calculated by path.getTotalLength() -->
+														<path class="meter" d="M5,50a45,45 0 1,0 90,0a45,45 0 1,0 -90,0" stroke-linecap="round" stroke-linejoin="round" stroke-dashoffset="282.78302001953125" stroke-dasharray="282.78302001953125" />
+														<!-- Value automatically updates based on data-value set above -->
+														<text x="50" y="50" text-anchor="middle" dominant-baseline="central" font-size="20"></text>
+														</svg>
 													</div>
 												</div>
-											</div>
+												<div class="overall-content">
+													<div style="margin-top:1rem;">
+														<h6>Content</h6>
+													</div>
+													<p class="list-color">This means that the majority of important UX elements were in place and working well. However, here is still room for improvement as any one of the areas reviewed could make a big impact on the performance of your business.</p>
+												</div>
 
+											</div>
+										<div class="metric-inner">
+											<div class="metrics">
+												<div>
+													<div class="dd-flex metricshead">
+														<h6>Content written for scanning</h6>
+														<div class="innerrateing">
+															<h6>Ratings-<span>3</span>😐</h6>
+														</div>
+													</div>
+												</div>
+												<div class="obserrecom">
+													<h6>Observations</h6>
+													<p>
+														This means that the majority of important UX elements were in place and working well. However, here is still room for improvement as any one of the areas reviewed could make a big impact on the performance of your business.
+													</p>
+												</div>
+												<div class="obserrecom">
+													<h6>Recommendations</h6>
+													<p>
+														This means that the majority of important UX elements were in place and working well. However, here is still room for improvement as any one of the areas reviewed could make a big impact on the performance of your business.
+													</p>
+												</div>
+											</div>
+											<div class="metrics">
+												<div>
+													<div class="dd-flex metricshead">
+														<h6>Content follows summary / detail format</h6>
+														<div class="innerrateing">
+															<h6>Ratings-<span>1</span>😉</h6>
+														</div>
+													</div>
+												</div>
+												<div class="obserrecom">
+													<h6>Observations</h6>
+													<p>
+														This means that the majority of important UX elements were in place and working well. However, here is still room for improvement as any one of the areas reviewed could make a big impact on the performance of your business.
+													</p>
+												</div>
+												<div class="obserrecom">
+													<h6>Recommendations</h6>
+													<p>
+														This means that the majority of important UX elements were in place and working well. However, here is still room for improvement as any one of the areas reviewed could make a big impact on the performance of your business.
+													</p>
+												</div>
+											</div>
+											<div class="metrics">
+												<div>
+													<div class="dd-flex metricshead">
+														<h6>Tone of writing is appropriate</h6>
+														<div class="innerrateing">
+															<h6>Ratings-<span>4</span>😑</h6>
+														</div>
+													</div>
+												</div>
+												<div class="obserrecom">
+													<h6>Observations</h6>
+													<p>
+														This means that the majority of important UX elements were in place and working well. However, here is still room for improvement as any one of the areas reviewed could make a big impact on the performance of your business.
+													</p>
+												</div>
+												<div class="obserrecom">
+													<h6>Recommendations</h6>
+													<p>
+														This means that the majority of important UX elements were in place and working well. However, here is still room for improvement as any one of the areas reviewed could make a big impact on the performance of your business.
+													</p>
+												</div>
+											</div>
+											<div class="metrics">
+												<div>
+													<div class="dd-flex metricshead">
+														<h6>Content facilitates decision making</h6>
+														<div class="innerrateing">
+															<h6>Ratings-<span>5</span>😶</h6>
+														</div>
+													</div>
+												</div>
+												<div class="obserrecom">
+													<h6>Observations</h6>
+													<p>
+														This means that the majority of important UX elements were in place and working well. However, here is still room for improvement as any one of the areas reviewed could make a big impact on the performance of your business.
+													</p>
+												</div>
+												<div class="obserrecom">
+													<h6>Recommendations</h6>
+													<p>
+														This means that the majority of important UX elements were in place and working well. However, here is still room for improvement as any one of the areas reviewed could make a big impact on the performance of your business.
+													</p>
+												</div>
+											</div>
+										</div>
 										</div>
 					
 										<div class="european_animals_item" data-option="2">
 											
-											<div class="overallrate dd-flex">
+											<div class="overallrate inner-overall dd-flex">
 												<div class="overall-image">
-												
 													<div class="dd-flex" style="justify-content:center;">
 														<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" data-value="60">
 														<circle r="45" cx="50" cy="50" />
@@ -616,54 +689,114 @@
 														<text x="50" y="50" text-anchor="middle" dominant-baseline="central" font-size="20"></text>
 														</svg>
 													</div>
-													<div class="text-center" style="margin-top:1rem;">
-														<h6>Presentation</h6>
-													</div>
 												</div>
 												<div class="overall-content">
-													<p class="list-color Overall-chead">(Showing a thumbnail, on clicking the actual image appears with markings as mentioned in today’s call – future development)</p>
-													<div class="pdusability dd-flex">
-														<div>
-														<h5 class="pdh5">Usability Dimension</h2>
-															<ul>
-																
-																<li class="bold">Visual language</li>
-															
-																<li><span>🙂</span> Layout - good balance, low visual complexity, clear visual hierarchy</li>
-			
-																<li><span>🙂</span> Color - appropriate for brand, guides attention, aids in grouping</li>
-			
-																<li><span>😐</span> Graphics - supports brand, follows a clear purpose, enhances layout</li>
-																
-																<li><span>😐</span> Typography - clear type hierarchy, appropriate size, good legibility</li>
-																
-			
-															<ul>
-														</div>
-														<div>
-														<h5 class="pdh5">Recommendations</h2>
-														<ul>
-																<li>Layout - good balance, low visual complexity, clear visual hierarchy Layout - good balance, low visual complexity, clear visual hierarchy</li>
-			
-																<li>Color - appropriate for brand, guides attention, aids in grouping Color - appropriate for brand, guides attention, aids in grouping</li>
-			
-																<li>Graphics - supports brand, follows a clear purpose, enhances layout</li>
-			
-															<ul>
+													<div style="margin-top:1rem;">
+														<h6>Presentation</h6>
+													</div>
+													<p class="list-color">This means that the majority of important UX elements were in place and working well. However, here is still room for improvement as any one of the areas reviewed could make a big impact on the performance of your business.</p>
+												</div>
+
+											</div>
+										<div class="metric-inner">
+											<div class="metrics">
+												<div>
+													<div class="dd-flex metricshead">
+														<h6>Layout - good balance, low visual complexity, clear visual hierarchy</h6>
+														<div class="innerrateing">
+															<h6>Ratings-<span>2</span>🙂</h6>
 														</div>
 													</div>
 												</div>
+												<div class="obserrecom">
+													<h6>Observations</h6>
+													<p>
+														This means that the majority of important UX elements were in place and working well. However, here is still room for improvement as any one of the areas reviewed could make a big impact on the performance of your business.
+													</p>
+												</div>
+												<div class="obserrecom">
+													<h6>Recommendations</h6>
+													<p>
+														This means that the majority of important UX elements were in place and working well. However, here is still room for improvement as any one of the areas reviewed could make a big impact on the performance of your business.
+													</p>
+												</div>
 											</div>
+											<div class="metrics">
+												<div>
+													<div class="dd-flex metricshead">
+														<h6>Color - appropriate for brand, guides attention, aids in grouping</h6>
+														<div class="innerrateing">
+															<h6>Ratings-<span>3</span>😐</h6>
+														</div>
+													</div>
+												</div>
+												<div class="obserrecom">
+													<h6>Observations</h6>
+													<p>
+														This means that the majority of important UX elements were in place and working well. However, here is still room for improvement as any one of the areas reviewed could make a big impact on the performance of your business.
+													</p>
+												</div>
+												<div class="obserrecom">
+													<h6>Recommendations</h6>
+													<p>
+														This means that the majority of important UX elements were in place and working well. However, here is still room for improvement as any one of the areas reviewed could make a big impact on the performance of your business.
+													</p>
+												</div>
+											</div>
+											<div class="metrics">
+												<div>
+													<div class="dd-flex metricshead">
+														<h6>Graphics - supports brand, follows a clear purpose, enhances layout</h6>
+														<div class="innerrateing">
+															<h6>Ratings-<span>5</span>😶</h6>
+														</div>
+													</div>
+												</div>
+												<div class="obserrecom">
+													<h6>Observations</h6>
+													<p>
+														This means that the majority of important UX elements were in place and working well. However, here is still room for improvement as any one of the areas reviewed could make a big impact on the performance of your business.
+													</p>
+												</div>
+												<div class="obserrecom">
+													<h6>Recommendations</h6>
+													<p>
+														This means that the majority of important UX elements were in place and working well. However, here is still room for improvement as any one of the areas reviewed could make a big impact on the performance of your business.
+													</p>
+												</div>
+											</div>
+											<div class="metrics">
+												<div>
+													<div class="dd-flex metricshead">
+														<h6>Typography - clear type hierarchy, appropriate size, good legibility</h6>
+														<div class="innerrateing">
+															<h6>Ratings-<span>2</span>🙂</h6>
+														</div>
+													</div>
+												</div>
+												<div class="obserrecom">
+													<h6>Observations</h6>
+													<p>
+														This means that the majority of important UX elements were in place and working well. However, here is still room for improvement as any one of the areas reviewed could make a big impact on the performance of your business.
+													</p>
+												</div>
+												<div class="obserrecom">
+													<h6>Recommendations</h6>
+													<p>
+														This means that the majority of important UX elements were in place and working well. However, here is still room for improvement as any one of the areas reviewed could make a big impact on the performance of your business.
+													</p>
+												</div>
+											</div>
+										</div>
 
 										</div>
 					
 										<div class="european_animals_item" data-option="3">
 											
-											<div class="overallrate dd-flex">
+											<div class="overallrate inner-overall dd-flex">
 												<div class="overall-image">
-												
 													<div class="dd-flex" style="justify-content:center;">
-														<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" data-value="35">
+														<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" data-value="25">
 														<circle r="45" cx="50" cy="50" />
 														<!-- 282.78302001953125 is auto-calculated by path.getTotalLength() -->
 														<path class="meter" d="M5,50a45,45 0 1,0 90,0a45,45 0 1,0 -90,0" stroke-linecap="round" stroke-linejoin="round" stroke-dashoffset="282.78302001953125" stroke-dasharray="282.78302001953125" />
@@ -671,29 +804,17 @@
 														<text x="50" y="50" text-anchor="middle" dominant-baseline="central" font-size="20"></text>
 														</svg>
 													</div>
-													<div class="text-center" style="margin-top:1rem;">
-														<h6>Interaction</h6>
-													</div>
 												</div>
 												<div class="overall-content">
-													<p class="list-color Overall-chead">(Showing a thumbnail, on clicking the actual image appears with markings as mentioned in today’s call – future development)</p>
-													<div class="pdusability dd-flex">
-														<div>
-														<h5 class="pdh5">Usability Dimension</h2>
-															<ul>
-																
-																<li class="bold">Controls and micro-interactions</li>
-																<li><span>🙂</span> Good use of controls and interaction model</li>
-			
-																<li><span>🙂</span> Number of micro-interactions to complete task is suitable</li>
-			
-																<li><span>😐</span> Strong visual affordances for selection</li>
-																<li><span>😐</span> Good error prevention strategy – format cues, controls, help Use of secondary windows, screens, and hover-overs</li>
-																<li><span>😐</span> Secondary windows or hover-overs work as expected</li>
-																<li><span>😐</span> Appropriate content relationship between windows Response to user input</li>
-																<li><span>😐</span> Speedy system response</li>
-																<li><span>😐</span> Appropriate messaging and feedback</li>
-			
+													<div style="margin-top:1rem;">
+														<h6>Interaction</h6>
+													</div>
+													<p class="list-color">This means that the majority of important UX elements were in place and working well. However, here is still room for improvement as any one of the areas reviewed could make a big impact on the performance of your business.</p>
+												</div>
+
+											</div>
+
+										<div class="metric-inner">
 											<div class="metrics">
 												<div>
 													<div class="dd-flex metricshead">
@@ -870,35 +991,37 @@
 													</p>
 												</div>
 											</div>
-														<div>
-														<h5 class="pdh5">Recommendations</h2>
-														<ul>
-																<li>Good use of controls and interaction model Good use of controls and interaction model</li>
-			
-																<li>Number of micro-interactions to complete task is suitable Number of micro-interactions to complete task is suitable</li>
-			
-																<li>Strong visual affordances for selection Strong visual affordances for selection</li>
-																<li>Good error prevention strategy – format cues, controls, help Use of secondary windows, screens, and hover-overs</li>
-																<li>Secondary windows or hover-overs work as expected</li>
-																<li>Appropriate content relationship between windows Response to user input</li>
-																<li>Speedy system response</li>
-																<li>Appropriate messaging and feedback</li>
-			
-															<ul>
+											<div class="metrics">
+												<div>
+													<div class="dd-flex metricshead">
+														<h6>Appropriate messaging and feedback</h6>
+														<div class="innerrateing">
+															<h6>Ratings-<span>3</span>😐</h6>
 														</div>
 													</div>
 												</div>
+												<div class="obserrecom">
+													<h6>Observations</h6>
+													<p>
+														This means that the majority of important UX elements were in place and working well. However, here is still room for improvement as any one of the areas reviewed could make a big impact on the performance of your business.
+													</p>
+												</div>
+												<div class="obserrecom">
+													<h6>Recommendations</h6>
+													<p>
+														This means that the majority of important UX elements were in place and working well. However, here is still room for improvement as any one of the areas reviewed could make a big impact on the performance of your business.
+													</p>
+												</div>
 											</div>
-
+										</div>
 										</div>
 					
 										<div class="european_animals_item" data-option="4">
 											
-											<div class="overallrate dd-flex">
+											<div class="overallrate inner-overall dd-flex">
 												<div class="overall-image">
-												
 													<div class="dd-flex" style="justify-content:center;">
-														<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" data-value="40">
+														<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" data-value="35">
 														<circle r="45" cx="50" cy="50" />
 														<!-- 282.78302001953125 is auto-calculated by path.getTotalLength() -->
 														<path class="meter" d="M5,50a45,45 0 1,0 90,0a45,45 0 1,0 -90,0" stroke-linecap="round" stroke-linejoin="round" stroke-dashoffset="282.78302001953125" stroke-dasharray="282.78302001953125" />
@@ -906,34 +1029,62 @@
 														<text x="50" y="50" text-anchor="middle" dominant-baseline="central" font-size="20"></text>
 														</svg>
 													</div>
-													<div class="text-center" style="margin-top:1rem;">
-														<h6>Value & Usefulness</h6>
-													</div>
 												</div>
 												<div class="overall-content">
-													<p class="list-color Overall-chead">(Showing a thumbnail, on clicking the actual image appears with markings as mentioned in today’s call – future development)</p>
-													<div class="pdusability dd-flex">
-														<div>
-														<h5 class="pdh5">Usability Dimension</h2>
-															<ul>
-																
-																<li><span>🙂</span> The content meets the user's needs.</li>
-																<li><span>😐</span> The features are useful and meet the user's needs.</li>
-															<ul>
-														</div>
-														<div>
-														<h5 class="pdh5">Recommendations</h2>
-														<ul>
-																<li>The content meets the user's needs The content meets the user's needs</li>
-			
-																<li>The features are useful and meet the user's needs The features are useful and meet the user's needs</li>
-			
-															<ul>
+													<div style="margin-top:1rem;">
+														<h6>Value & Usefulness</h6>
+													</div>
+													<p class="list-color">This means that the majority of important UX elements were in place and working well. However, here is still room for improvement as any one of the areas reviewed could make a big impact on the performance of your business.</p>
+												</div>
+
+											</div>
+
+										<div class="metric-inner">
+											<div class="metrics">
+												<div>
+													<div class="dd-flex metricshead">
+														<h6>The content meets the user's needs.</h6>
+														<div class="innerrateing">
+															<h6>Ratings-<span>2</span>🙂</h6>
 														</div>
 													</div>
 												</div>
+												<div class="obserrecom">
+													<h6>Observations</h6>
+													<p>
+														This means that the majority of important UX elements were in place and working well. However, here is still room for improvement as any one of the areas reviewed could make a big impact on the performance of your business.
+													</p>
+												</div>
+												<div class="obserrecom">
+													<h6>Recommendations</h6>
+													<p>
+														This means that the majority of important UX elements were in place and working well. However, here is still room for improvement as any one of the areas reviewed could make a big impact on the performance of your business.
+													</p>
+												</div>
 											</div>
-
+											<div class="metrics">
+												<div>
+													<div class="dd-flex metricshead">
+														<h6>The features are useful and meet the user's needs.</h6>
+														<div class="innerrateing">
+															<h6>Ratings-<span>4</span>😑</h6>
+														</div>
+													</div>
+												</div>
+												<div class="obserrecom">
+													<h6>Observations</h6>
+													<p>
+														This means that the majority of important UX elements were in place and working well. However, here is still room for improvement as any one of the areas reviewed could make a big impact on the performance of your business.
+													</p>
+												</div>
+												<div class="obserrecom">
+													<h6>Recommendations</h6>
+													<p>
+														This means that the majority of important UX elements were in place and working well. However, here is still room for improvement as any one of the areas reviewed could make a big impact on the performance of your business.
+													</p>
+												</div>
+											</div>
+										</div>
 										</div>
 					
 										<div class="european_animals_item" data-option="5">
