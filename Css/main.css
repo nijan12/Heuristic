@@ -1869,12 +1869,16 @@ select#iconSelector:focus-visible {
 /*Scroll changes*/
 /* width */
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 8px;
+    max-height: 10%;
+    height: 10%;
+    border-radius: 20px;
   }
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: #f1f1f1;
+    height: 20px; 
   }
    
   /* Handle */
