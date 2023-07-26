@@ -169,16 +169,16 @@
 			position: relative;
 		}
 		.contentdropdown select {
-			position: absolute;
-			top: -33px;
-			right: 0;
-			z-index: 999;
+			position: sticky;
+			top: 200px;
 			width: 200px;
 			line-height: 1;
 			font-size: 0.8rem;
 			font-weight: 600;
 			padding: 0.2rem;
-    		height: auto;
+			height: auto;
+			z-index: 10000;
+			margin-top: 1rem;
 		}
 		.contentdropdown .alert-info {
 			background: transparent;
@@ -198,8 +198,8 @@
 		}
 		.contentdropdown .overallrate {
 			margin-top: 0;
-			padding: 0;
-    		border: none;
+			margin-bottom: 1rem;
+    		border-bottom: 1px solid #E9E9E9;
 		}
 		.contentdropdown h6 {
 			color: #B02270;
@@ -220,7 +220,8 @@
 		}
 		.contentdropdown .metrics {
     		background: #fff;
-			margin-bottom: 1rem;
+			margin-bottom: 0.3rem;
+    		border-bottom: 1px solid #ccc;
 		}
 		.metricshead .innerrateing h6 {
 			color: #000;
@@ -242,7 +243,7 @@
 			font-size: 14px;
 		}
 		.contentdropdown .obserrecom {
-			padding: 1rem 1rem;
+			padding: 0.5rem 0.7rem;
 			border-bottom: 1px solid #E9E9E9;
 		}
 		.contentdropdown .obserrecom h6 {
@@ -258,14 +259,32 @@
 		.metricshead .innerrateing h6 span {
 			padding-right: 0.3rem;
 		}
-		.metric-inner {
-			overflow-y: scroll;
-			max-height: 20rem;
+		.pdf-main-section {
+			flex: 1;
+			overflow: scroll;
 		}
-	
+		.select-option {
+			width: 100%;
+			display: flex;
+			justify-content: flex-end;
+			position: relative;
+			top: 0;
+			right: 0;
+			line-height: 1;
+			font-size: 0.8rem;
+			font-weight: 600;
+			padding: 0.2rem;	
+		}
+		.pdf-main-section .container {
+			padding: 0;
+		}
 	@media screen and (min-width:1824px) {
 		.overallrate .overall-image {
 			flex-basis: 12%;
+		}
+		.pdf-main-section .container {
+			max-width: 100%;
+			padding: 0;
 		}
 	}
 	</style>
@@ -345,23 +364,21 @@
 				</div>
 				
 			<div class="pdf-main-section">			
-				<div class="pdf-carousel-section">
-
-					<div class="container mt-3">
-						<div class="overallrate dd-flex" style="margin-top:2.5rem;">
+				
 
 							<!--Dropdown selection conetent cahnge end-->
 							<main class="container">
 								<div id="european_animals" class="block contentdropdown">
-									<select class="european_animals_select form-control mb-3">
-										<option value="0">Navigation & IA</option>
-										<option value="1">Content</option>
-										<option value="2">Presentation</option>
-										<option value="3">Interaction</option>
-										<option value="4">Value & Usefulness</option>
-										
-									</select>
-					
+									<div class="select-option">
+										<select class="european_animals_select form-control mb-3">
+											<option value="0">Navigation & IA</option>
+											<option value="1">Content</option>
+											<option value="2">Presentation</option>
+											<option value="3">Interaction</option>
+											<option value="4">Value & Usefulness</option>
+											
+										</select>
+									</div>
 									<div class="alert alert-info">
 										<div class="european_animals_item" data-option="0">
 											
@@ -1097,22 +1114,9 @@
 							</main>
 
 							<!--Dropdown selection conetent cahnge end-->
-								
-								</div>
 						
-						
-						
-						
-							
-						
-						
-						
-						
-						
-						
-							</div>
-						</div>
 				</div>
+				<div class="footer" style="justify-content: center;">Copyrights @ All rights reserved group Heuristic Evaluation, 2023 <span>|</span> <a href="#">Privay Policy</a></div>
 		</div>
     </div>
 </div>
