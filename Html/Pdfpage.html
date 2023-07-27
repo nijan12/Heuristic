@@ -262,7 +262,6 @@
 		}
 		.pdf-main-section {
 			flex: 1;
-			overflow: scroll;
 		}
 		.select-option {
 			width: 100%;
@@ -282,13 +281,15 @@
 		.indvidualgrp {
 			display: flex;
 			flex-direction: column;
-			height: calc(100vh - 500px);
+			height: calc(100vh - 200px);
 		}
 		.metric-inner {
 			flex: 1;
 			overflow: scroll;
 			min-height: 0;
+			background: #fff;
 		}
+		
 	@media screen and (min-width:1824px) {
 		.overallrate .overall-image {
 			flex-basis: 12%;
@@ -296,6 +297,16 @@
 		.pdf-main-section .container {
 			max-width: 100%;
 			padding: 0;
+		}
+		.indvidualgrp {
+			display: flex;
+			flex-direction: column;
+			height: calc(100vh - 530px);
+		}
+		.metric-inner {
+			flex: 1;
+			overflow: scroll;
+			min-height: 0;
 		}
 	}
 	</style>
