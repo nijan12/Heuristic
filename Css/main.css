@@ -2006,7 +2006,10 @@ select#iconSelector:focus-visible {
     }
     .contentdropdown .obserrecom, .contentdropdown .metrics .metricshead {
         padding: 1rem 1.5rem;
-
+    }
+    .buttonGroup.bot-fix {
+        right: 1.4%;
+        width: 85.6%;
     }
 }
 
