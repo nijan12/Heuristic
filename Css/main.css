@@ -1462,6 +1462,7 @@ scection {
 .evcreateaddnew {
     color: #B02270;
     border: 1px solid #B02270;
+    display: none;
 }
 .evcreateaddnew:hover {
     background: #B02270;
